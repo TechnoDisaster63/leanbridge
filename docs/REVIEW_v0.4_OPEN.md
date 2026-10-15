@@ -1,11 +1,24 @@
-# Independent review of v0.4 stage 1-2 (offline data only): ACCEPTED as offline data scaffold, NOT adapter-ready
-Status of review items (as relayed; the full reviewer text may be truncated, so ask the reviewer for details):
-- [fixed in this commit] Missing CAKE tin sent_bytes/drops no longer default to 0 (now None). Duplicate qdisc identity fails closed. Unit-suffixed size strings are rejected (ambiguous).
-- [OPEN] qdisc identity should be (dev, handle, kind), not handle only; parser has no dev input yet.
-- [OPEN] Rates/units of capacity_estimate unverified; it must NOT be used as a control input. Add explicit metadata: units/source = unverified until checked on a real kernel.
-- [OPEN] Dry-run allowlist is name-only: fails proposed gate L2. A future executor needs namespace+device binding and a VM marker check. No executor exists and none is authorized.
-- [OPEN] CAKE tin delay is sojourn time, not RTT. Missing: real RTT probe parser, idle baseline, lost/late probe rules.
-- [OPEN] `int(rate*1000)` truncation and planner errors need hold-last-safe handling in any future loop; the "no imports" test is weak evidence, not proof of non-execution.
-- [OPEN] Rollback, fault-injection, kernel/sch_cake, timing, and executor gates all remain open. Old "seven gates" list remains unrecovered.
-- Friend's Kali VM / hypervisor / permission: pending the user; not verified isolated or disposable; no third-party device use assumed.
-- Protocol decisions (docs/PROTOCOL_DECISIONS.md) are not prerequisites for offline repairs; to be asked later with recommended choices.
+# v0.4 offline review and open items
+
+Review outcome: accepted as an offline data scaffold, **not adapter-ready**. Subsequent parser fixes do not provide live-execution clearance.
+
+## Fixed in the v0.4.1 snapshot
+
+- Missing CAKE tin `sent_bytes` and `drops` stay `None`, never zero.
+- Duplicate parsed qdisc identities are rejected.
+- Ambiguous unit-suffixed size strings are rejected; plain byte forms remain supported.
+
+## Still open
+
+- [ ] Full identity must include `(dev, handle, kind)`; the parser has no device input yet.
+- [ ] Missing or empty CAKE `tins` are currently accepted as an empty list. This is not a complete measurement. Required-tin validation and fail-closed consumer handling are unresolved.
+- [ ] `capacity_estimate` source and units are unverified. The legacy `_bps` field name is not evidence. Do not use this value as a control input; add explicit source/units metadata and verify it against a real kernel.
+- [ ] The dry-run allowlist uses device names only and fails proposed L2. A future executor must bind namespace and device and verify a disposable-VM marker. No executor exists.
+- [ ] CAKE tin delay is sojourn time, not RTT. A real RTT parser, idle baseline and lost/late sample rules are missing.
+- [ ] Rate conversion currently truncates with `int(rate * 1000)`. Safe rounding, CAKE option preservation and planner-error hold behavior are unresolved for any future loop.
+- [ ] Import tests are narrow regression alarms, not proof of non-execution.
+- [ ] Rollback, fault injection, kernel support, timing and executor review remain open.
+- [ ] The original seven-gate itemized record is unavailable; no mapping is claimed and every gate remains open.
+- [ ] No lab host has been verified disposable, isolated and snapshotted for a run.
+
+[Protocol decisions](PROTOCOL_DECISIONS.md) remain unresolved for confirmatory research. They are not prerequisites for safe offline repairs or documentation work.
