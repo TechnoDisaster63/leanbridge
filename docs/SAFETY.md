@@ -1,11 +1,22 @@
 # Safety contract
-1. No live-network or host execution until the adapter is independently reviewed, the seven safety gates
-   are closed, and documented clearance is granted. A simulator pass is not proof of real-network safety.
-2. Guard has final authority: hard min/max, upward step limit, probe lockout after congestion.
-3. Fail closed: invalid/stale/missing telemetry never raises the rate; after N misses rate drops to the fallback.
-4. Same saved inputs + config reproduce the same decisions (tested).
-5. LLM: read-only explanation of approved logs; no shell, no shaping access.
-6. Scratch rebuild: no code reused from earlier harness scripts that failed review.
-Seven safety gates: the v8/restart documents say "seven safety gates remain open". Project records tie them to the
-earlier script-harness code reviews (that harness failed five independent audits). An itemized list of the seven was NOT
-recovered from the available sources, so no gate-to-test mapping exists here and none is invented. Treat every gate as open.
+
+## Current boundary
+
+Offline simulation, text parsing and dry-run argument data only. No network executor, RTT collector, rollback or live benchmark exists. Do not execute the returned command arguments or run network-changing tests on a primary host, router or live link.
+
+## Simulated policy rules
+
+- The guard has final authority over simulated min/max bounds, upward steps and congestion lockout.
+- Invalid, stale or missing synthetic observations cannot raise the guarded rate; after the configured miss count it falls back without raising the current rate.
+- Saved synthetic inputs and configuration reproduce decisions under the existing replay tests.
+- A possible future explanation model must remain read-only and outside the control path. It is not implemented here.
+
+These rules describe current simulated policy behavior, not a complete parser contract or real-network safety guarantee. Missing/empty CAKE tins can still be accepted by the offline parser; required-field consumer handling is open.
+
+## Gates remain open
+
+No live execution until the adapter and executor are independently reviewed, the required gates are closed and explicit clearance is recorded for that run.
+
+The original seven-gate itemized record has not been recovered. No gate-to-test mapping is claimed; treat all seven as open. Proposed L1-L8 gates in the [lab plan](LAB_PLAN.md) add planning requirements and do not replace or close them.
+
+See the [open review](REVIEW_v0.4_OPEN.md) for identity, units, probe timing, rounding, missing data and rollback gaps. Passing offline tests is not permission to run a live experiment.
