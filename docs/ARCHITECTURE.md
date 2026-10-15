@@ -41,7 +41,7 @@ There is no wired path from real qdisc counters to a running network controller.
 - Netdev counters: byte counts; `rate_mbps` computes `delta * 8 / seconds / 1e6`.
 - CAKE fixture delay fields use `_us` names, but fixtures are hand-built and require real-kernel verification.
 - `capacity_estimate_bps` is a legacy field name, **not proof of verified units**. Treat its source and units as unverified. Do not use it as control input.
-- Missing tin counters stay `None`; a consumer must reject unavailable required data rather than invent zero.
+- Missing tin counters stay `None`; missing/empty `tins` are currently accepted as an empty list. Required-tin validation and fail-closed consumer behavior remain open; do not invent zero.
 - Counter resets or invalid intervals return no rate. General parser input hardening is not complete.
 
 ## Boundaries still missing
