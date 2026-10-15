@@ -6,4 +6,6 @@
 4. Same saved inputs + config reproduce the same decisions (tested).
 5. LLM: read-only explanation of approved logs; no shell, no shaping access.
 6. Scratch rebuild: no code reused from earlier harness scripts that failed review.
-Seven gates: the list lives in the v8 source document and is not reproduced here; map them to tests in phase 3.
+Seven safety gates: the v8/restart documents say "seven safety gates remain open". Project records tie them to the
+earlier script-harness code reviews (that harness failed five independent audits). An itemized list of the seven was NOT
+recovered from the available sources, so no gate-to-test mapping exists here and none is invented. Treat every gate as open.
