@@ -1,0 +1,9 @@
+{
+  "note": "Predeclared before any v0.3 held-out execution. Changing this file after seeing held-out numbers means a new version (v0.4) with a new manifest.",
+  "arms": ["v0.1", "v0.2b_cut", "v0.2c_median_cut", "ablate_no_belief", "v0.2b_cut_hazard0", "simple_aimd_standin"],
+  "tuning":  {"families": ["rand_steps", "oscillation"], "seed_start": 0,   "n_seeds": 20},
+  "heldout": {"families": ["random_walk", "cross_traffic", "lossy_drop"], "seed_start": 1000, "n_seeds": 30},
+  "metrics": "p99 queue delay (ms), delivered goodput vs real simulated unshaped run, tail-drop fraction, frac steps rate>capacity; spread = min-max",
+  "limits": "toy fluid single-flow model; held-out families are unseen trace shapes within the same toy model, not real-network generalization",
+  "decision_rule": "none. No PASS/KILL; results feed a recommendation to the user only."
+}
