@@ -26,7 +26,7 @@ Local historical snapshot labels do not imply remote GitHub tags or published re
 ## Open work, not hidden by polish
 
 - Full qdisc identity and explicit verified source/units metadata.
-- Missing-field handling at every consumer; counter/parser hardening against unvalidated inputs.
+- Missing-field handling at every consumer. Missing/empty CAKE tins are accepted by the parser today; required-tin validation is open. Counter/parser hardening against unvalidated inputs also remains open.
 - Namespace/device-bound execution design and a verified disposable VM marker.
 - Real RTT probes with idle baseline and missing/late sample rules. CAKE sojourn time is not RTT.
 - Rate rounding, planner error hold behavior, CAKE option preservation and safe rollback.
