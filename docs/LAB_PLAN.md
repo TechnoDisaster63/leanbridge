@@ -34,3 +34,8 @@ L1 VM is disposable, snapshotted, no bridged/NAT access to the laptop LAN during
 L3 Fault-injection tests show controller errors cannot bypass the guard.   L4 Telemetry parser tested on recorded tc output, including malformed input.
 L5 Rollback/teardown restores the initial qdisc and namespaces; idempotent; no predictable /tmp state.   L6 Independent review of adapter code (earlier harness failed five audits).
 L7 Manifest (arms, scenarios, seeds, metrics, exclusions) committed before confirmatory runs; tuning separated from confirmatory.   L8 Explicit user clearance recorded.
+
+## Stage 1-2 status (implemented offline, reviewed? NO - pending independent review)
+`tcstats.py` (parsers for `tc -s -j qdisc show` and /proc/net/dev, counter-rate helper) and `dryrun.py` (allowlisted command builder + planner that returns argv as data, executed=False).
+No stage 3 executor exists. Test fixtures are HAND-BUILT from iproute2 field names (q_cake.c, tc_util.c, tc_qdisc.c), NOT captured real output; validate against real output inside the lab VM.
+Known gap: CAKE's own tin delays (avg/peak_delay_us) measure sojourn time inside CAKE, not the upstream ISP queue that LeanBridge is meant to keep short. A real delay signal needs an active RTT probe (e.g. ping/fping/irtt to a lab host); that parser is NOT written yet.
