@@ -1,3 +1,20 @@
+# Generated simulation output and local environments
 runs/
+.venv/
+venv/
 __pycache__/
+*.py[cod]
 *.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+.pytest_cache/
+# Local credentials and editor/OS clutter (not a secrets scanner)
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
