@@ -68,6 +68,13 @@ Held-out medians p99 ms / retention (v0.1 | v0.2b cut | ablate_no_belief | simpl
 - lossy_drop: 184/.99 | 65/.93 | 79/.93 | 50/.95
 - cross_traffic: 400/.86 | 400/.83 | 400/.86 | 400/.81  (no arm controls delay; unshaped is also 400)
 
-Reading (toy only): removing the belief (ablate_no_belief: guard + 0.9 cut, no estimator) performs about the same as v0.2b, which has the belief. The belief shows no demonstrated contribution in these
-families; the guarded reactive cut does the work. v0.1 is worst on p99. Nothing beats the trivial AIMD stand-in on p99 here. Setting hazard to 0 gave mixed results (lower p99 and lower retention on some families), so it is not a clear win.
-Cross-traffic bursts defeat every arm. No PASS/KILL; epsilon calibration is not achieved (v0.1 above-capacity 24-41% vs 5%).
+Reading (toy only; corrected after review, raw results unchanged):
+- No demonstrated contribution of the belief: v0.2b (belief + cut) and the no-belief ablation are close on random_walk (145 vs 153 ms) and cross_traffic (both 400).
+  A small benefit on lossy_drop (65 vs 79 ms median) cannot be ruled out; spreads overlap and there are no confidence intervals.
+- Ablation confound: the ablation arm proposes max_rate whenever delay is low, so the guard's step limit and lockout alone shape its ramp, while the belief arms ramp via the belief quantile.
+  The two arms therefore differ in more than "has a belief"; this comparison is not a clean ablation.
+- v0.1 (epsilon quantile) has the worst p99 in every held-out family. v0.2b-style cuts are better than v0.1.
+- It is NOT true that nothing beats the AIMD stand-in: on lossy_drop and random_walk AIMD is lower on median p99, but in tuning rand_steps v0.2b (84 ms) is below AIMD (107 ms) while AIMD is lower on oscillation (71 vs 86); trade-offs
+  in retention also differ by family. Read the per-family rows, not a blanket ranking.
+- Cross-traffic bursts leave every arm, including AIMD, at about 400 ms p99 in this toy model. Hazard = 0 gave mixed results. Epsilon calibration is not achieved (v0.1 above capacity 24-41% vs 5%).
+- No PASS/KILL; the protocol, H1/PASS and penalized p99 remain undefined.
