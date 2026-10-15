@@ -1,0 +1,12 @@
+[project]
+name = "leanbridge"
+version = "0.1.0.dev0"
+description = "LeanBridge by Zyronith - simulation-first research prototype (UNVALIDATED)"
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
