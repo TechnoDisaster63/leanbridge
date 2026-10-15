@@ -170,3 +170,24 @@ class ReviewFollowUps(unittest.TestCase):
         for _ in range(300):
             b.update(Observation(0.5, 0.0, 50.0))  # idle: uninformative, hazard keeps mixing
         self.assertLess(b.quantile(0.05), informed)  # documented limitation: uncertainty grows when idle
+
+
+class V02Tests(unittest.TestCase):
+    def test_defaults_reproduce_v01_exactly(self):
+        from dataclasses import replace
+        a = run("abrupt_drop", LeanBridgeController(Config(), 50.0), 3)
+        b = run("abrupt_drop", LeanBridgeController(replace(Config(), quantile_override=-1.0, delay_cut_factor=0.0), 50.0), 3)
+        self.assertEqual(a.log, b.log)
+
+    def test_variants_stay_within_guard_bounds_with_faults(self):
+        from dataclasses import replace
+        from leanbridge.research import VARIANTS
+        cfg = Config()
+        for kw in VARIANTS.values():
+            for sc in SCENARIOS:
+                res = run(sc, LeanBridgeController(replace(cfg, **kw), 50.0), 1, drop_rate=0.3)
+                self.assertTrue(all(cfg.min_rate <= r <= cfg.max_rate for r in res.rates))
+
+    def test_tuning_and_heldout_seeds_disjoint(self):
+        from leanbridge.research import TUNING_SEEDS, HELDOUT_SEEDS
+        self.assertFalse(set(TUNING_SEEDS) & set(HELDOUT_SEEDS))
