@@ -19,4 +19,6 @@ No live execution until the adapter and executor are independently reviewed, the
 
 The original seven-gate itemized record has not been recovered. No gate-to-test mapping is claimed; treat all seven as open. Proposed L1-L8 gates in the [lab plan](LAB_PLAN.md) add planning requirements and do not replace or close them.
 
+The `lab/cake_netns_lab.py` draft is untested, never run and NOT cleared. A run needs separate recorded clearance, a disposable snapshotted VM and all network adapters detached. Its VM check and `--i-confirm-disposable-vm` flag cannot verify disposability, snapshots or isolation. Its mocked tests and `check.py` do not clear it, and `check.py` does not cover it.
+
 See the [open review](REVIEW_v0.4_OPEN.md) for identity, units, probe timing, rounding, missing data and rollback gaps. Passing offline tests is not permission to run a live experiment.
