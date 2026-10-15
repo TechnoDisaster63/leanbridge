@@ -4,7 +4,7 @@
 
 The source tree declares Python 3.9+ and has no runtime dependencies. The polish checks were exercised with Python 3.10 on Linux; other versions/platforms are not certified by that run. Make is optional. Git is needed only for normal source control and the historical `research3` manifest-hash driver.
 
-Do not install packages or use `sudo` for the offline path below. No Kali tools, VM, CAKE module or active network connection are required once the source is present.
+Do not install packages or use `sudo` for the offline path below. No VM, CAKE module or active network connection are required once the source is present.
 
 ## Linux / macOS
 
