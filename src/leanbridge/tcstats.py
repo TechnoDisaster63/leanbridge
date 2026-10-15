@@ -11,7 +11,7 @@ class TelemetryError(ValueError):
     pass
 
 
-_SIZE = re.compile(r"^\s*([0-9]+(?:\.[0-9]+)?)\s*([kKmMgG]?)[bB]?\s*$")
+_SIZE = re.compile(r"^\s*([0-9]+)\s*[bB]?\s*$")  # plain bytes only; unit-suffixed strings are ambiguous (b vs bit, K=1000 vs 1024) and rejected
 
 
 def _num(v, name):
@@ -23,7 +23,7 @@ def _num(v, name):
         m = _SIZE.match(v)
         if not m:
             raise TelemetryError(f"{name}: unparseable {v!r}")
-        x = float(m.group(1)) * {"": 1, "k": 1e3, "m": 1e6, "g": 1e9}[m.group(2).lower()]
+        x = float(m.group(1))
     else:
         raise TelemetryError(f"{name}: type {type(v).__name__}")
     if not math.isfinite(x) or x < 0 or x > 1e15:
@@ -33,8 +33,8 @@ def _num(v, name):
 
 @dataclass(frozen=True)
 class Tin:
-    sent_bytes: float
-    drops: float
+    sent_bytes: Optional[float]
+    drops: Optional[float]
     avg_delay_us: Optional[float]
     peak_delay_us: Optional[float]
 
@@ -76,9 +76,11 @@ def parse_qdisc_json(text: str) -> Dict[str, QdiscStats]:
             if not isinstance(t, dict):
                 raise TelemetryError("tin not an object")
             g = lambda n: _num(t[n], n) if n in t else None
-            tins.append(Tin(g("sent_bytes") or 0.0, g("drops") or 0.0, g("avg_delay_us"), g("peak_delay_us")))
+            tins.append(Tin(g("sent_bytes"), g("drops"), g("avg_delay_us"), g("peak_delay_us")))  # missing stays None, never 0
         cap = _num(q["capacity_estimate"], "capacity_estimate") if "capacity_estimate" in q else None
         key = str(q.get("handle", q["kind"]))
+        if key in out:
+            raise TelemetryError(f"duplicate qdisc identity {key!r}")
         out[key] = QdiscStats(q["kind"], str(q.get("handle", "")), _num(q["bytes"], "bytes"), _num(q["packets"], "packets"),
                               _num(q["drops"], "drops"), _num(q["backlog"], "backlog"), _num(q["qlen"], "qlen"), tins, cap)
     return out
