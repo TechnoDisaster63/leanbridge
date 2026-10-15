@@ -13,12 +13,14 @@ As of 2026-10-15: offline research only. No live benchmark, network executor, RT
 | Text parsers reject selected bad inputs | Stage 1-2 fixture tests | Hand-built inputs; no kernel validation |
 | Dry-run plans arguments without executing | Current module and tests | Name-only allowlist; not namespace binding |
 | Lab is safe and ready | Unsupported | Executor, telemetry and safety gates open |
+| `lab/cake_netns_lab.py` works against a real kernel | Unsupported | Untested draft: never run, not cleared; only mocked unit tests exist; not covered by `check.py` or `make check` |
 
 ## Review history
 
 - v0.3: independent review reported 30 tests and corrected interpretation of mixed/negative results. No demonstrated clean belief advantage.
 - v0.4: independent review reported 38 tests and accepted **offline data only**, not adapter readiness.
 - v0.4.1: subsequent parser fixes brought the pre-polish local suite to 40 tests. This is a test result, not renewed adapter approval.
+- Lab draft (branch addition): `lab/` adds an untested namespace lab script with 42 mocked tests and a limited static read-through. No kernel run, no run clearance, runtime unknowns open. See [lab/PROVENANCE.md](../lab/PROVENANCE.md).
 - Repository polish: documentation/tooling changes only; independent review is still required before any broader quality or readiness claim. See [change log](../CHANGELOG.md).
 
 Local historical snapshot labels do not imply remote GitHub tags or published releases. The Python package still reports `0.1.0.dev0`. Do not use that version alone to identify a source snapshot; retain its Git commit too.
@@ -30,7 +32,7 @@ Local historical snapshot labels do not imply remote GitHub tags or published re
 - Namespace/device-bound execution design and a verified disposable VM marker.
 - Real RTT probes with idle baseline and missing/late sample rules. CAKE sojourn time is not RTT.
 - Rate rounding, planner error hold behavior, CAKE option preservation and safe rollback.
-- Kernel support, timing, fault injection, executor tests and independent review.
+- Kernel support, timing, fault injection, executor tests and independent review. The `lab/` draft has never run; its tc JSON units, ping output format, iperf3 JSON, sch_cake availability and timing are unverified.
 - Original seven gates: itemized record not recovered, mapping unavailable; all remain open.
 - Proposed L1-L8 lab gates: planning only, not a substitute for the original gates.
 - H1 versus PASS, penalized p99, reference arm, trial/exclusion rules and other [protocol decisions](PROTOCOL_DECISIONS.md).
