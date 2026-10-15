@@ -1,6 +1,6 @@
 # Security and safe handling
 
-LeanBridge is a private research prototype with no live network executor. It is not supported for production or use on a primary host network.
+LeanBridge is a private research prototype with no live network executor. The `lab/` directory holds an untested, never-run, NOT cleared draft lab script; see the boundary below. It is not supported for production or use on a primary host network.
 
 ## Reporting a concern
 
@@ -11,7 +11,7 @@ Include the affected source revision, a minimal sanitized input, expected behavi
 ## Boundaries
 
 - Do not execute dry-run command arguments.
-- Do not run this project with root privileges.
+- Do not run this project with root privileges. The only possible exception is `lab/cake_netns_lab.py`, and only after a separate, recorded clearance for that run, inside a disposable snapshotted VM with all network adapters detached (see [lab/README_LAB.md](lab/README_LAB.md)). That script's self-attestation flag cannot verify those conditions. Everything else stays non-root.
 - Do not add API keys, passwords or private captures to the repository.
 - `.gitignore` prevents some accidental tracking; it does not remove previously tracked secrets or scan history.
 - Tests are not a security audit. The parser, identity and execution boundaries in the [open review](docs/REVIEW_v0.4_OPEN.md) are unresolved.
