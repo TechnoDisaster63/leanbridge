@@ -15,7 +15,8 @@ This repository is an **unvalidated, offline research prototype**, not a router 
 | Screening and ablation | Negative and mixed results retained; no PASS/KILL verdict |
 | `tc` JSON and `/proc/net/dev` parsers | Text inputs only; hand-built fixtures, not kernel-validated |
 | Dry-run planner | Returns command arguments **as data**; never executes them |
-| Live adapter, RTT probe, executor and rollback | **Not implemented** |
+| Live adapter, RTT probe, executor and rollback | **Not implemented** in `src/` |
+| `lab/cake_netns_lab.py` (VM-only namespace lab draft) | **Untested draft: never run, NOT cleared.** Not covered by `check.py` or `make check`. See [lab/README_LAB.md](lab/README_LAB.md) |
 
 The v0.4 scaffold was accepted for **offline data only**, not adapter readiness. Later parser fixes do not close the open review. See [current status and evidence](docs/STATUS.md).
 
@@ -35,7 +36,7 @@ The demo writes `run.json`, `log.jsonl` and `plot.svg` under `runs/demo`. A repe
 With Make installed:
 
 ```sh
-make check       # tests, source syntax and local documentation links
+make check       # tests, source syntax and local documentation links (does NOT run the lab tests)
 make run         # one simulated demo
 make screen      # toy screening only, not a fresh held-out experiment
 ```
@@ -53,7 +54,7 @@ Read the [full findings](docs/FINDINGS.md), [frozen v0.3 manifest](docs/MANIFEST
 
 ## Safety boundary
 
-Do not copy the dry-run arguments into a terminal. There is no approved network executor. No host, router or live-link test is cleared by passing these tests.
+Do not copy the dry-run arguments into a terminal. There is no approved network executor. No host, router or live-link test is cleared by passing these tests. The untested lab draft in `lab/` has its own tests (`cd lab && python3 test_cake_netns_lab.py`, mocks only); passing them is not run clearance. No physical phone or laptop path exists.
 
 [Safety contract](docs/SAFETY.md) · [Open review](docs/REVIEW_v0.4_OPEN.md) · [Protocol decisions](docs/PROTOCOL_DECISIONS.md)
 
@@ -65,6 +66,7 @@ The original seven gates have not been recovered item by item and remain open. P
 src/leanbridge/   belief, guard, policies, simulators, offline parsers and planner
 tests/          unit, regression and repository-quality checks
 docs/           architecture, evidence, limitations and future lab planning
+lab/            untested, never-run, NOT cleared namespace lab draft with its own tests and provenance
  check.py        dependency-free local quality runner
 ```
 
