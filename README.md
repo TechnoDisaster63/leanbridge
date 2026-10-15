@@ -4,7 +4,7 @@ Risk-budgeted adaptive traffic shaping: a probabilistic capacity belief, an expl
 and a deterministic safety guard that has final authority over the shaping rate.
 
 ## Status (read first)
-- Simulation only. v0.3 ablation: no demonstrated benefit of the belief over a guarded reactive cut (docs/FINDINGS.md). v0.2 research variants (docs/FINDINGS.md) also do not beat the AIMD stand-in in the toy sim. v0.1 does NOT beat a trivial AIMD stand-in on tail delay in the toy sim (docs/FINDINGS.md). This repo contains **no** tc/CAKE/network code and touches no network.
+- Simulation only. v0.3 ablation: no demonstrated benefit of the belief over a guarded reactive cut; a small lossy-scenario benefit is not ruled out and the ablation has a ramp confound (docs/FINDINGS.md). v0.2 research variants (docs/FINDINGS.md) also do not beat the AIMD stand-in in the toy sim. v0.1 does NOT beat a trivial AIMD stand-in on tail delay in the toy sim (docs/FINDINGS.md). This repo contains **no** tc/CAKE/network code and touches no network.
 - Evidence: toy fluid simulator + unit/golden tests. **No live benchmark exists.** Nothing here shows
   LeanBridge lowers latency, keeps throughput, or is safe on a real link.
 - epsilon = 0.05 is a PROPOSED model risk budget, not a real-world guarantee.
