@@ -55,3 +55,19 @@ under high delay removes most of the bufferbloat (p99 ~60-80 ms vs 400) with ret
 beat the trivial AIMD stand-in on p99 or retention, and calibration (frac_above) is nowhere near epsilon. The belief
 machinery does not show added value over a reactive cut here. Tuning and held-out results agree in direction (see research.py output).
 The 0.9 factor and 15 ms threshold were NOT tuned. Not a formal KILL/design-iteration result; H1/PASS and penalized p99 remain undefined.
+
+## v0.3: scenario families + belief ablation (manifest docs/MANIFEST_v0.3.json, raw numbers docs/results_v0.3.json)
+Provenance (labelled honestly): the manifest was committed locally and uploaded to the remote before the held-out run, and the
+held-out run was executed once. This is single-author and not independently proven. Tuning families (rand_steps, oscillation; 20 seeds) were looked at;
+held-out families (random_walk, cross_traffic, lossy_drop; 30 seeds) are UNSEEN TRACE SHAPES in the same toy model, not real-network generalization.
+Measurement upgrades: unshaped reference is a real simulated run (so its own queue and tail drops are counted); retention = delivered goodput / that run; random link loss
+and cross-traffic added. Retention still ignores that a full queue is the "unshaped" baseline, i.e. it favors never-shaping; read it with p99, not alone.
+
+Held-out medians p99 ms / retention (v0.1 | v0.2b cut | ablate_no_belief | simple_aimd):
+- random_walk: 400/.92 | 145/.89 | 153/.90 | 123/.89
+- lossy_drop: 184/.99 | 65/.93 | 79/.93 | 50/.95
+- cross_traffic: 400/.86 | 400/.83 | 400/.86 | 400/.81  (no arm controls delay; unshaped is also 400)
+
+Reading (toy only): removing the belief (ablate_no_belief: guard + 0.9 cut, no estimator) performs about the same as v0.2b, which has the belief. The belief shows no demonstrated contribution in these
+families; the guarded reactive cut does the work. v0.1 is worst on p99. Nothing beats the trivial AIMD stand-in on p99 here. Setting hazard to 0 gave mixed results (lower p99 and lower retention on some families), so it is not a clear win.
+Cross-traffic bursts defeat every arm. No PASS/KILL; epsilon calibration is not achieved (v0.1 above-capacity 24-41% vs 5%).
