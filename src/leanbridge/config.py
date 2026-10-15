@@ -16,6 +16,9 @@ class Config:
     probe_lockout_steps: int = 5       # guard: no upward move for N steps after congestion
     stale_after_steps: int = 3         # guard: missing data this long => fail closed
     max_plausible_mbps: float = 1000.0 # telemetry above this is rejected as implausible
+    # v0.2 research switches (HYPOTHESES under evaluation; defaults reproduce v0.1 exactly)
+    quantile_override: float = -1.0    # >0: use this belief quantile instead of epsilon
+    delay_cut_factor: float = 0.0      # >0: when delay is high, propose at most factor*goodput
     fallback_rate: float = 5.0         # guard: rate used when data is stale (never above current)
 
     def validate(self) -> None:
