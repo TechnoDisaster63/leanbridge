@@ -33,10 +33,23 @@ class Parsers(unittest.TestCase):
             with self.assertRaises(TelemetryError, msg=b):
                 parse_qdisc_json(b)
 
-    def test_size_strings_tolerated(self):
-        j = json.loads(GOOD); j[0]["backlog"] = "1514b"; j[0]["bytes"] = "2Kb"
-        q = parse_qdisc_json(json.dumps(j))["8001:"]
-        self.assertEqual((q.backlog, q.bytes), (1514.0, 2000.0))
+    def test_ambiguous_size_strings_rejected_plain_bytes_ok(self):
+        j = json.loads(GOOD); j[0]["backlog"] = "1514b"
+        self.assertEqual(parse_qdisc_json(json.dumps(j))["8001:"].backlog, 1514.0)
+        for v in ("2Kb", "1.5Mb", "3kbit"):
+            j[0]["backlog"] = v
+            with self.assertRaises(TelemetryError):
+                parse_qdisc_json(json.dumps(j))
+
+    def test_missing_tin_fields_stay_none_not_zero(self):
+        j = json.loads(GOOD); j[0]["tins"] = [{"avg_delay_us": 5}]
+        t = parse_qdisc_json(json.dumps(j))["8001:"].tins[0]
+        self.assertIsNone(t.sent_bytes); self.assertIsNone(t.drops)
+
+    def test_duplicate_identity_fails_closed(self):
+        j = json.loads(GOOD); j.append(dict(j[0]))
+        with self.assertRaises(TelemetryError):
+            parse_qdisc_json(json.dumps(j))
 
     def test_netdev(self):
         d = parse_proc_net_dev(NETDEV)
