@@ -191,3 +191,30 @@ class V02Tests(unittest.TestCase):
     def test_tuning_and_heldout_seeds_disjoint(self):
         from leanbridge.research import TUNING_SEEDS, HELDOUT_SEEDS
         self.assertFalse(set(TUNING_SEEDS) & set(HELDOUT_SEEDS))
+
+
+class V03Tests(unittest.TestCase):
+    def test_families_vary_with_seed_and_replay(self):
+        from leanbridge.families import FAMILIES
+        for n, f in FAMILIES.items():
+            self.assertEqual(f(3), f(3))
+            self.assertNotEqual(f(3)[0], f(4)[0], n)
+
+    def test_manifest_splits_disjoint(self):
+        import json as j
+        m = j.load(open(os.path.join(os.path.dirname(__file__), "..", "docs", "MANIFEST_v0.3.json")))
+        self.assertFalse(set(m["tuning"]["families"]) & set(m["heldout"]["families"]))
+        self.assertGreaterEqual(m["heldout"]["seed_start"], m["tuning"]["seed_start"] + m["tuning"]["n_seeds"])
+
+    def test_unshaped_reference_is_a_real_run_with_drops(self):
+        from leanbridge.families import run_family
+        r = run_family("lossy_drop", StaticRate(1000.0), 1)
+        self.assertGreater(r.drops_mb, 0.0)
+
+    def test_ablation_arm_respects_bounds_and_runs(self):
+        from leanbridge.ablation import ReactiveGuarded
+        from leanbridge.families import run_family, FAMILIES
+        cfg = Config()
+        for fam in FAMILIES:
+            r = run_family(fam, ReactiveGuarded(cfg, 50.0), 2)
+            self.assertTrue(all(cfg.min_rate <= x <= cfg.max_rate for x in r.rates))
