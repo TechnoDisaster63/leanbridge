@@ -20,6 +20,7 @@ As of 2026-10-15: offline research only. No live benchmark, network executor, RT
 - v0.4: independent review reported 38 tests and accepted **offline data only**, not adapter readiness.
 - v0.4.1: subsequent parser fixes brought the pre-polish local suite to 40 tests. This is a test result, not renewed adapter approval.
 - Repository polish: documentation/tooling changes only; independent review is still required before any broader quality or readiness claim. See [change log](../CHANGELOG.md).
+- 2026-10-16: current local suite is 48 tests (unittest discover over tests/), all passing; the lab branch adds 42 mocked lab tests. Test results, not readiness claims. Repository is now public under the MIT License.
 
 Local historical snapshot labels do not imply remote GitHub tags or published releases. The Python package still reports `0.1.0.dev0`. Do not use that version alone to identify a source snapshot; retain its Git commit too.
 
@@ -40,3 +41,4 @@ The [open review](REVIEW_v0.4_OPEN.md) and [safety contract](SAFETY.md) remain a
 ## Evidence preservation
 
 [Findings](FINDINGS.md), [manifest](MANIFEST_v0.3.json) and [raw results](results_v0.3.json) are historical records. This polish does not rerun or replace held-out research. Existing raw numbers and their provenance caveats stay in place.
+
