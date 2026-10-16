@@ -10,7 +10,7 @@ Traffic: iperf3 -J (kernel TCP) client->server, plus a continuous ping to 10.77.
 Modes: --plan (prints argv, no changes) | --check (non-root: no changes; as root it CREATES AND DELETES a throwaway namespace) | --execute | --cleanup --run-id ID.
 Root use requires --code-dir: a root-owned, non-writable directory tree holding this script, src/ (repo core) - validated before import.
 Nothing here touches host interfaces, routes, firewall or sysctl outside the new namespaces."""
-import argparse, json, os, random, re, shutil, signal, statistics, string, subprocess, sys, threading, time
+import argparse, json, math, os, random, re, shutil, signal, statistics, string, subprocess, sys, threading, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 STATE_DIR = '/run/leanbridge-lab'
@@ -44,6 +44,17 @@ def load_controller(code_dir):
     sys.path.insert(0, src)
     from leanbridge.controller import LeanBridgeController; from leanbridge.config import Config; from leanbridge.telemetry import Observation
     return LeanBridgeController, Config, Observation
+
+def load_recovery(code_dir, cap10=False):
+    """Recovery arms (HYPOTHESIS, unexecuted): same validated-root-owned-tree rule as load_controller.
+    cap10=False: probe wrapper with the DEFAULT guard (5% up-step cap), the executed LeanBridge guard unchanged.
+    cap10=True : explicit opt-in that ALSO raises the guard up-step cap to 10% (a safety-parameter change).
+    Offline model: most of the recovery speed-up comes from the cap, so the two arms keep the effects separable."""
+    load_controller(code_dir)
+    from dataclasses import replace
+    from leanbridge.recovery import RecoveryController, RecoveryConfig; from leanbridge.config import Config; from leanbridge.telemetry import Observation
+    cfg = replace(Config(), max_up_step_frac=0.10) if cap10 else Config()
+    return (lambda init: RecoveryController(cfg, init, RecoveryConfig(probe_frac=0.10 if cap10 else 0.05))), Observation
 
 class Runner:
     """All process execution goes through here: argv lists only, never a shell."""
@@ -183,6 +194,39 @@ def _cleanup(r, rid, force_self=False):
 
 def parse_ping_line(line):
     m = re.search(r'icmp_seq=(\d+).*time=([\d.]+) ms', line); return (int(m.group(1)), float(m.group(2))) if m else None
+PING_INTERVAL = 0.2; PING_WAIT = 1   # seconds: used for BOTH the ping flags and the in-flight loss window
+def inflight_guard(interval, wait):
+    if interval <= 0 or wait <= 0: raise ValueError('interval and wait must be positive')
+    return math.ceil(wait / interval - 1e-9) + 1   # mirrors leanbridge/pingloss.py
+_NOANS = re.compile(r'no answer yet for icmp_seq=(\d+)')
+_SUMMARY = re.compile(r'(\d+) packets transmitted, (\d+) (?:packets )?received')
+class PingAccount:
+    """Loss from sequence numbers, not from 'no answer yet' markers (those only mean 'not answered yet').
+    Mirrors leanbridge/pingloss.py (main-derived tree); kept inline because this script must stay standalone."""
+    def __init__(self, guard=None): self.guard = inflight_guard(PING_INTERVAL, PING_WAIT) if guard is None else guard; self.replied = set(); self.max_seq = 0; self.dups = 0; self.ssent = self.srecv = None
+    def feed(self, line):
+        m = _SUMMARY.search(line)
+        if m: self.ssent, self.srecv = int(m.group(1)), int(m.group(2)); return None
+        if '(DUP!)' in line: self.dups += 1; return None
+        m = _NOANS.search(line)
+        if m: self.max_seq = max(self.max_seq, int(m.group(1))); return None
+        x = parse_ping_line(line)
+        if not x: return None
+        self.max_seq = max(self.max_seq, x[0])
+        if x[0] in self.replied: self.dups += 1; return None
+        self.replied.add(x[0]); return x[1]
+    def result(self):
+        if self.ssent is not None:
+            lost = max(0, self.ssent - self.srecv)
+            return {'basis': 'ping_summary', 'sent': self.ssent, 'received': self.srecv, 'lost': lost, 'loss_pct': round(100.0 * lost / self.ssent, 2) if self.ssent else None, 'valid': self.ssent > 0}
+        res = max(0, self.max_seq - self.guard); got = sum(1 for q in self.replied if q <= res); lost = res - got
+        return {'basis': 'sequence_numbers', 'sent_lower_bound': self.max_seq, 'resolved_window': res, 'received_total': len(self.replied), 'lost_in_window': lost, 'loss_pct': round(100.0 * lost / res, 2) if res else None, 'unresolved_tail': min(self.guard, self.max_seq), 'valid': res > 0}
+def stop_ping(p, th, wait=3.0):
+    """SIGINT makes ping print its summary; read until EOF (bounded). Falls back to sequence accounting if none."""
+    if p and p.poll() is None:
+        try: os.killpg(p.pid, signal.SIGINT)
+        except ProcessLookupError: pass
+    if th: th.join(wait)
 def iperf_mbps(j):
     try: return j['end']['sum_received']['bits_per_second'] / 1e6
     except (KeyError, TypeError): return None
@@ -208,7 +252,7 @@ STEP = 1.0   # seconds: the repo's declared simulation step (sim.DT=1.0, ARCHITE
 def execute(arm, T, rid, static_mbit, init_mbit, code_dir):
     install_handlers(); check_rid(rid)
     print('run id: %s  (if interrupted: python3 -I %s --cleanup --run-id %s)' % (rid, os.path.basename(__file__), rid), flush=True)
-    r = Runner(False); n = None; srv = cli = png = None; samples = []; lost = [0]; missing = 0
+    r = Runner(False); n = None; srv = cli = png = None; samples = []; missing = 0
     secure_state_dir()
     if os.path.exists(state_path(rid)): raise RuntimeError('state file for run id %s already exists (another run?); pick another id' % rid)
     try:
@@ -217,24 +261,26 @@ def execute(arm, T, rid, static_mbit, init_mbit, code_dir):
         if arm == 'none': r.run(['tc', 'qdisc', 'add', 'dev', 'b1', 'root', 'pfifo', 'limit', '1000'], ns=n['b'])
         else: set_cake(r, n, static_mbit if arm == 'static' else init_mbit, add=True)
         r.run(['ping', '-c', '1', '-W', '2', SERVER_IP], ns=n['c'])               # route sanity
-        base = [parse_ping_line(l) for l in r.run(['ping', '-c', '10', '-i', '0.2', '-W', '1', SERVER_IP], ns=n['c']).splitlines()]
+        base = [parse_ping_line(l) for l in r.run(['ping', '-c', '10', '-i', str(PING_INTERVAL), '-W', str(PING_WAIT), SERVER_IP], ns=n['c']).splitlines()]
         base = [x[1] for x in base if x]
         if len(base) < 5: raise RuntimeError('idle RTT baseline failed (%d/10 replies)' % len(base))
         base_rtt = min(base)
         srv = r.popen(['iperf3', '-s', '-1', '-B', SERVER_IP], ns=n['s']); time.sleep(1)
         cli = r.popen(['iperf3', '-c', SERVER_IP, '-t', str(T), '-J'], ns=n['c'])
-        png = r.popen(['ping', '-i', '0.2', '-O', '-W', '1', SERVER_IP], ns=n['c'])
+        png = r.popen(['ping', '-i', str(PING_INTERVAL), '-O', '-W', str(PING_WAIT), SERVER_IP], ns=n['c'])
         t0 = time.time()
+        acct = PingAccount()
         def rd():
             for l in png.stdout:
-                x = parse_ping_line(l)
-                if x: samples.append((time.time() - t0, x[1]))
-                elif 'no answer' in l: lost[0] += 1
-        threading.Thread(target=rd, daemon=True).start()
+                rtt = acct.feed(l)
+                if rtt is not None: samples.append((time.time() - t0, rtt))
+        rth = threading.Thread(target=rd, daemon=True); rth.start()
         ctl = None; rate = float(init_mbit)
         if arm == 'leanbridge':
             LeanBridgeController, Config, Observation = load_controller(code_dir)
             ctl = LeanBridgeController(Config(), rate)
+        if arm in ('recovery', 'recovery_cap10'):
+            mk, Observation = load_recovery(code_dir, cap10=(arm == 'recovery_cap10')); ctl = mk(rate)
         last_b = tx_bytes(r, n); last_t = time.time(); capnow = 20
         while time.time() - t0 < T:
             time.sleep(STEP); t = time.time() - t0
@@ -248,13 +294,14 @@ def execute(arm, T, rid, static_mbit, init_mbit, code_dir):
                     if missing >= 3: rate = min(rate, 5.0); set_cake(r, n, rate); print('heuristic: probe data missing %d steps, fail closed at %.1f Mbit' % (missing, rate))
                 else:
                     missing = 0; rate = max(1.0, rate * 0.8) if qd > 20 else min(40.0, rate * 1.04 + 0.1); set_cake(r, n, rate)
-            if arm == 'leanbridge':
+            if arm in ('leanbridge', 'recovery', 'recovery_cap10'):
                 obs = Observation(gp, qd, rate) if qd is not None else None
                 rate = ctl.step(obs)['rate']; set_cake(r, n, rate)
-            print(f't={t:4.0f}s cap={cap}Mb goodput={gp:5.1f}Mb cake={rate if arm in ("heuristic","leanbridge") else "-"} qdelay_ms={qd}', flush=True)
+            print(f't={t:4.0f}s cap={cap}Mb goodput={gp:5.1f}Mb cake={rate if arm in ("heuristic","leanbridge","recovery","recovery_cap10") else "-"} qdelay_ms={qd}', flush=True)
         out, _ = cli.communicate(timeout=15)
+        stop_ping(png, rth)
         rtts = [x[1] for x in samples]; tput = iperf_mbps(json.loads(out)) if out else None
-        print(json.dumps({'arm': arm, 'run_id': rid, 'iperf_recv_mbps': tput, 'rtt_ms': {'idle_min': base_rtt, 'p50': pctl(rtts, .5), 'p95': pctl(rtts, .95), 'p99': pctl(rtts, .99), 'samples': len(rtts), 'lost': lost[0], 'loss_pct': round(100.0 * lost[0] / max(1, len(rtts) + lost[0]), 1)}, 'cadence_s': STEP, 'note': 'variant run, single sample, no formal metric'}))
+        print(json.dumps({'arm': arm, 'run_id': rid, 'iperf_recv_mbps': tput, 'rtt_ms': {'idle_min': base_rtt, 'p50': pctl(rtts, .5), 'p95': pctl(rtts, .95), 'p99': pctl(rtts, .99), 'samples': len(rtts), 'loss': acct.result()}, 'cadence_s': STEP, 'note': 'variant run, single sample, no formal metric'}))
     finally:
         for p in (png, cli, srv): kill_group(p)
         if state_is_mine(rid):
@@ -271,7 +318,7 @@ def plan(arm, T, rid, static_mbit, init_mbit):
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(); g = ap.add_mutually_exclusive_group(required=True)
     for f in ('check', 'plan', 'execute', 'cleanup'): g.add_argument('--' + f, action='store_true')
-    ap.add_argument('--arm', default='leanbridge', choices=['none', 'static', 'heuristic', 'leanbridge']); ap.add_argument('--seconds', type=int, default=30)
+    ap.add_argument('--arm', default='leanbridge', choices=['none', 'static', 'heuristic', 'leanbridge', 'recovery', 'recovery_cap10']); ap.add_argument('--seconds', type=int, default=30)
     ap.add_argument('--run-id'); ap.add_argument('--static-mbit', type=float, default=18.0); ap.add_argument('--init-mbit', type=float, default=10.0)
     ap.add_argument('--code-dir', help='root-owned immutable dir containing src/ (required for --execute)'); ap.add_argument('--i-confirm-disposable-vm', action='store_true', help='your statement; NOT verified by this script')
     a = ap.parse_args(); T = max(9, min(a.seconds, 120)); rid = check_rid(a.run_id or new_run_id())
@@ -291,7 +338,7 @@ if __name__ == '__main__':
         if not a.i_confirm_disposable_vm: sys.exit('refusing: pass --i-confirm-disposable-vm only inside a disposable, snapshotted VM')
         g = vm_gate(a.i_confirm_disposable_vm)
         if g: sys.exit(g)
-        if a.arm == 'leanbridge':
+        if a.arm in ('leanbridge', 'recovery', 'recovery_cap10'):
             if not a.code_dir: sys.exit('refusing: --code-dir required for the leanbridge arm')
             load_controller(a.code_dir)
         verify_root_owned_tree(HERE)
