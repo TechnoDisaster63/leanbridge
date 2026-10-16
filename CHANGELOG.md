@@ -2,6 +2,11 @@
 
 Development snapshots, not validated releases. Snapshot names below also appear in local historical records; they are not a claim that matching GitHub tags or releases exist.
 
+## v0.6 overnight loss accounting and recovery - 2026-10-16
+
+- Added `pingloss.py` (sequence-based loss accounting that fixes the invalid-loss bug for future runs), `recovery.py` (bounded upward probing around the unchanged core controller), `labmodel.py` and `recovery_eval.py` (offline fluid model and screening). 24 new tests. Core controller, guard, defaults and frozen evidence unchanged.
+- Lab-script fix and an unexecuted recovery arm are on branch `lab-loss-fix`, not merged. No new real run. See [v0.6 notes](docs/RECOVERY_v0.6.md).
+
 ## Local Kali additions and evidence repair - 2026-10-16
 
 - Added the owner-supplied two delay-cut regression tests and v0.5 research protocol draft. Protocol choices remain proposed, NOT APPROVED; defaults and lab code unchanged.
