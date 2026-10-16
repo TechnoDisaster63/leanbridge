@@ -72,7 +72,38 @@ class GuardTests(unittest.TestCase):
         g = SafetyGuard(self.cfg, 30)
         r, why = g.apply(90.0, Observation(float("inf"), 0, 30))
         self.assertEqual((r, why), (30, "hold_invalid"))
+class DelayCutTests(unittest.TestCase):
+    def test_delay_cut_limits_proposed_rate_when_congested(self):
+        from dataclasses import replace
 
+        cfg = replace(Config(), delay_cut_factor=0.8)
+        controller = LeanBridgeController(cfg, 50.0)
+
+        obs = Observation(
+            goodput_mbps=20.0,
+            queue_delay_ms=100.0,
+            shaped_rate_mbps=50.0,
+        )
+
+        result = controller.step(obs)
+
+        self.assertLessEqual(result["proposed"], 16.0)
+        self.assertLessEqual(result["rate"], 16.0)
+
+    def test_delay_cut_disabled_by_default(self):
+        cfg = Config()
+        controller = LeanBridgeController(cfg, 50.0)
+
+        obs = Observation(
+            goodput_mbps=20.0,
+            queue_delay_ms=100.0,
+            shaped_rate_mbps=50.0,
+        )
+
+        result = controller.step(obs)
+
+        self.assertEqual(cfg.delay_cut_factor, 0.0)
+        self.assertEqual(result["proposed"], controller.belief.quantile(cfg.epsilon))
 
 class SimTests(unittest.TestCase):
     def test_deterministic_replay(self):
