@@ -209,5 +209,89 @@ class Gates(unittest.TestCase):
         r = subprocess.run([sys.executable, '-I', os.path.join(L.HERE, 'cake_netns_lab.py'), '--check'], capture_output=True, text=True)
         self.assertIn('problems', r.stdout)   # non-root path unchanged (no mutation)
 
+class PingLoss(unittest.TestCase):
+    """Regression for the 2026-10-16 invalid-loss bug: 'no answer yet' markers were counted as lost."""
+    def rep(self, n, t=5.0): return '64 bytes from 10.77.3.2: icmp_seq=%d ttl=64 time=%s ms' % (n, t)
+    def acct(self, lines):
+        a = L.PingAccount()
+        for l in lines: a.feed(l)
+        return a
+    def test_late_reply_after_marker_is_not_loss(self):
+        a = self.acct([self.rep(1), 'no answer yet for icmp_seq=2', 'no answer yet for icmp_seq=2', self.rep(2, 900.0)] + [self.rep(i) for i in range(3, 21)])
+        r = a.result(); self.assertEqual(r['lost_in_window'], 0); self.assertEqual(r['loss_pct'], 0.0); self.assertTrue(r['valid'])
+    def test_real_loss_counted_once(self):
+        a = self.acct([self.rep(i) for i in range(1, 5)] + ['no answer yet for icmp_seq=5'] * 3 + [self.rep(i) for i in range(6, 31)])
+        self.assertEqual(a.result()['lost_in_window'], 1)
+    def test_tail_unresolved_and_empty_invalid(self):
+        a = self.acct([self.rep(i) for i in range(1, 11)] + ['no answer yet for icmp_seq=%d' % i for i in (11, 12, 13)])
+        self.assertEqual(a.result()['lost_in_window'], 0)
+        r = L.PingAccount().result(); self.assertFalse(r['valid']); self.assertIsNone(r['loss_pct'])
+    def test_summary_is_authoritative(self):
+        a = self.acct([self.rep(1), '30 packets transmitted, 27 received, 10% packet loss, time 6001ms'])
+        r = a.result(); self.assertEqual((r['sent'], r['received'], r['lost'], r['basis']), (30, 27, 3, 'ping_summary'))
+    def test_sigint_summary_path_with_fake_ping(self):
+        code = ("import signal,sys,time\n"
+                "def h(*a):\n print('--- x ping statistics ---');print('4 packets transmitted, 3 received, 25%% packet loss, time 800ms',flush=True);sys.exit(0)\n"
+                "signal.signal(signal.SIGINT,h)\n"
+                "print('64 bytes from 10.77.3.2: icmp_seq=1 ttl=64 time=5.0 ms',flush=True);print('no answer yet for icmp_seq=2',flush=True)\n"
+                "time.sleep(30)\n")
+        p = subprocess.Popen([sys.executable, '-c', code], stdout=subprocess.PIPE, text=True, start_new_session=True)
+        a = L.PingAccount(); import threading
+        th = threading.Thread(target=lambda: [a.feed(l) for l in p.stdout], daemon=True); th.start()
+        time.sleep(1.0); L.stop_ping(p, th); p.wait(timeout=5)
+        r = a.result(); self.assertEqual(r['basis'], 'ping_summary'); self.assertEqual(r['lost'], 1)
+    @unittest.skipUnless(os.path.exists('/usr/bin/ping') or os.path.exists('/bin/ping'), 'ping not installed')
+    def test_real_ping_loopback_summary_parses(self):
+        r = subprocess.run(['ping', '-c', '3', '-i', '0.2', '-W', '1', '127.0.0.1'], capture_output=True, text=True)
+        if r.returncode not in (0, 1): self.skipTest('ping unusable here: %s' % r.stderr.strip()[:80])
+        a = L.PingAccount()
+        for l in r.stdout.splitlines(): a.feed(l)
+        res = a.result()
+        if res['basis'] != 'ping_summary': self.skipTest('no summary produced')
+        self.assertEqual(res['sent'], 3)
+
+class PingFlags(unittest.TestCase):
+    def test_guard_derived_and_flags_share_constants(self):
+        self.assertEqual((L.inflight_guard(0.2, 1), L.inflight_guard(1, 1), L.inflight_guard(0.5, 2)), (6, 2, 5))
+        self.assertEqual(L.PingAccount().guard, L.inflight_guard(L.PING_INTERVAL, L.PING_WAIT))
+        with self.assertRaises(ValueError): L.inflight_guard(0, 1)
+    def test_ping_argv_uses_same_constants(self):
+        seen = []
+        class Spy(L.Runner):
+            def popen(self, argv, ns=None):
+                seen.append(list(argv))
+                if argv[0] == 'ping': raise RuntimeError('stop')
+                return mock.MagicMock(**{'poll.return_value': 0})
+            def run(self, argv, ns=None, check=True, timeout=30):
+                if argv[0] == 'ping': seen.append(list(argv))
+                return '64 bytes from x: icmp_seq=1 ttl=64 time=1.0 ms\n' * 10
+        fresh_dir()
+        with mock.patch.object(L, 'Runner', Spy), mock.patch.object(L, 'setup', return_value={'c': 'c', 'b': 'b', 'i': 'i', 's': 's'}), mock.patch.object(L, 'set_bottleneck'), mock.patch.object(L, 'set_cake'), mock.patch.object(L, 'cleanup', return_value=True), mock.patch.object(L, 'state_is_mine', return_value=False):
+            with self.assertRaises(RuntimeError): L.execute('static', 9, 'abc123', 18, 10, None)
+        pings = [a for a in seen if a and a[0] == 'ping' and '-i' in a]
+        self.assertEqual(len(pings), 2)   # idle baseline + continuous probe
+        self.assertTrue(all(str(L.PING_INTERVAL) in a and a[a.index('-i') + 1] == str(L.PING_INTERVAL) and a[a.index('-W') + 1] == str(L.PING_WAIT) for a in pings))
+
+class RecoveryArm(unittest.TestCase):
+    def test_plan_accepts_recovery_arm(self):
+        r = subprocess.run([sys.executable, '-I', os.path.join(L.HERE, 'cake_netns_lab.py'), '--plan', '--arm', 'recovery', '--seconds', '30'], capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0); self.assertIn('cake bandwidth', r.stdout)
+    def test_plan_accepts_cap10_arm(self):
+        r = subprocess.run([sys.executable, '-I', os.path.join(L.HERE, 'cake_netns_lab.py'), '--plan', '--arm', 'recovery_cap10', '--seconds', '30'], capture_output=True, text=True)
+        self.assertEqual(r.returncode, 0)
+    def test_recovery_refused_without_code_dir_or_gate(self):
+        r = subprocess.run([sys.executable, '-I', os.path.join(L.HERE, 'cake_netns_lab.py'), '--arm', 'recovery'], capture_output=True, text=True)
+        self.assertNotEqual(r.returncode, 0)   # never executes without the VM self-attestation and gates
+    @unittest.skipUnless(os.path.exists(os.path.join(os.path.dirname(L.HERE), 'src', 'leanbridge', 'recovery.py')), 'recovery module not in this tree')
+    def test_load_recovery_default_guard_and_explicit_cap10_optin(self):
+        src_root = os.path.dirname(L.HERE)
+        with mock.patch.object(L, 'verify_root_owned_tree', side_effect=lambda p: p):
+            mk, Obs = L.load_recovery(src_root)
+        c = mk(10.0); self.assertEqual(c.cfg.max_up_step_frac, 0.05); self.assertEqual(c.rcfg.probe_frac, 0.05)   # default guard
+        with mock.patch.object(L, 'verify_root_owned_tree', side_effect=lambda p: p):
+            mk2, _ = L.load_recovery(src_root, cap10=True)
+        c2 = mk2(10.0); self.assertEqual(c2.cfg.max_up_step_frac, 0.10); self.assertEqual(c2.rcfg.probe_frac, 0.10)
+        self.assertEqual(c.step(Obs(10.0, 0.0, 10.0))['rate'] >= 2.0, True)
+
 import time
 if __name__ == '__main__': unittest.main(verbosity=1)
