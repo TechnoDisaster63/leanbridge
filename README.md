@@ -8,7 +8,7 @@ This repository is an **unvalidated, offline research prototype**, not a router 
 
 ## Latest activity - 2026-10-16
 
-The owner supplied Kali session transcripts showing matching lab-file hashes, 42 mocked lab tests passing and a plan-only run. No root preflight or real-packet result is evidenced. The latest exploratory simulator sweep compares delay-cut factors across two scenarios and five seeds: lower delay trades off against goodput. It does not establish a best setting or live-network improvement; defaults stay unchanged. See [status](docs/STATUS.md) and the [exploratory log](docs/EXPLORATORY_2026-10-16.md) for the new sweep; the [frozen findings log](docs/FINDINGS.md) keeps the earlier evidence unchanged.
+The owner supplied four real-packet runs inside an isolated VirtualBox VM using the pinned lab-branch script and real kernel CAKE for the shaped arms. In this one-run-each set, LeanBridge had 49.4 ms p99 raw RTT at 5.56 Mbps versus static CAKE's 134 ms at 10.48 Mbps: a delay-for-throughput tradeoff, not a proven overall win. All packet-loss fields are invalid because of a reporting bug. See the [session record and full supplied terminal logs](docs/VM_LAB_2026-10-16.md). This is not a physical-network deployment or general run clearance. The latest exploratory simulator sweep compares delay-cut factors across two scenarios and five seeds: lower delay trades off against goodput. It does not establish a best setting or live-network improvement; defaults stay unchanged. See [status](docs/STATUS.md) and the [exploratory log](docs/EXPLORATORY_2026-10-16.md) for the new sweep; the [frozen findings log](docs/FINDINGS.md) keeps the earlier evidence unchanged.
 
 ## What works today
 
