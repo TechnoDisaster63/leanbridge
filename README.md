@@ -6,6 +6,10 @@
 
 This repository is an **unvalidated, offline research prototype**, not a router tool or a deployable CAKE controller. It cannot create bandwidth, guarantee latency or provide a real-world risk bound.
 
+## Latest activity - 2026-10-16
+
+The owner supplied Kali session transcripts showing matching lab-file hashes, 42 mocked lab tests passing and a plan-only run. No root preflight or real-packet result is evidenced. The latest exploratory simulator sweep compares delay-cut factors across two scenarios and five seeds: lower delay trades off against goodput. It does not establish a best setting or live-network improvement; defaults stay unchanged. See [status](docs/STATUS.md) and the [findings log](docs/FINDINGS.md) for provenance, numbers and limits.
+
 ## What works today
 
 | Component | Current boundary |
@@ -71,4 +75,3 @@ docs/           architecture, evidence, limitations and future lab planning
 [Documentation index](docs/README.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Change log](CHANGELOG.md) · [Security](SECURITY.md)
 
 Repository snapshot labels and Python package versions describe development history, not validation. This repository is public by the owner's decision (2026-10-16) and licensed under the MIT License; see LICENSE.
-
