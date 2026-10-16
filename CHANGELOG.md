@@ -2,6 +2,12 @@
 
 Development snapshots, not validated releases. Snapshot names below also appear in local historical records; they are not a claim that matching GitHub tags or releases exist.
 
+## Local Kali additions and evidence repair - 2026-10-16
+
+- Added the owner-supplied two delay-cut regression tests and v0.5 research protocol draft. Protocol choices remain proposed, NOT APPROVED; defaults and lab code unchanged.
+- Restored frozen FINDINGS.md bytes and moved the Oct16 exploratory append to EXPLORATORY_2026-10-16.md without changing frozen evidence hashes. This repairs the earlier documentation update's evidence-integrity test failure while retaining the new content.
+- Full local validation of this merged tree: 50 tests passed, plus source syntax and local Markdown links. No root or real-packet run performed.
+
 ## Exploratory sweep and lab preparation - 2026-10-16
 
 - Recorded user-supplied terminal summaries from exploratory delay-cut simulations (two scenarios, five seeds, 300 steps); no independently reproduced or raw per-step result artifact is claimed.
