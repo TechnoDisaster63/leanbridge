@@ -206,7 +206,7 @@ class Gates(unittest.TestCase):
         with mock.patch.object(L, 'vm_check', return_value=(False, 'container: docker')): self.assertIn('not an allowed', L.vm_gate(True))
         with mock.patch.object(L, 'vm_check', return_value=(True, 'vm=kvm')): self.assertIsNone(L.vm_gate(True))
     def test_D_root_check_cli_refuses_without_gate(self):
-        r = subprocess.run([sys.executable, '-I', 'cake_netns_lab.py', '--check'], capture_output=True, text=True)
+        r = subprocess.run([sys.executable, '-I', os.path.join(L.HERE, 'cake_netns_lab.py'), '--check'], capture_output=True, text=True)
         self.assertIn('problems', r.stdout)   # non-root path unchanged (no mutation)
 
 import time
