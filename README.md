@@ -8,7 +8,7 @@ This repository is an **unvalidated, offline research prototype**, not a router 
 
 ## Latest activity - 2026-10-16
 
-The owner supplied Kali session transcripts showing matching lab-file hashes, 42 mocked lab tests passing and a plan-only run. No root preflight or real-packet result is evidenced. The latest exploratory simulator sweep compares delay-cut factors across two scenarios and five seeds: lower delay trades off against goodput. It does not establish a best setting or live-network improvement; defaults stay unchanged. See [status](docs/STATUS.md) and the [findings log](docs/FINDINGS.md) for provenance, numbers and limits.
+The owner supplied Kali session transcripts showing matching lab-file hashes, 42 mocked lab tests passing and a plan-only run. No root preflight or real-packet result is evidenced. The latest exploratory simulator sweep compares delay-cut factors across two scenarios and five seeds: lower delay trades off against goodput. It does not establish a best setting or live-network improvement; defaults stay unchanged. See [status](docs/STATUS.md) and the [exploratory log](docs/EXPLORATORY_2026-10-16.md) for the new sweep; the [frozen findings log](docs/FINDINGS.md) keeps the earlier evidence unchanged.
 
 ## What works today
 
