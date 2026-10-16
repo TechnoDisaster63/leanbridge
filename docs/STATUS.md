@@ -21,6 +21,8 @@ As of 2026-10-15: offline research only. No live benchmark, network executor, RT
 - v0.4.1: subsequent parser fixes brought the pre-polish local suite to 40 tests. This is a test result, not renewed adapter approval.
 - Repository polish: documentation/tooling changes only; independent review is still required before any broader quality or readiness claim. See [change log](../CHANGELOG.md).
 - 2026-10-16: current local suite is 48 tests (unittest discover over tests/), all passing; the lab branch adds 42 mocked lab tests. Test results, not readiness claims. Repository is now public under the MIT License.
+- 2026-10-16 (lab prep): the owner's supplied Kali session transcript reports that the three lab file hashes match the reviewed PROVENANCE fingerprints (exact Git HEAD still unconfirmed), the 42 mocked lab tests pass, and --plan prints the expected setup. No root preflight or measured run is evidenced in the supplied transcripts; the lab remains UNTESTED DRAFT, NOT CLEARED. Environment/module checks and a reviewer pre-run pass are still open.
+- 2026-10-16 (exploratory sim sweep): owner ran ad-hoc delay_cut_factor sweeps (0.6-0.9 vs default) on two scenarios in the toy simulator; direction matches v0.2b/v0.3 findings, defaults unchanged. See Findings log. Not a protocol benchmark.
 
 Local historical snapshot labels do not imply remote GitHub tags or published releases. The Python package still reports `0.1.0.dev0`. Do not use that version alone to identify a source snapshot; retain its Git commit too.
 
