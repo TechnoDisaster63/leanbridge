@@ -72,4 +72,5 @@ lab/            untested, never-run, NOT cleared namespace lab draft with its ow
 
 [Documentation index](docs/README.md) · [Architecture](docs/ARCHITECTURE.md) · [Contributing](CONTRIBUTING.md) · [Change log](CHANGELOG.md) · [Security](SECURITY.md)
 
-Repository snapshot labels and Python package versions describe development history, not validation. Keep this repository private; no open-source license or permission to publish is added by this polish.
+Repository snapshot labels and Python package versions describe development history, not validation. This repository is public by the owner's decision (2026-10-16) and licensed under the MIT License; see LICENSE.
+
