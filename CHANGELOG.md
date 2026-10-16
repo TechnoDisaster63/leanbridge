@@ -2,6 +2,12 @@
 
 Development snapshots, not validated releases. Snapshot names below also appear in local historical records; they are not a claim that matching GitHub tags or releases exist.
 
+## Exploratory sweep and lab preparation - 2026-10-16
+
+- Recorded user-supplied terminal summaries from exploratory delay-cut simulations (two scenarios, five seeds, 300 steps); no independently reproduced or raw per-step result artifact is claimed.
+- Recorded matching lab-file hashes, 42 mocked tests and the plan-only stage in the supplied Kali transcript. Exact user Git HEAD and environment/rollback checks remain unconfirmed.
+- Updated README and status links; retained all prior findings and unvalidated/live-test boundaries. No controller defaults, source, lab code or frozen results changed.
+
 ## Public visibility - 2026-10-16
 
 - Repository made public by the owner's explicit decision and licensed under the MIT License (LICENSE file added).
@@ -35,4 +41,3 @@ Scenario families, a declared manifest and raw results. Negative/mixed findings 
 ## v0.1 / v0.2 - historical research
 
 Fluid simulation, belief/guard policies, simplified baselines and research variants. No real-network validation. Python package metadata remains `0.1.0.dev0` for this documentation/tooling-only polish; snapshot labels are not package releases.
-
