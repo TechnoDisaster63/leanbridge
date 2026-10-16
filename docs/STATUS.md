@@ -1,6 +1,6 @@
 # Status and evidence
 
-As of 2026-10-15: offline research only. No live benchmark, network executor, RTT collector, rollback or appliance validation exists.
+As of 2026-10-16: offline research only. No live benchmark, network executor, RTT collector, rollback or appliance validation exists.
 
 ## Claim-to-evidence map
 
@@ -14,13 +14,19 @@ As of 2026-10-15: offline research only. No live benchmark, network executor, RT
 | Dry-run plans arguments without executing | Current module and tests | Name-only allowlist; not namespace binding |
 | Lab is safe and ready | Unsupported | Executor, telemetry and safety gates open |
 
+## Current validation scope
+
+On 2026-10-16, the current main-derived tree with these documentation fixes passed **50 core/repository tests**, source syntax checks and local Markdown-link checks using the documented unprivileged `python3 check.py` command (Python 3.10.12). This is local validation of the tree, not the owner's Kali run or a verified CI result. Earlier test-count checkpoints remain below. The separate mocked lab suite was not run as part of this check.
+
+The main source tree does not contain `lab/`; the privileged `lab/cake_netns_lab.py` draft on the separate lab branch is **UNTESTED and NOT CLEARED**. Neither its preflight nor any lab arm may run until independent review of the exact version is complete and explicit clearance for that run is recorded. A VM, static source review, MIT license or passing tests is not clearance. Any later authorized run must satisfy disposable/snapshotted-VM, detached-adapter and host-sharing restrictions; VM detection alone does not establish isolation.
+
 ## Review history
 
 - v0.3: independent review reported 30 tests and corrected interpretation of mixed/negative results. No demonstrated clean belief advantage.
 - v0.4: independent review reported 38 tests and accepted **offline data only**, not adapter readiness.
 - v0.4.1: subsequent parser fixes brought the pre-polish local suite to 40 tests. This is a test result, not renewed adapter approval.
 - Repository polish: documentation/tooling changes only; independent review is still required before any broader quality or readiness claim. See [change log](../CHANGELOG.md).
-- 2026-10-16: current local suite is 48 tests (unittest discover over tests/), all passing; the lab branch adds 42 mocked lab tests. Test results, not readiness claims. Repository is now public under the MIT License.
+- 2026-10-16 (earlier checkpoint): 48 core/repository tests were recorded passing before the two delay-cut tests were added. This is historical, not the current total. The separate `lab-cake-draft` branch records 42 mocked lab tests; those files are not present in this main tree, and their count is not combined with the core suite. Repository is public under the MIT License.
 - 2026-10-16 (lab prep): the owner's supplied Kali session transcript reports that the three lab file hashes match the reviewed PROVENANCE fingerprints (exact Git HEAD still unconfirmed), the 42 mocked lab tests pass, and --plan prints the expected setup. No root preflight or measured run is evidenced in the supplied transcripts; the lab remains UNTESTED DRAFT, NOT CLEARED. Environment/module checks and a reviewer pre-run pass are still open.
 - 2026-10-16 (exploratory sim sweep): owner ran ad-hoc delay_cut_factor sweeps (0.6-0.9 vs default) on two scenarios in the toy simulator; direction matches v0.2b/v0.3 findings, defaults unchanged. See [exploratory log](EXPLORATORY_2026-10-16.md). Not a protocol benchmark.
 
