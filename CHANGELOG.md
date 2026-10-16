@@ -2,6 +2,10 @@
 
 Development snapshots, not validated releases. Snapshot names below also appear in local historical records; they are not a claim that matching GitHub tags or releases exist.
 
+## Public visibility - 2026-10-16
+
+- Repository made public by the owner's explicit decision and licensed under the MIT License (LICENSE file added).
+
 ## Repository polish - 2026-10-15
 
 - Replaced the stale v0.1-only README with the actual simulator/offline-parser/dry-run boundary.
@@ -31,3 +35,4 @@ Scenario families, a declared manifest and raw results. Negative/mixed findings 
 ## v0.1 / v0.2 - historical research
 
 Fluid simulation, belief/guard policies, simplified baselines and research variants. No real-network validation. Python package metadata remains `0.1.0.dev0` for this documentation/tooling-only polish; snapshot labels are not package releases.
+
