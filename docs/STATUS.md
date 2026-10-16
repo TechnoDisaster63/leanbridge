@@ -22,7 +22,7 @@ As of 2026-10-15: offline research only. No live benchmark, network executor, RT
 - Repository polish: documentation/tooling changes only; independent review is still required before any broader quality or readiness claim. See [change log](../CHANGELOG.md).
 - 2026-10-16: current local suite is 48 tests (unittest discover over tests/), all passing; the lab branch adds 42 mocked lab tests. Test results, not readiness claims. Repository is now public under the MIT License.
 - 2026-10-16 (lab prep): the owner's supplied Kali session transcript reports that the three lab file hashes match the reviewed PROVENANCE fingerprints (exact Git HEAD still unconfirmed), the 42 mocked lab tests pass, and --plan prints the expected setup. No root preflight or measured run is evidenced in the supplied transcripts; the lab remains UNTESTED DRAFT, NOT CLEARED. Environment/module checks and a reviewer pre-run pass are still open.
-- 2026-10-16 (exploratory sim sweep): owner ran ad-hoc delay_cut_factor sweeps (0.6-0.9 vs default) on two scenarios in the toy simulator; direction matches v0.2b/v0.3 findings, defaults unchanged. See Findings log. Not a protocol benchmark.
+- 2026-10-16 (exploratory sim sweep): owner ran ad-hoc delay_cut_factor sweeps (0.6-0.9 vs default) on two scenarios in the toy simulator; direction matches v0.2b/v0.3 findings, defaults unchanged. See [exploratory log](EXPLORATORY_2026-10-16.md). Not a protocol benchmark.
 
 Local historical snapshot labels do not imply remote GitHub tags or published releases. The Python package still reports `0.1.0.dev0`. Do not use that version alone to identify a source snapshot; retain its Git commit too.
 
@@ -44,3 +44,9 @@ The [open review](REVIEW_v0.4_OPEN.md) and [safety contract](SAFETY.md) remain a
 
 [Findings](FINDINGS.md), [manifest](MANIFEST_v0.3.json) and [raw results](results_v0.3.json) are historical records. This polish does not rerun or replace held-out research. Existing raw numbers and their provenance caveats stay in place.
 
+
+## Local Kali additions - 2026-10-16
+
+Two delay-cut regression tests supplied in the owner's local project are added without controller or default changes. The [v0.5 protocol draft](PROTOCOL_DRAFT_v0.5.md) remains proposed and NOT APPROVED; its suggested combined throughput/latency rule is not an adopted acceptance criterion. No lab execution clearance follows.
+
+Validation of these local additions: 50 project tests passed, including the two new delay-cut tests. Source syntax and local Markdown links pass. The earlier FINDINGS append violated the frozen-file hash contract; it now lives in [the exploratory log](EXPLORATORY_2026-10-16.md), and FINDINGS, manifest and v0.3 raw-result bytes retain their original hashes. Mock tests and these checks are not live-kernel validation.
