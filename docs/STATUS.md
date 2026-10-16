@@ -62,3 +62,8 @@ The [open review](REVIEW_v0.4_OPEN.md) and [safety contract](SAFETY.md) remain a
 Two delay-cut regression tests supplied in the owner's local project are added without controller or default changes. The [v0.5 protocol draft](PROTOCOL_DRAFT_v0.5.md) remains proposed and NOT APPROVED; its suggested combined throughput/latency rule is not an adopted acceptance criterion. No lab execution clearance follows.
 
 Validation of these local additions: 50 project tests passed, including the two new delay-cut tests. Source syntax and local Markdown links pass. The earlier FINDINGS append violated the frozen-file hash contract; it now lives in [the exploratory log](EXPLORATORY_2026-10-16.md), and FINDINGS, manifest and v0.3 raw-result bytes retain their original hashes. Mock tests and these checks are not live-kernel validation.
+
+
+## v0.6 overnight additions - 2026-10-16 (offline only)
+
+Loss accounting from sequence numbers (`pingloss.py`), a bounded-probe recovery wrapper (`recovery.py`) and a fluid model of the 20/6/20 lab shape (`labmodel.py`) are added without changing the core controller or defaults. The lab-script fix and an unexecuted recovery arm live on branch `lab-loss-fix`. Results are HYPOTHESIS-grade model numbers; no new real-packet run, no clearance, no rollback. Details and tables: [v0.6 notes](RECOVERY_v0.6.md). The loss fields of the 2026-10-16 real run remain invalid; they are not retroactively repaired.
