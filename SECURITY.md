@@ -1,6 +1,6 @@
 # Security and safe handling
 
-LeanBridge is a private research prototype with no live network executor. It is not supported for production or use on a primary host network.
+LeanBridge is a public research prototype (MIT License) with no live network executor. It is not supported for production or use on a primary host network.
 
 ## Reporting a concern
 
@@ -18,3 +18,4 @@ Include the affected source revision, a minimal sanitized input, expected behavi
 - Repository privacy does not authorize redistribution or make uploaded data safe to retain.
 
 No supported production version, vulnerability bounty or disclosure schedule is claimed.
+
