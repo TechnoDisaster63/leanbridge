@@ -1,0 +1,362 @@
+{
+ "20->6->20": {
+  "core_5pct": {
+   "recovery_steps_median": 28.0,
+   "never_recovered": 0,
+   "retention": 0.754,
+   "steps_over_15ms": 11.5,
+   "mean_delay_ms": 9.5
+  },
+  "proposal_ceiling_5pct": {
+   "recovery_steps_median": 23.5,
+   "never_recovered": 0,
+   "retention": 0.781,
+   "steps_over_15ms": 13.0,
+   "mean_delay_ms": 10.4
+  },
+  "wrapper_5pct": {
+   "recovery_steps_median": 24.5,
+   "never_recovered": 0,
+   "retention": 0.768,
+   "steps_over_15ms": 13.0,
+   "mean_delay_ms": 10.2
+  },
+  "core_fixed10": {
+   "recovery_steps_median": 18.5,
+   "never_recovered": 0,
+   "retention": 0.813,
+   "steps_over_15ms": 16.0,
+   "mean_delay_ms": 12.9
+  },
+  "wrapper_fixed10": {
+   "recovery_steps_median": 15.0,
+   "never_recovered": 0,
+   "retention": 0.835,
+   "steps_over_15ms": 19.0,
+   "mean_delay_ms": 15.9
+  },
+  "core_accel_hard10": {
+   "recovery_steps_median": 19.5,
+   "never_recovered": 0,
+   "retention": 0.798,
+   "steps_over_15ms": 14.0,
+   "mean_delay_ms": 11.9
+  },
+  "wrapper_accel_hard10": {
+   "recovery_steps_median": 14.0,
+   "never_recovered": 0,
+   "retention": 0.831,
+   "steps_over_15ms": 16.0,
+   "mean_delay_ms": 13.0
+  },
+  "static_6.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.391,
+   "steps_over_15ms": 0.0,
+   "mean_delay_ms": 0.0
+  },
+  "static_12.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.653,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  },
+  "static_18.0": {
+   "recovery_steps_median": 0.0,
+   "never_recovered": 0,
+   "retention": 0.914,
+   "steps_over_15ms": 41.0,
+   "mean_delay_ms": 133.5
+  }
+ },
+ "50->10->50": {
+  "core_5pct": {
+   "recovery_steps_median": 36.5,
+   "never_recovered": 4,
+   "retention": 0.65,
+   "steps_over_15ms": 11.0,
+   "mean_delay_ms": 8.7
+  },
+  "proposal_ceiling_5pct": {
+   "recovery_steps_median": 32.0,
+   "never_recovered": 0,
+   "retention": 0.706,
+   "steps_over_15ms": 12.0,
+   "mean_delay_ms": 9.6
+  },
+  "wrapper_5pct": {
+   "recovery_steps_median": 33.0,
+   "never_recovered": 0,
+   "retention": 0.69,
+   "steps_over_15ms": 12.0,
+   "mean_delay_ms": 9.1
+  },
+  "core_fixed10": {
+   "recovery_steps_median": 23.0,
+   "never_recovered": 0,
+   "retention": 0.754,
+   "steps_over_15ms": 14.0,
+   "mean_delay_ms": 9.7
+  },
+  "wrapper_fixed10": {
+   "recovery_steps_median": 20.0,
+   "never_recovered": 0,
+   "retention": 0.788,
+   "steps_over_15ms": 17.0,
+   "mean_delay_ms": 13.9
+  },
+  "core_accel_hard10": {
+   "recovery_steps_median": 25.5,
+   "never_recovered": 0,
+   "retention": 0.732,
+   "steps_over_15ms": 13.0,
+   "mean_delay_ms": 9.2
+  },
+  "wrapper_accel_hard10": {
+   "recovery_steps_median": 18.0,
+   "never_recovered": 0,
+   "retention": 0.788,
+   "steps_over_15ms": 15.0,
+   "mean_delay_ms": 12.6
+  },
+  "static_15.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.365,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  },
+  "static_30.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.637,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  },
+  "static_45.0": {
+   "recovery_steps_median": 0.0,
+   "never_recovered": 0,
+   "retention": 0.91,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  }
+ },
+ "30->15->30": {
+  "core_5pct": {
+   "recovery_steps_median": 19.0,
+   "never_recovered": 0,
+   "retention": 0.829,
+   "steps_over_15ms": 13.0,
+   "mean_delay_ms": 9.3
+  },
+  "proposal_ceiling_5pct": {
+   "recovery_steps_median": 12.5,
+   "never_recovered": 0,
+   "retention": 0.855,
+   "steps_over_15ms": 14.0,
+   "mean_delay_ms": 10.6
+  },
+  "wrapper_5pct": {
+   "recovery_steps_median": 14.0,
+   "never_recovered": 0,
+   "retention": 0.847,
+   "steps_over_15ms": 14.0,
+   "mean_delay_ms": 10.5
+  },
+  "core_fixed10": {
+   "recovery_steps_median": 13.5,
+   "never_recovered": 0,
+   "retention": 0.864,
+   "steps_over_15ms": 16.0,
+   "mean_delay_ms": 10.2
+  },
+  "wrapper_fixed10": {
+   "recovery_steps_median": 10.0,
+   "never_recovered": 0,
+   "retention": 0.879,
+   "steps_over_15ms": 19.0,
+   "mean_delay_ms": 15.2
+  },
+  "core_accel_hard10": {
+   "recovery_steps_median": 15.0,
+   "never_recovered": 0,
+   "retention": 0.853,
+   "steps_over_15ms": 15.0,
+   "mean_delay_ms": 9.9
+  },
+  "wrapper_accel_hard10": {
+   "recovery_steps_median": 8.5,
+   "never_recovered": 0,
+   "retention": 0.877,
+   "steps_over_15ms": 17.0,
+   "mean_delay_ms": 12.9
+  },
+  "static_9.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.36,
+   "steps_over_15ms": 0.0,
+   "mean_delay_ms": 0.0
+  },
+  "static_18.0": {
+   "recovery_steps_median": 0.0,
+   "never_recovered": 0,
+   "retention": 0.682,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 131.7
+  },
+  "static_27.0": {
+   "recovery_steps_median": 0.0,
+   "never_recovered": 0,
+   "retention": 0.922,
+   "steps_over_15ms": 41.0,
+   "mean_delay_ms": 134.2
+  }
+ },
+ "100->20->100": {
+  "core_5pct": {
+   "recovery_steps_median": 37,
+   "never_recovered": 7,
+   "retention": 0.651,
+   "steps_over_15ms": 7.0,
+   "mean_delay_ms": 7.7
+  },
+  "proposal_ceiling_5pct": {
+   "recovery_steps_median": 31.5,
+   "never_recovered": 0,
+   "retention": 0.728,
+   "steps_over_15ms": 7.0,
+   "mean_delay_ms": 8.1
+  },
+  "wrapper_5pct": {
+   "recovery_steps_median": 33.0,
+   "never_recovered": 0,
+   "retention": 0.698,
+   "steps_over_15ms": 7.0,
+   "mean_delay_ms": 8.1
+  },
+  "core_fixed10": {
+   "recovery_steps_median": 31.0,
+   "never_recovered": 0,
+   "retention": 0.698,
+   "steps_over_15ms": 7.0,
+   "mean_delay_ms": 7.8
+  },
+  "wrapper_fixed10": {
+   "recovery_steps_median": 19.5,
+   "never_recovered": 0,
+   "retention": 0.814,
+   "steps_over_15ms": 9.0,
+   "mean_delay_ms": 9.7
+  },
+  "core_accel_hard10": {
+   "recovery_steps_median": 32.0,
+   "never_recovered": 0,
+   "retention": 0.686,
+   "steps_over_15ms": 7.0,
+   "mean_delay_ms": 7.7
+  },
+  "wrapper_accel_hard10": {
+   "recovery_steps_median": 20.5,
+   "never_recovered": 0,
+   "retention": 0.806,
+   "steps_over_15ms": 8.0,
+   "mean_delay_ms": 9.1
+  },
+  "static_30.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.365,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  },
+  "static_60.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.637,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  },
+  "static_90.0": {
+   "recovery_steps_median": 0.0,
+   "never_recovered": 0,
+   "retention": 0.91,
+   "steps_over_15ms": 40.0,
+   "mean_delay_ms": 133.3
+  }
+ },
+ "20->12->20": {
+  "core_5pct": {
+   "recovery_steps_median": 16.0,
+   "never_recovered": 0,
+   "retention": 0.858,
+   "steps_over_15ms": 13.5,
+   "mean_delay_ms": 9.8
+  },
+  "proposal_ceiling_5pct": {
+   "recovery_steps_median": 9.0,
+   "never_recovered": 0,
+   "retention": 0.877,
+   "steps_over_15ms": 15.0,
+   "mean_delay_ms": 11.3
+  },
+  "wrapper_5pct": {
+   "recovery_steps_median": 10.5,
+   "never_recovered": 0,
+   "retention": 0.872,
+   "steps_over_15ms": 15.0,
+   "mean_delay_ms": 10.8
+  },
+  "core_fixed10": {
+   "recovery_steps_median": 12.0,
+   "never_recovered": 0,
+   "retention": 0.883,
+   "steps_over_15ms": 16.0,
+   "mean_delay_ms": 11.4
+  },
+  "wrapper_fixed10": {
+   "recovery_steps_median": 8.0,
+   "never_recovered": 0,
+   "retention": 0.891,
+   "steps_over_15ms": 19.0,
+   "mean_delay_ms": 15.9
+  },
+  "core_accel_hard10": {
+   "recovery_steps_median": 13.5,
+   "never_recovered": 0,
+   "retention": 0.873,
+   "steps_over_15ms": 14.5,
+   "mean_delay_ms": 10.7
+  },
+  "wrapper_accel_hard10": {
+   "recovery_steps_median": 6.0,
+   "never_recovered": 0,
+   "retention": 0.889,
+   "steps_over_15ms": 17.0,
+   "mean_delay_ms": 13.0
+  },
+  "static_6.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.346,
+   "steps_over_15ms": 0.0,
+   "mean_delay_ms": 0.0
+  },
+  "static_12.0": {
+   "recovery_steps_median": null,
+   "never_recovered": 20,
+   "retention": 0.692,
+   "steps_over_15ms": 0.0,
+   "mean_delay_ms": 0.0
+  },
+  "static_18.0": {
+   "recovery_steps_median": 0.0,
+   "never_recovered": 0,
+   "retention": 0.925,
+   "steps_over_15ms": 42.0,
+   "mean_delay_ms": 134.8
+  }
+ }
+}
