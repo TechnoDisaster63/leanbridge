@@ -1,5 +1,8 @@
 # Change log
 
+## v0.7 (offline, unreleased)
+- Opt-in `AcceleratingGuard`, `accel_eval`, equal-hard-cap comparison and a proposal-ceiling bound: see docs/ACCEL_v0.7.md. Model only; defaults unchanged. 7 new tests.
+
 Development snapshots, not validated releases. Snapshot names below also appear in local historical records; they are not a claim that matching GitHub tags or releases exist.
 
 ## v0.6 overnight loss accounting and recovery - 2026-10-16
