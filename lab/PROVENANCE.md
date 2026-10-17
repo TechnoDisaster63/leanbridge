@@ -35,3 +35,11 @@ Changes after the completed VM session, made offline with mocked tests only:
 - Validation: 54 mocked tests pass (42 prior + 12 new; the recovery-module load test also needs the main-derived `src/` tree and was run there, 54 of 54). Not kernel validation. This script has never been run as root.
 - New SHA-256: `cake_netns_lab.py` `5a51cc03d8a264a3d24ddb3c5d15714d6c7d744074d287b2f9bde29a00a43335`; `test_cake_netns_lab.py` `9d15eddd89dfce5fffb1c0b1248dd5cc4d961a04fcd3fae0977b2ea1b704957d` (hashes of the working copy at the time of writing).
 - Any run of this version needs independent review of the exact version and explicit owner clearance for that run.
+
+## One-command wrapper and vendored src - 2026-10-17 (branch `lab-oneshot-v0.7`, NOT EXECUTED, NOT CLEARED)
+
+- `lab/run_lab.sh` chains the existing documented steps (fresh root-owned copy, `--check`, `--execute` per arm, `--cleanup`). It adds no network actions and keeps `python3 -I` and the `--i-confirm-disposable-vm` statement, which stays the owner's own unverified attestation. On interrupt it stops the lab, waits for it to exit, then runs `--cleanup` with the run id read from the current partial log (validated as 6 lowercase alphanumerics). The lab's exit status is kept (no pipeline masking it). It has never been run as root.
+- `src/` on this branch is the `overnight-v0.7` source (adds recovery, pingloss, labmodel, accel modules; core controller, guard, estimator and config are unchanged from main). Fingerprint printed by the wrapper at start (sha256 of the sorted per-file sha256 list of `src/**/*.py`): `b7191b0386bb1a6cb46ae5da2ad5aef85a7283f31ed636865587db895d4c82c6`.
+- SHA-256 at the time of writing: `lab/run_lab.sh` `31b704b7d50b095cfd7102794e234bc44c0cdad2ecb47ee2497d9334bc75bdd8`; `lab/test_run_lab.py` `496a1e77efa15d227313e1d0133b9661ba3bbc1aa661c1db1e64a78af775ad31`; `lab/cake_netns_lab.py` unchanged `5a51cc03d8a264a3d24ddb3c5d15714d6c7d744074d287b2f9bde29a00a43335`.
+- Tests: 9 wrapper tests (refusals, arm list parity, exit status, run id validation, interrupt-then-cleanup ordering with a fake lab). They use no root and no namespaces; they do not test the real lab path.
+- A run of this exact version needs independent review and explicit owner clearance.
