@@ -35,10 +35,13 @@ class RecoveryConfig:
 class RecoveryController:
     name = "leanbridge_recovery"
 
-    def __init__(self, cfg: Config, initial_rate: float, rcfg: Optional[RecoveryConfig] = None):
+    def __init__(self, cfg: Config, initial_rate: float, rcfg: Optional[RecoveryConfig] = None,
+                 guard_factory=None):
         self.rcfg = rcfg or RecoveryConfig()
         self.rcfg.validate()
         self.core = LeanBridgeController(cfg, initial_rate)
+        if guard_factory is not None:  # opt-in alternative guard (e.g. AcceleratingGuard); default unchanged
+            self.core.guard = guard_factory(cfg, initial_rate)
         self.cfg = cfg
         self.rate = self.core.rate
         self.clean = 0
