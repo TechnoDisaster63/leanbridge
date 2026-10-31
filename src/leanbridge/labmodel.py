@@ -41,9 +41,9 @@ class LabResult:
                 "final_third_retention": round(sum(self.goodput[t0:]) / sum(self.cap[t0:]), 3)}
 
 
-def run_lab(controller, seed: int = 0, steps: int = 60, hi: float = 20.0, lo: float = 6.0, load: float = LOAD) -> LabResult:
+def run_lab(controller, seed: int = 0, steps: int = 60, hi: float = 20.0, lo: float = 6.0, load: float = LOAD, cap=None) -> LabResult:
     rng = random.Random(seed)
-    cap = cap_trace(steps, hi, lo)
+    cap = cap if cap is not None else cap_trace(steps, hi, lo)
     q = 0.0
     obs = None
     res = LabResult(cap, [], [], [], steps)
