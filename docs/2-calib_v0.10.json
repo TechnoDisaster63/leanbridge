@@ -1,0 +1,8787 @@
+{
+ "delay_cut_0.9_eps0.05": {
+  "eps=0.05/aci_mag_oracle": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.16,
+     "binary_range": [
+      0.1467,
+      0.1767
+     ],
+     "e_clip_mbps_median": 0.0962,
+     "e_clip_mbps_range": [
+      0.0851,
+      0.1053
+     ],
+     "e_over_mbps_median": 0.1743,
+     "e_over_mbps_range": [
+      0.0966,
+      0.1841
+     ],
+     "e_qb_mbps_median": 0.1743,
+     "e_qb_mbps_range": [
+      0.0966,
+      0.1841
+     ],
+     "final_alpha_median": 0.003,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 5.739,
+     "mean_delay_ms_range": [
+      3.5251,
+      6.2428
+     ],
+     "p99_delay_ms_median": 50.8908,
+     "p99_delay_ms_range": [
+      43.2462,
+      53.421
+     ],
+     "p_over_0.5mbps_median": 0.1083,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.1167
+     ],
+     "p_over_1.0mbps_median": 0.0383,
+     "p_over_1.0mbps_range": [
+      0.0267,
+      0.0467
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.01
+     ],
+     "retention_median": 0.9009,
+     "retention_range": [
+      0.8611,
+      0.9318
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1433,
+     "binary_range": [
+      0.1267,
+      0.16
+     ],
+     "e_clip_mbps_median": 0.0892,
+     "e_clip_mbps_range": [
+      0.0754,
+      0.0963
+     ],
+     "e_over_mbps_median": 0.1811,
+     "e_over_mbps_range": [
+      0.1688,
+      0.2054
+     ],
+     "e_qb_mbps_median": 0.1811,
+     "e_qb_mbps_range": [
+      0.1688,
+      0.2054
+     ],
+     "final_alpha_median": 0.0085,
+     "final_alpha_range": [
+      0.003,
+      0.019
+     ],
+     "mean_delay_ms_median": 5.4521,
+     "mean_delay_ms_range": [
+      4.8651,
+      6.4213
+     ],
+     "p99_delay_ms_median": 51.0835,
+     "p99_delay_ms_range": [
+      41.1815,
+      71.5426
+     ],
+     "p_over_0.5mbps_median": 0.095,
+     "p_over_0.5mbps_range": [
+      0.0733,
+      0.1067
+     ],
+     "p_over_1.0mbps_median": 0.03,
+     "p_over_1.0mbps_range": [
+      0.0233,
+      0.05
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "retention_median": 0.8625,
+     "retention_range": [
+      0.8256,
+      0.8953
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1517,
+     "binary_range": [
+      0.13,
+      0.16
+     ],
+     "e_clip_mbps_median": 0.1095,
+     "e_clip_mbps_range": [
+      0.0948,
+      0.1164
+     ],
+     "e_over_mbps_median": 0.1426,
+     "e_over_mbps_range": [
+      0.1162,
+      0.1674
+     ],
+     "e_qb_mbps_median": 0.1426,
+     "e_qb_mbps_range": [
+      0.1162,
+      0.1674
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.0108
+     ],
+     "mean_delay_ms_median": 4.2501,
+     "mean_delay_ms_range": [
+      3.394,
+      4.8085
+     ],
+     "p99_delay_ms_median": 51.5209,
+     "p99_delay_ms_range": [
+      42.4062,
+      61.4557
+     ],
+     "p_over_0.5mbps_median": 0.1117,
+     "p_over_0.5mbps_range": [
+      0.0967,
+      0.1267
+     ],
+     "p_over_1.0mbps_median": 0.0633,
+     "p_over_1.0mbps_range": [
+      0.0433,
+      0.0833
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "retention_median": 0.89,
+     "retention_range": [
+      0.848,
+      0.9163
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.14,
+     "binary_range": [
+      0.1233,
+      0.1533
+     ],
+     "e_clip_mbps_median": 0.0823,
+     "e_clip_mbps_range": [
+      0.0723,
+      0.0955
+     ],
+     "e_over_mbps_median": 0.0923,
+     "e_over_mbps_range": [
+      0.0813,
+      0.1129
+     ],
+     "e_qb_mbps_median": 0.0923,
+     "e_qb_mbps_range": [
+      0.0803,
+      0.1129
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 3.1483,
+     "mean_delay_ms_range": [
+      2.7789,
+      3.829
+     ],
+     "p99_delay_ms_median": 44.3459,
+     "p99_delay_ms_range": [
+      37.2858,
+      51.0898
+     ],
+     "p_over_0.5mbps_median": 0.0933,
+     "p_over_0.5mbps_range": [
+      0.08,
+      0.1
+     ],
+     "p_over_1.0mbps_median": 0.0233,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.06
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8024,
+     "retention_range": [
+      0.7588,
+      0.8217
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.15,
+     "range": [
+      0.1233,
+      0.1767
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0933,
+     "range": [
+      0.0723,
+      0.1164
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1483,
+     "range": [
+      0.0813,
+      0.2054
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1483,
+     "range": [
+      0.0803,
+      0.2054
+     ]
+    },
+    "final_alpha": {
+     "median": 0.005,
+     "range": [
+      0.002,
+      0.019
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 4.5112,
+     "range": [
+      2.7789,
+      6.4213
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 49.7028,
+     "range": [
+      37.2858,
+      71.5426
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1,
+     "range": [
+      0.0733,
+      0.1267
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0367,
+     "range": [
+      0.0167,
+      0.0833
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.0133
+     ]
+    },
+    "retention": {
+     "median": 0.8766,
+     "range": [
+      0.7588,
+      0.9318
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_mag_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.1683,
+     "binary_range": [
+      0.1467,
+      0.17
+     ],
+     "e_clip_mbps_median": 0.0956,
+     "e_clip_mbps_range": [
+      0.0822,
+      0.1049
+     ],
+     "e_over_mbps_median": 0.158,
+     "e_over_mbps_range": [
+      0.121,
+      0.2005
+     ],
+     "e_qb_mbps_median": 0.158,
+     "e_qb_mbps_range": [
+      0.121,
+      0.2005
+     ],
+     "final_alpha_median": 0.0065,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 5.3788,
+     "mean_delay_ms_range": [
+      4.3613,
+      6.2944
+     ],
+     "p99_delay_ms_median": 49.5593,
+     "p99_delay_ms_range": [
+      45.2261,
+      52.6978
+     ],
+     "p_over_0.5mbps_median": 0.1017,
+     "p_over_0.5mbps_range": [
+      0.0867,
+      0.11
+     ],
+     "p_over_1.0mbps_median": 0.0417,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.0567
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.8994,
+     "retention_range": [
+      0.8729,
+      0.9199
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.15,
+     "binary_range": [
+      0.13,
+      0.1633
+     ],
+     "e_clip_mbps_median": 0.0876,
+     "e_clip_mbps_range": [
+      0.0816,
+      0.0957
+     ],
+     "e_over_mbps_median": 0.1929,
+     "e_over_mbps_range": [
+      0.1772,
+      0.2054
+     ],
+     "e_qb_mbps_median": 0.1929,
+     "e_qb_mbps_range": [
+      0.1772,
+      0.2054
+     ],
+     "final_alpha_median": 0.0055,
+     "final_alpha_range": [
+      0.002,
+      0.019
+     ],
+     "mean_delay_ms_median": 5.4678,
+     "mean_delay_ms_range": [
+      5.1012,
+      6.2384
+     ],
+     "p99_delay_ms_median": 53.3459,
+     "p99_delay_ms_range": [
+      37.4713,
+      71.5426
+     ],
+     "p_over_0.5mbps_median": 0.0917,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.0967
+     ],
+     "p_over_1.0mbps_median": 0.045,
+     "p_over_1.0mbps_range": [
+      0.0367,
+      0.06
+     ],
+     "p_over_2.0mbps_median": 0.01,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.02
+     ],
+     "retention_median": 0.8705,
+     "retention_range": [
+      0.8478,
+      0.8945
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1533,
+     "binary_range": [
+      0.13,
+      0.17
+     ],
+     "e_clip_mbps_median": 0.1139,
+     "e_clip_mbps_range": [
+      0.0959,
+      0.1197
+     ],
+     "e_over_mbps_median": 0.1509,
+     "e_over_mbps_range": [
+      0.1212,
+      0.1723
+     ],
+     "e_qb_mbps_median": 0.1509,
+     "e_qb_mbps_range": [
+      0.1212,
+      0.1723
+     ],
+     "final_alpha_median": 0.0039,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 4.4036,
+     "mean_delay_ms_range": [
+      3.4985,
+      4.8727
+     ],
+     "p99_delay_ms_median": 52.3784,
+     "p99_delay_ms_range": [
+      48.624,
+      58.2293
+     ],
+     "p_over_0.5mbps_median": 0.115,
+     "p_over_0.5mbps_range": [
+      0.1067,
+      0.1267
+     ],
+     "p_over_1.0mbps_median": 0.0733,
+     "p_over_1.0mbps_range": [
+      0.0467,
+      0.0833
+     ],
+     "p_over_2.0mbps_median": 0.01,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.02
+     ],
+     "retention_median": 0.9059,
+     "retention_range": [
+      0.8481,
+      0.9197
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.145,
+     "binary_range": [
+      0.1267,
+      0.16
+     ],
+     "e_clip_mbps_median": 0.0868,
+     "e_clip_mbps_range": [
+      0.0748,
+      0.0978
+     ],
+     "e_over_mbps_median": 0.1016,
+     "e_over_mbps_range": [
+      0.0794,
+      0.1207
+     ],
+     "e_qb_mbps_median": 0.0996,
+     "e_qb_mbps_range": [
+      0.0794,
+      0.1146
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 3.3329,
+     "mean_delay_ms_range": [
+      2.8938,
+      3.9136
+     ],
+     "p99_delay_ms_median": 44.9246,
+     "p99_delay_ms_range": [
+      40.3759,
+      49.5493
+     ],
+     "p_over_0.5mbps_median": 0.0933,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.1067
+     ],
+     "p_over_1.0mbps_median": 0.0383,
+     "p_over_1.0mbps_range": [
+      0.0133,
+      0.0567
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8059,
+     "retention_range": [
+      0.7869,
+      0.826
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.1533,
+     "range": [
+      0.1267,
+      0.17
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0938,
+     "range": [
+      0.0748,
+      0.1197
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1546,
+     "range": [
+      0.0794,
+      0.2054
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1546,
+     "range": [
+      0.0794,
+      0.2054
+     ]
+    },
+    "final_alpha": {
+     "median": 0.005,
+     "range": [
+      0.002,
+      0.019
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 4.7176,
+     "range": [
+      2.8938,
+      6.2944
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 49.494,
+     "range": [
+      37.4713,
+      71.5426
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0967,
+     "range": [
+      0.0833,
+      0.1267
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0467,
+     "range": [
+      0.0133,
+      0.0833
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.02
+     ]
+    },
+    "retention": {
+     "median": 0.8847,
+     "range": [
+      0.7869,
+      0.9199
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.155,
+     "binary_range": [
+      0.1433,
+      0.1767
+     ],
+     "e_clip_mbps_median": 0.0993,
+     "e_clip_mbps_range": [
+      0.0902,
+      0.1123
+     ],
+     "e_over_mbps_median": 0.1634,
+     "e_over_mbps_range": [
+      0.1167,
+      0.1912
+     ],
+     "e_qb_mbps_median": 0.1634,
+     "e_qb_mbps_range": [
+      0.1167,
+      0.1912
+     ],
+     "final_alpha_median": 0.0065,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 5.64,
+     "mean_delay_ms_range": [
+      4.4284,
+      6.2783
+     ],
+     "p99_delay_ms_median": 54.6426,
+     "p99_delay_ms_range": [
+      45.2261,
+      65.317
+     ],
+     "p_over_0.5mbps_median": 0.11,
+     "p_over_0.5mbps_range": [
+      0.1,
+      0.1133
+     ],
+     "p_over_1.0mbps_median": 0.0433,
+     "p_over_1.0mbps_range": [
+      0.0333,
+      0.0567
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.8942,
+     "retention_range": [
+      0.8546,
+      0.9133
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.14,
+     "binary_range": [
+      0.13,
+      0.1467
+     ],
+     "e_clip_mbps_median": 0.0914,
+     "e_clip_mbps_range": [
+      0.0786,
+      0.1026
+     ],
+     "e_over_mbps_median": 0.1997,
+     "e_over_mbps_range": [
+      0.1707,
+      0.2299
+     ],
+     "e_qb_mbps_median": 0.1997,
+     "e_qb_mbps_range": [
+      0.1707,
+      0.2299
+     ],
+     "final_alpha_median": 0.0065,
+     "final_alpha_range": [
+      0.003,
+      0.016
+     ],
+     "mean_delay_ms_median": 5.7918,
+     "mean_delay_ms_range": [
+      4.77,
+      6.8304
+     ],
+     "p99_delay_ms_median": 56.3794,
+     "p99_delay_ms_range": [
+      46.4893,
+      71.5426
+     ],
+     "p_over_0.5mbps_median": 0.1,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.11
+     ],
+     "p_over_1.0mbps_median": 0.05,
+     "p_over_1.0mbps_range": [
+      0.0333,
+      0.0667
+     ],
+     "p_over_2.0mbps_median": 0.0133,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0267
+     ],
+     "retention_median": 0.8673,
+     "retention_range": [
+      0.8521,
+      0.9057
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1533,
+     "binary_range": [
+      0.1367,
+      0.1633
+     ],
+     "e_clip_mbps_median": 0.1178,
+     "e_clip_mbps_range": [
+      0.1023,
+      0.1283
+     ],
+     "e_over_mbps_median": 0.1706,
+     "e_over_mbps_range": [
+      0.1403,
+      0.1996
+     ],
+     "e_qb_mbps_median": 0.1706,
+     "e_qb_mbps_range": [
+      0.1403,
+      0.1996
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.011
+     ],
+     "mean_delay_ms_median": 4.997,
+     "mean_delay_ms_range": [
+      4.0586,
+      5.7911
+     ],
+     "p99_delay_ms_median": 68.2579,
+     "p99_delay_ms_range": [
+      52.7292,
+      72.2568
+     ],
+     "p_over_0.5mbps_median": 0.1167,
+     "p_over_0.5mbps_range": [
+      0.11,
+      0.1367
+     ],
+     "p_over_1.0mbps_median": 0.0783,
+     "p_over_1.0mbps_range": [
+      0.0567,
+      0.1033
+     ],
+     "p_over_2.0mbps_median": 0.0167,
+     "p_over_2.0mbps_range": [
+      0.01,
+      0.0267
+     ],
+     "retention_median": 0.9046,
+     "retention_range": [
+      0.8713,
+      0.9283
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.135,
+     "binary_range": [
+      0.12,
+      0.1667
+     ],
+     "e_clip_mbps_median": 0.0867,
+     "e_clip_mbps_range": [
+      0.0783,
+      0.0939
+     ],
+     "e_over_mbps_median": 0.0997,
+     "e_over_mbps_range": [
+      0.0862,
+      0.1156
+     ],
+     "e_qb_mbps_median": 0.0977,
+     "e_qb_mbps_range": [
+      0.0862,
+      0.1156
+     ],
+     "final_alpha_median": 0.008,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 3.3932,
+     "mean_delay_ms_range": [
+      3.0954,
+      3.9998
+     ],
+     "p99_delay_ms_median": 45.5388,
+     "p99_delay_ms_range": [
+      44.6231,
+      55.3282
+     ],
+     "p_over_0.5mbps_median": 0.0933,
+     "p_over_0.5mbps_range": [
+      0.09,
+      0.1033
+     ],
+     "p_over_1.0mbps_median": 0.0333,
+     "p_over_1.0mbps_range": [
+      0.0233,
+      0.0533
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.7999,
+     "retention_range": [
+      0.772,
+      0.8259
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.145,
+     "range": [
+      0.12,
+      0.1767
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0946,
+     "range": [
+      0.0783,
+      0.1283
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1668,
+     "range": [
+      0.0862,
+      0.2299
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1668,
+     "range": [
+      0.0862,
+      0.2299
+     ]
+    },
+    "final_alpha": {
+     "median": 0.0065,
+     "range": [
+      0.002,
+      0.016
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 5.0303,
+     "range": [
+      3.0954,
+      6.8304
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 55.5439,
+     "range": [
+      44.6231,
+      72.2568
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1067,
+     "range": [
+      0.0833,
+      0.1367
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.05,
+     "range": [
+      0.0233,
+      0.1033
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.0267
+     ]
+    },
+    "retention": {
+     "median": 0.8744,
+     "range": [
+      0.772,
+      0.9283
+     ]
+    }
+   }
+  },
+  "eps=0.05/baseline": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.175,
+     "binary_range": [
+      0.16,
+      0.1867
+     ],
+     "e_clip_mbps_median": 0.1191,
+     "e_clip_mbps_range": [
+      0.1082,
+      0.1267
+     ],
+     "e_over_mbps_median": 0.2302,
+     "e_over_mbps_range": [
+      0.1874,
+      0.2432
+     ],
+     "e_qb_mbps_median": 0.2302,
+     "e_qb_mbps_range": [
+      0.1874,
+      0.2432
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 8.1424,
+     "mean_delay_ms_range": [
+      6.4212,
+      8.8494
+     ],
+     "p99_delay_ms_median": 74.788,
+     "p99_delay_ms_range": [
+      58.9961,
+      129.5588
+     ],
+     "p_over_0.5mbps_median": 0.1233,
+     "p_over_0.5mbps_range": [
+      0.1067,
+      0.1367
+     ],
+     "p_over_1.0mbps_median": 0.0733,
+     "p_over_1.0mbps_range": [
+      0.0533,
+      0.0867
+     ],
+     "p_over_2.0mbps_median": 0.02,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.03
+     ],
+     "retention_median": 0.9365,
+     "retention_range": [
+      0.9301,
+      0.9399
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1567,
+     "binary_range": [
+      0.1433,
+      0.17
+     ],
+     "e_clip_mbps_median": 0.117,
+     "e_clip_mbps_range": [
+      0.1078,
+      0.1229
+     ],
+     "e_over_mbps_median": 0.2525,
+     "e_over_mbps_range": [
+      0.2294,
+      0.2642
+     ],
+     "e_qb_mbps_median": 0.2525,
+     "e_qb_mbps_range": [
+      0.2294,
+      0.2642
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 7.1271,
+     "mean_delay_ms_range": [
+      6.6338,
+      8.0338
+     ],
+     "p99_delay_ms_median": 68.851,
+     "p99_delay_ms_range": [
+      61.9441,
+      116.4644
+     ],
+     "p_over_0.5mbps_median": 0.1183,
+     "p_over_0.5mbps_range": [
+      0.11,
+      0.1267
+     ],
+     "p_over_1.0mbps_median": 0.08,
+     "p_over_1.0mbps_range": [
+      0.0633,
+      0.0933
+     ],
+     "p_over_2.0mbps_median": 0.0283,
+     "p_over_2.0mbps_range": [
+      0.02,
+      0.0367
+     ],
+     "retention_median": 0.9029,
+     "retention_range": [
+      0.898,
+      0.9133
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1667,
+     "binary_range": [
+      0.1567,
+      0.1767
+     ],
+     "e_clip_mbps_median": 0.133,
+     "e_clip_mbps_range": [
+      0.1267,
+      0.1383
+     ],
+     "e_over_mbps_median": 0.2031,
+     "e_over_mbps_range": [
+      0.1832,
+      0.2267
+     ],
+     "e_qb_mbps_median": 0.2031,
+     "e_qb_mbps_range": [
+      0.1832,
+      0.2267
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 5.8592,
+     "mean_delay_ms_range": [
+      5.0423,
+      6.553
+     ],
+     "p99_delay_ms_median": 73.8543,
+     "p99_delay_ms_range": [
+      64.2335,
+      79.28
+     ],
+     "p_over_0.5mbps_median": 0.135,
+     "p_over_0.5mbps_range": [
+      0.13,
+      0.1467
+     ],
+     "p_over_1.0mbps_median": 0.0983,
+     "p_over_1.0mbps_range": [
+      0.0833,
+      0.1033
+     ],
+     "p_over_2.0mbps_median": 0.0283,
+     "p_over_2.0mbps_range": [
+      0.0233,
+      0.04
+     ],
+     "retention_median": 0.9382,
+     "retention_range": [
+      0.9338,
+      0.9405
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1617,
+     "binary_range": [
+      0.14,
+      0.1833
+     ],
+     "e_clip_mbps_median": 0.1152,
+     "e_clip_mbps_range": [
+      0.1034,
+      0.1326
+     ],
+     "e_over_mbps_median": 0.1648,
+     "e_over_mbps_range": [
+      0.1349,
+      0.2012
+     ],
+     "e_qb_mbps_median": 0.1324,
+     "e_qb_mbps_range": [
+      0.1084,
+      0.153
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 4.2746,
+     "mean_delay_ms_range": [
+      3.8154,
+      4.9588
+     ],
+     "p99_delay_ms_median": 54.4983,
+     "p99_delay_ms_range": [
+      49.872,
+      62.3349
+     ],
+     "p_over_0.5mbps_median": 0.1183,
+     "p_over_0.5mbps_range": [
+      0.1067,
+      0.1367
+     ],
+     "p_over_1.0mbps_median": 0.0733,
+     "p_over_1.0mbps_range": [
+      0.0567,
+      0.09
+     ],
+     "p_over_2.0mbps_median": 0.0217,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.0367
+     ],
+     "retention_median": 0.8334,
+     "retention_range": [
+      0.8262,
+      0.8394
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.165,
+     "range": [
+      0.14,
+      0.1867
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1195,
+     "range": [
+      0.1034,
+      0.1383
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2185,
+     "range": [
+      0.1349,
+      0.2642
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2185,
+     "range": [
+      0.1084,
+      0.2642
+     ]
+    },
+    "final_alpha": null,
+    "mean_delay_ms": {
+     "median": 6.4813,
+     "range": [
+      3.8154,
+      8.8494
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 68.2904,
+     "range": [
+      49.872,
+      129.5588
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1233,
+     "range": [
+      0.1067,
+      0.1467
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.08,
+     "range": [
+      0.0533,
+      0.1033
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0267,
+     "range": [
+      0.0067,
+      0.04
+     ]
+    },
+    "retention": {
+     "median": 0.9217,
+     "range": [
+      0.8262,
+      0.9405
+     ]
+    }
+   }
+  }
+ },
+ "gamma_sensitivity_eps0.05": {
+  "gamma=0.01": {
+   "eps=0.05/aci_mag_oracle": {
+    "n_runs": 40,
+    "per_scenario": [
+     {
+      "binary_median": 0.2033,
+      "binary_range": [
+       0.1633,
+       0.2467
+      ],
+      "e_clip_mbps_median": 0.0991,
+      "e_clip_mbps_range": [
+       0.082,
+       0.1099
+      ],
+      "e_over_mbps_median": 0.1714,
+      "e_over_mbps_range": [
+       0.1069,
+       0.1835
+      ],
+      "e_qb_mbps_median": 0.1714,
+      "e_qb_mbps_range": [
+       0.1069,
+       0.1835
+      ],
+      "final_alpha_median": 0.0043,
+      "final_alpha_range": [
+       0.0025,
+       0.009
+      ],
+      "mean_delay_ms_median": 8.3342,
+      "mean_delay_ms_range": [
+       6.5456,
+       11.991
+      ],
+      "p99_delay_ms_median": 60.4422,
+      "p99_delay_ms_range": [
+       46.1106,
+       89.1256
+      ],
+      "p_over_0.5mbps_median": 0.1033,
+      "p_over_0.5mbps_range": [
+       0.0733,
+       0.1267
+      ],
+      "p_over_1.0mbps_median": 0.0167,
+      "p_over_1.0mbps_range": [
+       0.0067,
+       0.0367
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.01
+      ],
+      "retention_median": 0.8954,
+      "retention_range": [
+       0.8568,
+       0.9362
+      ],
+      "scenario": "abrupt_drop"
+     },
+     {
+      "binary_median": 0.245,
+      "binary_range": [
+       0.2333,
+       0.26
+      ],
+      "e_clip_mbps_median": 0.0878,
+      "e_clip_mbps_range": [
+       0.078,
+       0.0989
+      ],
+      "e_over_mbps_median": 0.1811,
+      "e_over_mbps_range": [
+       0.172,
+       0.2044
+      ],
+      "e_qb_mbps_median": 0.1811,
+      "e_qb_mbps_range": [
+       0.172,
+       0.2044
+      ],
+      "final_alpha_median": 0.0067,
+      "final_alpha_range": [
+       0.002,
+       0.013
+      ],
+      "mean_delay_ms_median": 12.7863,
+      "mean_delay_ms_range": [
+       9.9376,
+       15.4847
+      ],
+      "p99_delay_ms_median": 106.0302,
+      "p99_delay_ms_range": [
+       75.7789,
+       181.1055
+      ],
+      "p_over_0.5mbps_median": 0.0667,
+      "p_over_0.5mbps_range": [
+       0.0567,
+       0.0833
+      ],
+      "p_over_1.0mbps_median": 0.0367,
+      "p_over_1.0mbps_range": [
+       0.0267,
+       0.0533
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.0167
+      ],
+      "retention_median": 0.8648,
+      "retention_range": [
+       0.8277,
+       0.8883
+      ],
+      "scenario": "capacity_rise"
+     },
+     {
+      "binary_median": 0.155,
+      "binary_range": [
+       0.1333,
+       0.1667
+      ],
+      "e_clip_mbps_median": 0.1041,
+      "e_clip_mbps_range": [
+       0.0899,
+       0.121
+      ],
+      "e_over_mbps_median": 0.1366,
+      "e_over_mbps_range": [
+       0.118,
+       0.1527
+      ],
+      "e_qb_mbps_median": 0.1366,
+      "e_qb_mbps_range": [
+       0.118,
+       0.1527
+      ],
+      "final_alpha_median": 0.0035,
+      "final_alpha_range": [
+       0.002,
+       0.0055
+      ],
+      "mean_delay_ms_median": 5.2129,
+      "mean_delay_ms_range": [
+       4.4029,
+       7.3955
+      ],
+      "p99_delay_ms_median": 56.3175,
+      "p99_delay_ms_range": [
+       51.3852,
+       70.5999
+      ],
+      "p_over_0.5mbps_median": 0.1033,
+      "p_over_0.5mbps_range": [
+       0.0833,
+       0.1267
+      ],
+      "p_over_1.0mbps_median": 0.06,
+      "p_over_1.0mbps_range": [
+       0.0467,
+       0.07
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.01
+      ],
+      "retention_median": 0.8893,
+      "retention_range": [
+       0.8619,
+       0.9254
+      ],
+      "scenario": "gradual_decline"
+     },
+     {
+      "binary_median": 0.2417,
+      "binary_range": [
+       0.1867,
+       0.2833
+      ],
+      "e_clip_mbps_median": 0.0767,
+      "e_clip_mbps_range": [
+       0.0666,
+       0.088
+      ],
+      "e_over_mbps_median": 0.0823,
+      "e_over_mbps_range": [
+       0.0715,
+       0.0995
+      ],
+      "e_qb_mbps_median": 0.0812,
+      "e_qb_mbps_range": [
+       0.0715,
+       0.0995
+      ],
+      "final_alpha_median": 0.0043,
+      "final_alpha_range": [
+       0.002,
+       0.0095
+      ],
+      "mean_delay_ms_median": 8.0108,
+      "mean_delay_ms_range": [
+       5.9249,
+       11.104
+      ],
+      "p99_delay_ms_median": 58.2915,
+      "p99_delay_ms_range": [
+       40.603,
+       96.8844
+      ],
+      "p_over_0.5mbps_median": 0.065,
+      "p_over_0.5mbps_range": [
+       0.0433,
+       0.0867
+      ],
+      "p_over_1.0mbps_median": 0.0083,
+      "p_over_1.0mbps_range": [
+       0.0033,
+       0.0167
+      ],
+      "p_over_2.0mbps_median": 0.0033,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.0067
+      ],
+      "retention_median": 0.7956,
+      "retention_range": [
+       0.7736,
+       0.8442
+      ],
+      "scenario": "idle_drop"
+     }
+    ],
+    "pooled": {
+     "binary": {
+      "median": 0.2183,
+      "range": [
+       0.1333,
+       0.2833
+      ]
+     },
+     "e_clip_mbps": {
+      "median": 0.0902,
+      "range": [
+       0.0666,
+       0.121
+      ]
+     },
+     "e_over_mbps": {
+      "median": 0.1471,
+      "range": [
+       0.0715,
+       0.2044
+      ]
+     },
+     "e_qb_mbps": {
+      "median": 0.1471,
+      "range": [
+       0.0715,
+       0.2044
+      ]
+     },
+     "final_alpha": {
+      "median": 0.0048,
+      "range": [
+       0.002,
+       0.013
+      ]
+     },
+     "mean_delay_ms": {
+      "median": 8.2709,
+      "range": [
+       4.4029,
+       15.4847
+      ]
+     },
+     "p99_delay_ms": {
+      "median": 62.1576,
+      "range": [
+       40.603,
+       181.1055
+      ]
+     },
+     "p_over_0.5mbps": {
+      "median": 0.085,
+      "range": [
+       0.0433,
+       0.1267
+      ]
+     },
+     "p_over_1.0mbps": {
+      "median": 0.0267,
+      "range": [
+       0.0033,
+       0.07
+      ]
+     },
+     "p_over_2.0mbps": {
+      "median": 0.0067,
+      "range": [
+       0.0,
+       0.0167
+      ]
+     },
+     "retention": {
+      "median": 0.8722,
+      "range": [
+       0.7736,
+       0.9362
+      ]
+     }
+    }
+   },
+   "eps=0.05/aci_mag_proxy": {
+    "n_runs": 40,
+    "per_scenario": [
+     {
+      "binary_median": 0.1917,
+      "binary_range": [
+       0.1533,
+       0.2067
+      ],
+      "e_clip_mbps_median": 0.0877,
+      "e_clip_mbps_range": [
+       0.0788,
+       0.0998
+      ],
+      "e_over_mbps_median": 0.1392,
+      "e_over_mbps_range": [
+       0.0853,
+       0.1881
+      ],
+      "e_qb_mbps_median": 0.1392,
+      "e_qb_mbps_range": [
+       0.0853,
+       0.1881
+      ],
+      "final_alpha_median": 0.005,
+      "final_alpha_range": [
+       0.002,
+       0.009
+      ],
+      "mean_delay_ms_median": 7.1955,
+      "mean_delay_ms_range": [
+       4.5716,
+       9.0615
+      ],
+      "p99_delay_ms_median": 55.5384,
+      "p99_delay_ms_range": [
+       43.0151,
+       97.1658
+      ],
+      "p_over_0.5mbps_median": 0.0917,
+      "p_over_0.5mbps_range": [
+       0.08,
+       0.11
+      ],
+      "p_over_1.0mbps_median": 0.0267,
+      "p_over_1.0mbps_range": [
+       0.01,
+       0.0333
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.01
+      ],
+      "retention_median": 0.8799,
+      "retention_range": [
+       0.844,
+       0.9278
+      ],
+      "scenario": "abrupt_drop"
+     },
+     {
+      "binary_median": 0.1517,
+      "binary_range": [
+       0.1333,
+       0.17
+      ],
+      "e_clip_mbps_median": 0.0776,
+      "e_clip_mbps_range": [
+       0.0628,
+       0.0924
+      ],
+      "e_over_mbps_median": 0.1733,
+      "e_over_mbps_range": [
+       0.1489,
+       0.1886
+      ],
+      "e_qb_mbps_median": 0.1733,
+      "e_qb_mbps_range": [
+       0.1489,
+       0.1886
+      ],
+      "final_alpha_median": 0.0068,
+      "final_alpha_range": [
+       0.002,
+       0.0155
+      ],
+      "mean_delay_ms_median": 6.2244,
+      "mean_delay_ms_range": [
+       4.7883,
+       7.1628
+      ],
+      "p99_delay_ms_median": 59.2211,
+      "p99_delay_ms_range": [
+       44.386,
+       141.7085
+      ],
+      "p_over_0.5mbps_median": 0.0767,
+      "p_over_0.5mbps_range": [
+       0.06,
+       0.0933
+      ],
+      "p_over_1.0mbps_median": 0.035,
+      "p_over_1.0mbps_range": [
+       0.0233,
+       0.0533
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.0133
+      ],
+      "retention_median": 0.8196,
+      "retention_range": [
+       0.7829,
+       0.8712
+      ],
+      "scenario": "capacity_rise"
+     },
+     {
+      "binary_median": 0.1467,
+      "binary_range": [
+       0.1367,
+       0.1667
+      ],
+      "e_clip_mbps_median": 0.0966,
+      "e_clip_mbps_range": [
+       0.0902,
+       0.1185
+      ],
+      "e_over_mbps_median": 0.1263,
+      "e_over_mbps_range": [
+       0.1046,
+       0.1506
+      ],
+      "e_qb_mbps_median": 0.1263,
+      "e_qb_mbps_range": [
+       0.1046,
+       0.1506
+      ],
+      "final_alpha_median": 0.0035,
+      "final_alpha_range": [
+       0.002,
+       0.0065
+      ],
+      "mean_delay_ms_median": 4.3823,
+      "mean_delay_ms_range": [
+       4.0512,
+       5.5115
+      ],
+      "p99_delay_ms_median": 48.6412,
+      "p99_delay_ms_range": [
+       42.8908,
+       73.0385
+      ],
+      "p_over_0.5mbps_median": 0.1,
+      "p_over_0.5mbps_range": [
+       0.0867,
+       0.1267
+      ],
+      "p_over_1.0mbps_median": 0.0533,
+      "p_over_1.0mbps_range": [
+       0.0233,
+       0.0767
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.0133
+      ],
+      "retention_median": 0.8628,
+      "retention_range": [
+       0.8424,
+       0.9244
+      ],
+      "scenario": "gradual_decline"
+     },
+     {
+      "binary_median": 0.1717,
+      "binary_range": [
+       0.1433,
+       0.1967
+      ],
+      "e_clip_mbps_median": 0.0776,
+      "e_clip_mbps_range": [
+       0.0696,
+       0.0974
+      ],
+      "e_over_mbps_median": 0.0852,
+      "e_over_mbps_range": [
+       0.0704,
+       0.1028
+      ],
+      "e_qb_mbps_median": 0.0852,
+      "e_qb_mbps_range": [
+       0.0704,
+       0.0961
+      ],
+      "final_alpha_median": 0.0043,
+      "final_alpha_range": [
+       0.002,
+       0.009
+      ],
+      "mean_delay_ms_median": 5.1602,
+      "mean_delay_ms_range": [
+       4.044,
+       6.7772
+      ],
+      "p99_delay_ms_median": 48.2814,
+      "p99_delay_ms_range": [
+       40.2814,
+       58.1541
+      ],
+      "p_over_0.5mbps_median": 0.085,
+      "p_over_0.5mbps_range": [
+       0.0733,
+       0.11
+      ],
+      "p_over_1.0mbps_median": 0.0167,
+      "p_over_1.0mbps_range": [
+       0.0033,
+       0.0233
+      ],
+      "p_over_2.0mbps_median": 0.0033,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.0067
+      ],
+      "retention_median": 0.7815,
+      "retention_range": [
+       0.7597,
+       0.8132
+      ],
+      "scenario": "idle_drop"
+     }
+    ],
+    "pooled": {
+     "binary": {
+      "median": 0.1617,
+      "range": [
+       0.1333,
+       0.2067
+      ]
+     },
+     "e_clip_mbps": {
+      "median": 0.083,
+      "range": [
+       0.0628,
+       0.1185
+      ]
+     },
+     "e_over_mbps": {
+      "median": 0.1286,
+      "range": [
+       0.0704,
+       0.1886
+      ]
+     },
+     "e_qb_mbps": {
+      "median": 0.1286,
+      "range": [
+       0.0704,
+       0.1886
+      ]
+     },
+     "final_alpha": {
+      "median": 0.0043,
+      "range": [
+       0.002,
+       0.0155
+      ]
+     },
+     "mean_delay_ms": {
+      "median": 5.3894,
+      "range": [
+       4.044,
+       9.0615
+      ]
+     },
+     "p99_delay_ms": {
+      "median": 50.4263,
+      "range": [
+       40.2814,
+       141.7085
+      ]
+     },
+     "p_over_0.5mbps": {
+      "median": 0.0867,
+      "range": [
+       0.06,
+       0.1267
+      ]
+     },
+     "p_over_1.0mbps": {
+      "median": 0.0283,
+      "range": [
+       0.0033,
+       0.0767
+      ]
+     },
+     "p_over_2.0mbps": {
+      "median": 0.005,
+      "range": [
+       0.0,
+       0.0133
+      ]
+     },
+     "retention": {
+      "median": 0.8446,
+      "range": [
+       0.7597,
+       0.9278
+      ]
+     }
+    }
+   }
+  },
+  "gamma=0.05": {
+   "eps=0.05/aci_mag_oracle": {
+    "n_runs": 40,
+    "per_scenario": [
+     {
+      "binary_median": 0.2017,
+      "binary_range": [
+       0.18,
+       0.2333
+      ],
+      "e_clip_mbps_median": 0.1121,
+      "e_clip_mbps_range": [
+       0.0954,
+       0.124
+      ],
+      "e_over_mbps_median": 0.1921,
+      "e_over_mbps_range": [
+       0.1093,
+       0.2103
+      ],
+      "e_qb_mbps_median": 0.1921,
+      "e_qb_mbps_range": [
+       0.1093,
+       0.2103
+      ],
+      "final_alpha_median": 0.007,
+      "final_alpha_range": [
+       0.002,
+       0.017
+      ],
+      "mean_delay_ms_median": 9.0376,
+      "mean_delay_ms_range": [
+       6.6079,
+       11.2071
+      ],
+      "p99_delay_ms_median": 55.3467,
+      "p99_delay_ms_range": [
+       46.1106,
+       65.809
+      ],
+      "p_over_0.5mbps_median": 0.115,
+      "p_over_0.5mbps_range": [
+       0.0867,
+       0.13
+      ],
+      "p_over_1.0mbps_median": 0.0417,
+      "p_over_1.0mbps_range": [
+       0.0133,
+       0.0533
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.0133
+      ],
+      "retention_median": 0.93,
+      "retention_range": [
+       0.8769,
+       0.9563
+      ],
+      "scenario": "abrupt_drop"
+     },
+     {
+      "binary_median": 0.17,
+      "binary_range": [
+       0.1533,
+       0.1967
+      ],
+      "e_clip_mbps_median": 0.1129,
+      "e_clip_mbps_range": [
+       0.099,
+       0.1192
+      ],
+      "e_over_mbps_median": 0.2204,
+      "e_over_mbps_range": [
+       0.205,
+       0.2535
+      ],
+      "e_qb_mbps_median": 0.2204,
+      "e_qb_mbps_range": [
+       0.205,
+       0.2535
+      ],
+      "final_alpha_median": 0.0108,
+      "final_alpha_range": [
+       0.002,
+       0.067
+      ],
+      "mean_delay_ms_median": 6.9278,
+      "mean_delay_ms_range": [
+       6.0074,
+       7.8594
+      ],
+      "p99_delay_ms_median": 56.2799,
+      "p99_delay_ms_range": [
+       44.6231,
+       72.6231
+      ],
+      "p_over_0.5mbps_median": 0.1183,
+      "p_over_0.5mbps_range": [
+       0.0967,
+       0.1233
+      ],
+      "p_over_1.0mbps_median": 0.06,
+      "p_over_1.0mbps_range": [
+       0.0533,
+       0.0733
+      ],
+      "p_over_2.0mbps_median": 0.0133,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.03
+      ],
+      "retention_median": 0.8761,
+      "retention_range": [
+       0.8592,
+       0.9283
+      ],
+      "scenario": "capacity_rise"
+     },
+     {
+      "binary_median": 0.1617,
+      "binary_range": [
+       0.15,
+       0.1933
+      ],
+      "e_clip_mbps_median": 0.1246,
+      "e_clip_mbps_range": [
+       0.1041,
+       0.1334
+      ],
+      "e_over_mbps_median": 0.1689,
+      "e_over_mbps_range": [
+       0.1437,
+       0.1835
+      ],
+      "e_qb_mbps_median": 0.1689,
+      "e_qb_mbps_range": [
+       0.1437,
+       0.1835
+      ],
+      "final_alpha_median": 0.0108,
+      "final_alpha_range": [
+       0.002,
+       0.0195
+      ],
+      "mean_delay_ms_median": 5.5773,
+      "mean_delay_ms_range": [
+       4.5587,
+       8.1492
+      ],
+      "p99_delay_ms_median": 54.6072,
+      "p99_delay_ms_range": [
+       49.8492,
+       65.0598
+      ],
+      "p_over_0.5mbps_median": 0.1217,
+      "p_over_0.5mbps_range": [
+       0.11,
+       0.1433
+      ],
+      "p_over_1.0mbps_median": 0.08,
+      "p_over_1.0mbps_range": [
+       0.06,
+       0.0967
+      ],
+      "p_over_2.0mbps_median": 0.01,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.0167
+      ],
+      "retention_median": 0.9344,
+      "retention_range": [
+       0.8789,
+       0.9499
+      ],
+      "scenario": "gradual_decline"
+     },
+     {
+      "binary_median": 0.1867,
+      "binary_range": [
+       0.1567,
+       0.2167
+      ],
+      "e_clip_mbps_median": 0.1005,
+      "e_clip_mbps_range": [
+       0.0844,
+       0.1141
+      ],
+      "e_over_mbps_median": 0.1206,
+      "e_over_mbps_range": [
+       0.0925,
+       0.177
+      ],
+      "e_qb_mbps_median": 0.1147,
+      "e_qb_mbps_range": [
+       0.0925,
+       0.1286
+      ],
+      "final_alpha_median": 0.0095,
+      "final_alpha_range": [
+       0.002,
+       0.037
+      ],
+      "mean_delay_ms_median": 6.7308,
+      "mean_delay_ms_range": [
+       5.4916,
+       9.0234
+      ],
+      "p99_delay_ms_median": 51.6668,
+      "p99_delay_ms_range": [
+       43.7739,
+       66.794
+      ],
+      "p_over_0.5mbps_median": 0.1067,
+      "p_over_0.5mbps_range": [
+       0.08,
+       0.12
+      ],
+      "p_over_1.0mbps_median": 0.0317,
+      "p_over_1.0mbps_range": [
+       0.02,
+       0.0467
+      ],
+      "p_over_2.0mbps_median": 0.0033,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.0133
+      ],
+      "retention_median": 0.8272,
+      "retention_range": [
+       0.7772,
+       0.873
+      ],
+      "scenario": "idle_drop"
+     }
+    ],
+    "pooled": {
+     "binary": {
+      "median": 0.1767,
+      "range": [
+       0.15,
+       0.2333
+      ]
+     },
+     "e_clip_mbps": {
+      "median": 0.1125,
+      "range": [
+       0.0844,
+       0.1334
+      ]
+     },
+     "e_over_mbps": {
+      "median": 0.1767,
+      "range": [
+       0.0925,
+       0.2535
+      ]
+     },
+     "e_qb_mbps": {
+      "median": 0.1761,
+      "range": [
+       0.0925,
+       0.2535
+      ]
+     },
+     "final_alpha": {
+      "median": 0.0095,
+      "range": [
+       0.002,
+       0.067
+      ]
+     },
+     "mean_delay_ms": {
+      "median": 6.8031,
+      "range": [
+       4.5587,
+       11.2071
+      ]
+     },
+     "p99_delay_ms": {
+      "median": 54.9939,
+      "range": [
+       43.7739,
+       72.6231
+      ]
+     },
+     "p_over_0.5mbps": {
+      "median": 0.1167,
+      "range": [
+       0.08,
+       0.1433
+      ]
+     },
+     "p_over_1.0mbps": {
+      "median": 0.0533,
+      "range": [
+       0.0133,
+       0.0967
+      ]
+     },
+     "p_over_2.0mbps": {
+      "median": 0.0083,
+      "range": [
+       0.0033,
+       0.03
+      ]
+     },
+     "retention": {
+      "median": 0.8852,
+      "range": [
+       0.7772,
+       0.9563
+      ]
+     }
+    }
+   },
+   "eps=0.05/aci_mag_proxy": {
+    "n_runs": 40,
+    "per_scenario": [
+     {
+      "binary_median": 0.2033,
+      "binary_range": [
+       0.1433,
+       0.2267
+      ],
+      "e_clip_mbps_median": 0.1057,
+      "e_clip_mbps_range": [
+       0.0925,
+       0.1187
+      ],
+      "e_over_mbps_median": 0.1867,
+      "e_over_mbps_range": [
+       0.153,
+       0.2119
+      ],
+      "e_qb_mbps_median": 0.1867,
+      "e_qb_mbps_range": [
+       0.153,
+       0.2119
+      ],
+      "final_alpha_median": 0.0083,
+      "final_alpha_range": [
+       0.002,
+       0.037
+      ],
+      "mean_delay_ms_median": 8.8424,
+      "mean_delay_ms_range": [
+       6.1961,
+       10.3791
+      ],
+      "p99_delay_ms_median": 56.4523,
+      "p99_delay_ms_range": [
+       47.0274,
+       78.4422
+      ],
+      "p_over_0.5mbps_median": 0.1033,
+      "p_over_0.5mbps_range": [
+       0.0967,
+       0.1233
+      ],
+      "p_over_1.0mbps_median": 0.045,
+      "p_over_1.0mbps_range": [
+       0.0233,
+       0.0533
+      ],
+      "p_over_2.0mbps_median": 0.0067,
+      "p_over_2.0mbps_range": [
+       0.0033,
+       0.0167
+      ],
+      "retention_median": 0.9063,
+      "retention_range": [
+       0.8533,
+       0.9578
+      ],
+      "scenario": "abrupt_drop"
+     },
+     {
+      "binary_median": 0.1733,
+      "binary_range": [
+       0.1467,
+       0.1933
+      ],
+      "e_clip_mbps_median": 0.1072,
+      "e_clip_mbps_range": [
+       0.0877,
+       0.1199
+      ],
+      "e_over_mbps_median": 0.2188,
+      "e_over_mbps_range": [
+       0.1826,
+       0.2412
+      ],
+      "e_qb_mbps_median": 0.2188,
+      "e_qb_mbps_range": [
+       0.1826,
+       0.2412
+      ],
+      "final_alpha_median": 0.0106,
+      "final_alpha_range": [
+       0.002,
+       0.062
+      ],
+      "mean_delay_ms_median": 6.332,
+      "mean_delay_ms_range": [
+       5.8841,
+       8.1868
+      ],
+      "p99_delay_ms_median": 48.402,
+      "p99_delay_ms_range": [
+       41.1983,
+       67.019
+      ],
+      "p_over_0.5mbps_median": 0.1083,
+      "p_over_0.5mbps_range": [
+       0.09,
+       0.1333
+      ],
+      "p_over_1.0mbps_median": 0.0567,
+      "p_over_1.0mbps_range": [
+       0.0367,
+       0.0733
+      ],
+      "p_over_2.0mbps_median": 0.0117,
+      "p_over_2.0mbps_range": [
+       0.0067,
+       0.0333
+      ],
+      "retention_median": 0.8854,
+      "retention_range": [
+       0.8332,
+       0.9238
+      ],
+      "scenario": "capacity_rise"
+     },
+     {
+      "binary_median": 0.175,
+      "binary_range": [
+       0.16,
+       0.1933
+      ],
+      "e_clip_mbps_median": 0.1297,
+      "e_clip_mbps_range": [
+       0.1146,
+       0.1387
+      ],
+      "e_over_mbps_median": 0.1708,
+      "e_over_mbps_range": [
+       0.1491,
+       0.1836
+      ],
+      "e_qb_mbps_median": 0.1708,
+      "e_qb_mbps_range": [
+       0.1491,
+       0.1836
+      ],
+      "final_alpha_median": 0.0108,
+      "final_alpha_range": [
+       0.002,
+       0.0195
+      ],
+      "mean_delay_ms_median": 5.7106,
+      "mean_delay_ms_range": [
+       4.9632,
+       6.2585
+      ],
+      "p99_delay_ms_median": 55.559,
+      "p99_delay_ms_range": [
+       48.9447,
+       62.7607
+      ],
+      "p_over_0.5mbps_median": 0.13,
+      "p_over_0.5mbps_range": [
+       0.1067,
+       0.14
+      ],
+      "p_over_1.0mbps_median": 0.0817,
+      "p_over_1.0mbps_range": [
+       0.0633,
+       0.0933
+      ],
+      "p_over_2.0mbps_median": 0.0117,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.0167
+      ],
+      "retention_median": 0.9409,
+      "retention_range": [
+       0.8881,
+       0.9462
+      ],
+      "scenario": "gradual_decline"
+     },
+     {
+      "binary_median": 0.195,
+      "binary_range": [
+       0.1733,
+       0.2633
+      ],
+      "e_clip_mbps_median": 0.111,
+      "e_clip_mbps_range": [
+       0.084,
+       0.1594
+      ],
+      "e_over_mbps_median": 0.1303,
+      "e_over_mbps_range": [
+       0.0925,
+       0.957
+      ],
+      "e_qb_mbps_median": 0.1234,
+      "e_qb_mbps_range": [
+       0.0925,
+       0.1332
+      ],
+      "final_alpha_median": 0.007,
+      "final_alpha_range": [
+       0.002,
+       0.037
+      ],
+      "mean_delay_ms_median": 7.0642,
+      "mean_delay_ms_range": [
+       5.7813,
+       8.9693
+      ],
+      "p99_delay_ms_median": 57.496,
+      "p99_delay_ms_range": [
+       46.1106,
+       69.4271
+      ],
+      "p_over_0.5mbps_median": 0.1133,
+      "p_over_0.5mbps_range": [
+       0.0767,
+       0.1567
+      ],
+      "p_over_1.0mbps_median": 0.045,
+      "p_over_1.0mbps_range": [
+       0.0267,
+       0.1133
+      ],
+      "p_over_2.0mbps_median": 0.0083,
+      "p_over_2.0mbps_range": [
+       0.0,
+       0.0733
+      ],
+      "retention_median": 0.8325,
+      "retention_range": [
+       0.771,
+       0.8609
+      ],
+      "scenario": "idle_drop"
+     }
+    ],
+    "pooled": {
+     "binary": {
+      "median": 0.1817,
+      "range": [
+       0.1433,
+       0.2633
+      ]
+     },
+     "e_clip_mbps": {
+      "median": 0.1123,
+      "range": [
+       0.084,
+       0.1594
+      ]
+     },
+     "e_over_mbps": {
+      "median": 0.1806,
+      "range": [
+       0.0925,
+       0.957
+      ]
+     },
+     "e_qb_mbps": {
+      "median": 0.1772,
+      "range": [
+       0.0925,
+       0.2412
+      ]
+     },
+     "final_alpha": {
+      "median": 0.0095,
+      "range": [
+       0.002,
+       0.062
+      ]
+     },
+     "mean_delay_ms": {
+      "median": 6.4379,
+      "range": [
+       4.9632,
+       10.3791
+      ]
+     },
+     "p99_delay_ms": {
+      "median": 54.9766,
+      "range": [
+       41.1983,
+       78.4422
+      ]
+     },
+     "p_over_0.5mbps": {
+      "median": 0.1133,
+      "range": [
+       0.0767,
+       0.1567
+      ]
+     },
+     "p_over_1.0mbps": {
+      "median": 0.0533,
+      "range": [
+       0.0233,
+       0.1133
+      ]
+     },
+     "p_over_2.0mbps": {
+      "median": 0.01,
+      "range": [
+       0.0,
+       0.0733
+      ]
+     },
+     "retention": {
+      "median": 0.8912,
+      "range": [
+       0.771,
+       0.9578
+      ]
+     }
+    }
+   }
+  }
+ },
+ "heldout_eps0.05": {
+  "eps=0.05/aci_mag_oracle": {
+   "n_runs": 80,
+   "per_scenario": [
+    {
+     "binary_median": 0.2067,
+     "binary_range": [
+      0.17,
+      0.3
+     ],
+     "e_clip_mbps_median": 0.1028,
+     "e_clip_mbps_range": [
+      0.0921,
+      0.1275
+     ],
+     "e_over_mbps_median": 0.1817,
+     "e_over_mbps_range": [
+      0.1018,
+      0.2284
+     ],
+     "e_qb_mbps_median": 0.1817,
+     "e_qb_mbps_range": [
+      0.1018,
+      0.2284
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.018
+     ],
+     "mean_delay_ms_median": 8.7154,
+     "mean_delay_ms_range": [
+      5.8872,
+      10.9765
+     ],
+     "p99_delay_ms_median": 54.8543,
+     "p99_delay_ms_range": [
+      45.5648,
+      94.8291
+     ],
+     "p_over_0.5mbps_median": 0.1083,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.14
+     ],
+     "p_over_1.0mbps_median": 0.03,
+     "p_over_1.0mbps_range": [
+      0.02,
+      0.0567
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.01
+     ],
+     "retention_median": 0.9255,
+     "retention_range": [
+      0.8601,
+      0.972
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.2083,
+     "binary_range": [
+      0.1767,
+      0.23
+     ],
+     "e_clip_mbps_median": 0.0937,
+     "e_clip_mbps_range": [
+      0.0824,
+      0.1135
+     ],
+     "e_over_mbps_median": 0.1958,
+     "e_over_mbps_range": [
+      0.1753,
+      0.2266
+     ],
+     "e_qb_mbps_median": 0.1958,
+     "e_qb_mbps_range": [
+      0.1753,
+      0.2266
+     ],
+     "final_alpha_median": 0.0065,
+     "final_alpha_range": [
+      0.002,
+      0.03
+     ],
+     "mean_delay_ms_median": 8.2979,
+     "mean_delay_ms_range": [
+      7.2021,
+      9.8797
+     ],
+     "p99_delay_ms_median": 59.3893,
+     "p99_delay_ms_range": [
+      43.0151,
+      122.0101
+     ],
+     "p_over_0.5mbps_median": 0.0867,
+     "p_over_0.5mbps_range": [
+      0.0667,
+      0.12
+     ],
+     "p_over_1.0mbps_median": 0.045,
+     "p_over_1.0mbps_range": [
+      0.03,
+      0.06
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "retention_median": 0.8745,
+     "retention_range": [
+      0.8226,
+      0.9255
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1583,
+     "binary_range": [
+      0.13,
+      0.17
+     ],
+     "e_clip_mbps_median": 0.1144,
+     "e_clip_mbps_range": [
+      0.0998,
+      0.1263
+     ],
+     "e_over_mbps_median": 0.1503,
+     "e_over_mbps_range": [
+      0.1342,
+      0.1757
+     ],
+     "e_qb_mbps_median": 0.1503,
+     "e_qb_mbps_range": [
+      0.1342,
+      0.1757
+     ],
+     "final_alpha_median": 0.0045,
+     "final_alpha_range": [
+      0.002,
+      0.012
+     ],
+     "mean_delay_ms_median": 5.0619,
+     "mean_delay_ms_range": [
+      4.3251,
+      6.8245
+     ],
+     "p99_delay_ms_median": 52.3172,
+     "p99_delay_ms_range": [
+      41.6599,
+      67.7716
+     ],
+     "p_over_0.5mbps_median": 0.115,
+     "p_over_0.5mbps_range": [
+      0.1,
+      0.14
+     ],
+     "p_over_1.0mbps_median": 0.0717,
+     "p_over_1.0mbps_range": [
+      0.0567,
+      0.0833
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.02
+     ],
+     "retention_median": 0.9108,
+     "retention_range": [
+      0.8737,
+      0.9426
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.2017,
+     "binary_range": [
+      0.18,
+      0.2667
+     ],
+     "e_clip_mbps_median": 0.0855,
+     "e_clip_mbps_range": [
+      0.0696,
+      0.1032
+     ],
+     "e_over_mbps_median": 0.0952,
+     "e_over_mbps_range": [
+      0.0793,
+      0.1213
+     ],
+     "e_qb_mbps_median": 0.0952,
+     "e_qb_mbps_range": [
+      0.0793,
+      0.1213
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.018
+     ],
+     "mean_delay_ms_median": 6.4824,
+     "mean_delay_ms_range": [
+      5.3859,
+      8.4621
+     ],
+     "p99_delay_ms_median": 48.6817,
+     "p99_delay_ms_range": [
+      40.2814,
+      65.809
+     ],
+     "p_over_0.5mbps_median": 0.0867,
+     "p_over_0.5mbps_range": [
+      0.0567,
+      0.11
+     ],
+     "p_over_1.0mbps_median": 0.0217,
+     "p_over_1.0mbps_range": [
+      0.0133,
+      0.0467
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8246,
+     "retention_range": [
+      0.756,
+      0.8661
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.2,
+     "range": [
+      0.13,
+      0.3
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0986,
+     "range": [
+      0.0696,
+      0.1275
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1613,
+     "range": [
+      0.0793,
+      0.2284
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1613,
+     "range": [
+      0.0793,
+      0.2284
+     ]
+    },
+    "final_alpha": {
+     "median": 0.005,
+     "range": [
+      0.002,
+      0.03
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 7.2769,
+     "range": [
+      4.3251,
+      10.9765
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 52.3906,
+     "range": [
+      40.2814,
+      122.0101
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1,
+     "range": [
+      0.0567,
+      0.14
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0383,
+     "range": [
+      0.0133,
+      0.0833
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.02
+     ]
+    },
+    "retention": {
+     "median": 0.8863,
+     "range": [
+      0.756,
+      0.972
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_mag_proxy": {
+   "n_runs": 80,
+   "per_scenario": [
+    {
+     "binary_median": 0.1933,
+     "binary_range": [
+      0.17,
+      0.2333
+     ],
+     "e_clip_mbps_median": 0.0962,
+     "e_clip_mbps_range": [
+      0.0877,
+      0.1138
+     ],
+     "e_over_mbps_median": 0.1802,
+     "e_over_mbps_range": [
+      0.0986,
+      0.208
+     ],
+     "e_qb_mbps_median": 0.1802,
+     "e_qb_mbps_range": [
+      0.0986,
+      0.208
+     ],
+     "final_alpha_median": 0.0045,
+     "final_alpha_range": [
+      0.002,
+      0.018
+     ],
+     "mean_delay_ms_median": 8.1056,
+     "mean_delay_ms_range": [
+      4.8821,
+      9.6654
+     ],
+     "p99_delay_ms_median": 57.7688,
+     "p99_delay_ms_range": [
+      43.7739,
+      71.6382
+     ],
+     "p_over_0.5mbps_median": 0.0967,
+     "p_over_0.5mbps_range": [
+      0.0867,
+      0.1233
+     ],
+     "p_over_1.0mbps_median": 0.0333,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.05
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0167
+     ],
+     "retention_median": 0.9098,
+     "retention_range": [
+      0.8325,
+      0.9524
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1667,
+     "binary_range": [
+      0.1267,
+      0.1933
+     ],
+     "e_clip_mbps_median": 0.0952,
+     "e_clip_mbps_range": [
+      0.0746,
+      0.12
+     ],
+     "e_over_mbps_median": 0.1963,
+     "e_over_mbps_range": [
+      0.1662,
+      0.2297
+     ],
+     "e_qb_mbps_median": 0.1963,
+     "e_qb_mbps_range": [
+      0.1662,
+      0.2297
+     ],
+     "final_alpha_median": 0.0058,
+     "final_alpha_range": [
+      0.002,
+      0.0299
+     ],
+     "mean_delay_ms_median": 7.0931,
+     "mean_delay_ms_range": [
+      4.8366,
+      7.6949
+     ],
+     "p99_delay_ms_median": 54.9834,
+     "p99_delay_ms_range": [
+      41.1983,
+      102.3116
+     ],
+     "p_over_0.5mbps_median": 0.0967,
+     "p_over_0.5mbps_range": [
+      0.0767,
+      0.13
+     ],
+     "p_over_1.0mbps_median": 0.05,
+     "p_over_1.0mbps_range": [
+      0.0333,
+      0.0633
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "retention_median": 0.8694,
+     "retention_range": [
+      0.7925,
+      0.9333
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.16,
+     "binary_range": [
+      0.14,
+      0.18
+     ],
+     "e_clip_mbps_median": 0.1149,
+     "e_clip_mbps_range": [
+      0.1028,
+      0.1316
+     ],
+     "e_over_mbps_median": 0.1497,
+     "e_over_mbps_range": [
+      0.1299,
+      0.178
+     ],
+     "e_qb_mbps_median": 0.1497,
+     "e_qb_mbps_range": [
+      0.1299,
+      0.178
+     ],
+     "final_alpha_median": 0.004,
+     "final_alpha_range": [
+      0.002,
+      0.011
+     ],
+     "mean_delay_ms_median": 5.0462,
+     "mean_delay_ms_range": [
+      4.1875,
+      5.9874
+     ],
+     "p99_delay_ms_median": 52.968,
+     "p99_delay_ms_range": [
+      45.1745,
+      65.9333
+     ],
+     "p_over_0.5mbps_median": 0.1167,
+     "p_over_0.5mbps_range": [
+      0.0933,
+      0.1267
+     ],
+     "p_over_1.0mbps_median": 0.0683,
+     "p_over_1.0mbps_range": [
+      0.0467,
+      0.0933
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.02
+     ],
+     "retention_median": 0.9037,
+     "retention_range": [
+      0.8658,
+      0.9297
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1783,
+     "binary_range": [
+      0.1233,
+      0.21
+     ],
+     "e_clip_mbps_median": 0.0879,
+     "e_clip_mbps_range": [
+      0.0746,
+      0.0975
+     ],
+     "e_over_mbps_median": 0.0978,
+     "e_over_mbps_range": [
+      0.0812,
+      0.1212
+     ],
+     "e_qb_mbps_median": 0.0978,
+     "e_qb_mbps_range": [
+      0.0812,
+      0.1194
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.018
+     ],
+     "mean_delay_ms_median": 5.6527,
+     "mean_delay_ms_range": [
+      4.4947,
+      6.6563
+     ],
+     "p99_delay_ms_median": 49.603,
+     "p99_delay_ms_range": [
+      45.1457,
+      89.1256
+     ],
+     "p_over_0.5mbps_median": 0.0883,
+     "p_over_0.5mbps_range": [
+      0.0667,
+      0.1033
+     ],
+     "p_over_1.0mbps_median": 0.0267,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.05
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0133
+     ],
+     "retention_median": 0.8222,
+     "retention_range": [
+      0.7312,
+      0.8476
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.1733,
+     "range": [
+      0.1233,
+      0.2333
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0957,
+     "range": [
+      0.0746,
+      0.1316
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1564,
+     "range": [
+      0.0812,
+      0.2297
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1564,
+     "range": [
+      0.0812,
+      0.2297
+     ]
+    },
+    "final_alpha": {
+     "median": 0.005,
+     "range": [
+      0.002,
+      0.0299
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 6.1491,
+     "range": [
+      4.1875,
+      9.6654
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 52.6109,
+     "range": [
+      41.1983,
+      102.3116
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1,
+     "range": [
+      0.0667,
+      0.13
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0433,
+     "range": [
+      0.0167,
+      0.0933
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.02
+     ]
+    },
+    "retention": {
+     "median": 0.8825,
+     "range": [
+      0.7312,
+      0.9524
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_proxy": {
+   "n_runs": 80,
+   "per_scenario": [
+    {
+     "binary_median": 0.2117,
+     "binary_range": [
+      0.1867,
+      0.2667
+     ],
+     "e_clip_mbps_median": 0.1143,
+     "e_clip_mbps_range": [
+      0.0999,
+      0.1214
+     ],
+     "e_over_mbps_median": 0.2056,
+     "e_over_mbps_range": [
+      0.1213,
+      0.2348
+     ],
+     "e_qb_mbps_median": 0.2056,
+     "e_qb_mbps_range": [
+      0.1213,
+      0.2348
+     ],
+     "final_alpha_median": 0.0035,
+     "final_alpha_range": [
+      0.002,
+      0.013
+     ],
+     "mean_delay_ms_median": 9.5374,
+     "mean_delay_ms_range": [
+      7.0765,
+      11.5366
+     ],
+     "p99_delay_ms_median": 68.1106,
+     "p99_delay_ms_range": [
+      51.9397,
+      97.1658
+     ],
+     "p_over_0.5mbps_median": 0.1233,
+     "p_over_0.5mbps_range": [
+      0.1067,
+      0.1367
+     ],
+     "p_over_1.0mbps_median": 0.04,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.0567
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.02
+     ],
+     "retention_median": 0.9348,
+     "retention_range": [
+      0.8979,
+      0.9691
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1717,
+     "binary_range": [
+      0.1467,
+      0.1867
+     ],
+     "e_clip_mbps_median": 0.1047,
+     "e_clip_mbps_range": [
+      0.087,
+      0.1239
+     ],
+     "e_over_mbps_median": 0.218,
+     "e_over_mbps_range": [
+      0.1938,
+      0.265
+     ],
+     "e_qb_mbps_median": 0.218,
+     "e_qb_mbps_range": [
+      0.1938,
+      0.265
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.03
+     ],
+     "mean_delay_ms_median": 7.8756,
+     "mean_delay_ms_range": [
+      6.1841,
+      9.5614
+     ],
+     "p99_delay_ms_median": 63.7839,
+     "p99_delay_ms_range": [
+      48.402,
+      116.8643
+     ],
+     "p_over_0.5mbps_median": 0.1117,
+     "p_over_0.5mbps_range": [
+      0.09,
+      0.13
+     ],
+     "p_over_1.0mbps_median": 0.0567,
+     "p_over_1.0mbps_range": [
+      0.04,
+      0.08
+     ],
+     "p_over_2.0mbps_median": 0.015,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0367
+     ],
+     "retention_median": 0.8842,
+     "retention_range": [
+      0.8527,
+      0.9181
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.165,
+     "binary_range": [
+      0.1433,
+      0.1767
+     ],
+     "e_clip_mbps_median": 0.1234,
+     "e_clip_mbps_range": [
+      0.1062,
+      0.1316
+     ],
+     "e_over_mbps_median": 0.1744,
+     "e_over_mbps_range": [
+      0.141,
+      0.1981
+     ],
+     "e_qb_mbps_median": 0.1744,
+     "e_qb_mbps_range": [
+      0.141,
+      0.1981
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.013
+     ],
+     "mean_delay_ms_median": 5.9352,
+     "mean_delay_ms_range": [
+      4.8347,
+      7.6304
+     ],
+     "p99_delay_ms_median": 68.1046,
+     "p99_delay_ms_range": [
+      54.1707,
+      78.2324
+     ],
+     "p_over_0.5mbps_median": 0.1217,
+     "p_over_0.5mbps_range": [
+      0.1033,
+      0.13
+     ],
+     "p_over_1.0mbps_median": 0.0833,
+     "p_over_1.0mbps_range": [
+      0.0633,
+      0.0933
+     ],
+     "p_over_2.0mbps_median": 0.0167,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.03
+     ],
+     "retention_median": 0.9164,
+     "retention_range": [
+      0.8858,
+      0.9335
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1833,
+     "binary_range": [
+      0.1667,
+      0.21
+     ],
+     "e_clip_mbps_median": 0.0993,
+     "e_clip_mbps_range": [
+      0.0845,
+      0.1109
+     ],
+     "e_over_mbps_median": 0.1122,
+     "e_over_mbps_range": [
+      0.0953,
+      0.1352
+     ],
+     "e_qb_mbps_median": 0.1115,
+     "e_qb_mbps_range": [
+      0.0953,
+      0.1352
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.012
+     ],
+     "mean_delay_ms_median": 6.8563,
+     "mean_delay_ms_range": [
+      5.2413,
+      10.1175
+     ],
+     "p99_delay_ms_median": 59.9799,
+     "p99_delay_ms_range": [
+      45.5648,
+      146.0101
+     ],
+     "p_over_0.5mbps_median": 0.11,
+     "p_over_0.5mbps_range": [
+      0.0867,
+      0.1267
+     ],
+     "p_over_1.0mbps_median": 0.0333,
+     "p_over_1.0mbps_range": [
+      0.0233,
+      0.06
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0133
+     ],
+     "retention_median": 0.8292,
+     "retention_range": [
+      0.7828,
+      0.8558
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.1767,
+     "range": [
+      0.1433,
+      0.2667
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1098,
+     "range": [
+      0.0845,
+      0.1316
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.187,
+     "range": [
+      0.0953,
+      0.265
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.187,
+     "range": [
+      0.0953,
+      0.265
+     ]
+    },
+    "final_alpha": {
+     "median": 0.005,
+     "range": [
+      0.002,
+      0.03
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 7.3335,
+     "range": [
+      4.8347,
+      11.5366
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 65.809,
+     "range": [
+      45.5648,
+      146.0101
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1167,
+     "range": [
+      0.0867,
+      0.1367
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.05,
+     "range": [
+      0.0167,
+      0.0933
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.01,
+     "range": [
+      0.0,
+      0.0367
+     ]
+    },
+    "retention": {
+     "median": 0.9049,
+     "range": [
+      0.7828,
+      0.9691
+     ]
+    }
+   }
+  },
+  "eps=0.05/baseline": {
+   "n_runs": 80,
+   "per_scenario": [
+    {
+     "binary_median": 0.6567,
+     "binary_range": [
+      0.54,
+      0.7333
+     ],
+     "e_clip_mbps_median": 0.1302,
+     "e_clip_mbps_range": [
+      0.1099,
+      0.1427
+     ],
+     "e_over_mbps_median": 0.2161,
+     "e_over_mbps_range": [
+      0.1957,
+      0.2284
+     ],
+     "e_qb_mbps_median": 0.2161,
+     "e_qb_mbps_range": [
+      0.1957,
+      0.2284
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 132.0641,
+     "mean_delay_ms_range": [
+      54.7659,
+      196.0604
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      175.2764,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.03,
+     "p_over_0.5mbps_range": [
+      0.02,
+      0.0433
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0167
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.9952,
+     "retention_range": [
+      0.9942,
+      0.9966
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.4683,
+     "binary_range": [
+      0.4133,
+      0.5867
+     ],
+     "e_clip_mbps_median": 0.1175,
+     "e_clip_mbps_range": [
+      0.1048,
+      0.1389
+     ],
+     "e_over_mbps_median": 0.2011,
+     "e_over_mbps_range": [
+      0.1887,
+      0.2197
+     ],
+     "e_qb_mbps_median": 0.2011,
+     "e_qb_mbps_range": [
+      0.1887,
+      0.2197
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 53.527,
+     "mean_delay_ms_range": [
+      31.7412,
+      116.2953
+     ],
+     "p99_delay_ms_median": 203.9196,
+     "p99_delay_ms_range": [
+      101.3065,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.0333,
+     "p_over_0.5mbps_range": [
+      0.0233,
+      0.0467
+     ],
+     "p_over_1.0mbps_median": 0.0067,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9657,
+     "retention_range": [
+      0.9598,
+      0.9746
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.6967,
+     "binary_range": [
+      0.6,
+      0.7967
+     ],
+     "e_clip_mbps_median": 0.3065,
+     "e_clip_mbps_range": [
+      0.2482,
+      0.3911
+     ],
+     "e_over_mbps_median": 0.3158,
+     "e_over_mbps_range": [
+      0.2563,
+      0.4009
+     ],
+     "e_qb_mbps_median": 0.3158,
+     "e_qb_mbps_range": [
+      0.2563,
+      0.4009
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 285.3481,
+     "mean_delay_ms_range": [
+      202.3489,
+      339.3812
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.285,
+     "p_over_0.5mbps_range": [
+      0.2,
+      0.3733
+     ],
+     "p_over_1.0mbps_median": 0.0317,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.09
+     ],
+     "p_over_2.0mbps_median": 0.0017,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.9985,
+     "retention_range": [
+      0.9976,
+      0.9995
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.5683,
+     "binary_range": [
+      0.48,
+      0.6467
+     ],
+     "e_clip_mbps_median": 0.1193,
+     "e_clip_mbps_range": [
+      0.1038,
+      0.1363
+     ],
+     "e_over_mbps_median": 0.1363,
+     "e_over_mbps_range": [
+      0.1201,
+      0.1524
+     ],
+     "e_qb_mbps_median": 0.1169,
+     "e_qb_mbps_range": [
+      0.1027,
+      0.1315
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 95.4307,
+     "mean_delay_ms_range": [
+      40.6518,
+      146.672
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      180.7035,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.0333,
+     "p_over_0.5mbps_range": [
+      0.0267,
+      0.0467
+     ],
+     "p_over_1.0mbps_median": 0.0133,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.02
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.8872,
+     "retention_range": [
+      0.8856,
+      0.8889
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.5983,
+     "range": [
+      0.4133,
+      0.7967
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1289,
+     "range": [
+      0.1038,
+      0.3911
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2108,
+     "range": [
+      0.1201,
+      0.4009
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2108,
+     "range": [
+      0.1027,
+      0.4009
+     ]
+    },
+    "final_alpha": null,
+    "mean_delay_ms": {
+     "median": 112.8492,
+     "range": [
+      31.7412,
+      339.3812
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 400.0,
+     "range": [
+      101.3065,
+      400.0
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0367,
+     "range": [
+      0.02,
+      0.3733
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.01,
+     "range": [
+      0.0033,
+      0.09
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0033,
+     "range": [
+      0.0,
+      0.01
+     ]
+    },
+    "retention": {
+     "median": 0.9844,
+     "range": [
+      0.8856,
+      0.9995
+     ]
+    }
+   }
+  }
+ },
+ "setup": {
+  "arms": [
+   "baseline",
+   "aci_proxy",
+   "aci_mag_proxy",
+   "aci_mag_oracle"
+  ],
+  "epsilons": [
+   0.01,
+   0.05,
+   0.1,
+   0.2
+  ],
+  "gamma": 0.02,
+  "heldout_seeds": [
+   100,
+   119
+  ],
+  "kill_rule": "docs/CALIB_v0.10.md, pre-declared commit 41707d2",
+  "mag_err": "oracle: min(1, overshoot_mbps/1.0); proxy: min(1, delay_ms/30ms)",
+  "note": "MODEL ONLY (HYPOTHESIS); overshoot scored on true capacity",
+  "scenarios": [
+   "abrupt_drop",
+   "capacity_rise",
+   "gradual_decline",
+   "idle_drop"
+  ],
+  "steps": 300,
+  "tuning_seeds": [
+   0,
+   9
+  ]
+ },
+ "tuning": {
+  "eps=0.01/aci_mag_oracle": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.1567,
+     "binary_range": [
+      0.1233,
+      0.1833
+     ],
+     "e_clip_mbps_median": 0.0618,
+     "e_clip_mbps_range": [
+      0.0482,
+      0.0842
+     ],
+     "e_over_mbps_median": 0.0846,
+     "e_over_mbps_range": [
+      0.0577,
+      0.1526
+     ],
+     "e_qb_mbps_median": 0.0846,
+     "e_qb_mbps_range": [
+      0.0577,
+      0.1526
+     ],
+     "final_alpha_median": 0.0029,
+     "final_alpha_range": [
+      0.002,
+      0.0048
+     ],
+     "mean_delay_ms_median": 5.6568,
+     "mean_delay_ms_range": [
+      3.2187,
+      6.6083
+     ],
+     "p99_delay_ms_median": 43.1844,
+     "p99_delay_ms_range": [
+      40.2814,
+      89.1256
+     ],
+     "p_over_0.5mbps_median": 0.0667,
+     "p_over_0.5mbps_range": [
+      0.0467,
+      0.09
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8061,
+     "retention_range": [
+      0.7679,
+      0.8761
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1083,
+     "binary_range": [
+      0.0767,
+      0.1667
+     ],
+     "e_clip_mbps_median": 0.0495,
+     "e_clip_mbps_range": [
+      0.0425,
+      0.0732
+     ],
+     "e_over_mbps_median": 0.1339,
+     "e_over_mbps_range": [
+      0.1249,
+      0.1624
+     ],
+     "e_qb_mbps_median": 0.1339,
+     "e_qb_mbps_range": [
+      0.1249,
+      0.1624
+     ],
+     "final_alpha_median": 0.0053,
+     "final_alpha_range": [
+      0.002,
+      0.0076
+     ],
+     "mean_delay_ms_median": 3.638,
+     "mean_delay_ms_range": [
+      3.1544,
+      5.0047
+     ],
+     "p99_delay_ms_median": 37.4426,
+     "p99_delay_ms_range": [
+      31.3568,
+      66.1688
+     ],
+     "p_over_0.5mbps_median": 0.05,
+     "p_over_0.5mbps_range": [
+      0.0333,
+      0.0767
+     ],
+     "p_over_1.0mbps_median": 0.0133,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.03
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.7565,
+     "retention_range": [
+      0.6946,
+      0.814
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.105,
+     "binary_range": [
+      0.09,
+      0.1267
+     ],
+     "e_clip_mbps_median": 0.0661,
+     "e_clip_mbps_range": [
+      0.0539,
+      0.0891
+     ],
+     "e_over_mbps_median": 0.0787,
+     "e_over_mbps_range": [
+      0.0631,
+      0.1003
+     ],
+     "e_qb_mbps_median": 0.0787,
+     "e_qb_mbps_range": [
+      0.0631,
+      0.1003
+     ],
+     "final_alpha_median": 0.0031,
+     "final_alpha_range": [
+      0.002,
+      0.0048
+     ],
+     "mean_delay_ms_median": 2.5113,
+     "mean_delay_ms_range": [
+      2.0725,
+      3.3203
+     ],
+     "p99_delay_ms_median": 40.9111,
+     "p99_delay_ms_range": [
+      35.114,
+      47.1703
+     ],
+     "p_over_0.5mbps_median": 0.0683,
+     "p_over_0.5mbps_range": [
+      0.05,
+      0.0967
+     ],
+     "p_over_1.0mbps_median": 0.0317,
+     "p_over_1.0mbps_range": [
+      0.02,
+      0.0433
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.7894,
+     "retention_range": [
+      0.7494,
+      0.8577
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1183,
+     "binary_range": [
+      0.0967,
+      0.1733
+     ],
+     "e_clip_mbps_median": 0.0497,
+     "e_clip_mbps_range": [
+      0.0349,
+      0.0764
+     ],
+     "e_over_mbps_median": 0.0529,
+     "e_over_mbps_range": [
+      0.0373,
+      0.0786
+     ],
+     "e_qb_mbps_median": 0.0529,
+     "e_qb_mbps_range": [
+      0.0373,
+      0.0786
+     ],
+     "final_alpha_median": 0.0029,
+     "final_alpha_range": [
+      0.002,
+      0.0052
+     ],
+     "mean_delay_ms_median": 3.0879,
+     "mean_delay_ms_range": [
+      1.8903,
+      5.6957
+     ],
+     "p99_delay_ms_median": 41.6482,
+     "p99_delay_ms_range": [
+      35.8399,
+      89.1256
+     ],
+     "p_over_0.5mbps_median": 0.055,
+     "p_over_0.5mbps_range": [
+      0.0333,
+      0.0767
+     ],
+     "p_over_1.0mbps_median": 0.0067,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.7028,
+     "retention_range": [
+      0.6333,
+      0.7573
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.1217,
+     "range": [
+      0.0767,
+      0.1833
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0599,
+     "range": [
+      0.0349,
+      0.0891
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.084,
+     "range": [
+      0.0373,
+      0.1624
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.084,
+     "range": [
+      0.0373,
+      0.1624
+     ]
+    },
+    "final_alpha": {
+     "median": 0.0031,
+     "range": [
+      0.002,
+      0.0076
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 3.3868,
+     "range": [
+      1.8903,
+      6.6083
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 40.5065,
+     "range": [
+      31.3568,
+      89.1256
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0567,
+     "range": [
+      0.0333,
+      0.0967
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0133,
+     "range": [
+      0.0033,
+      0.0433
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0033,
+     "range": [
+      0.0,
+      0.0067
+     ]
+    },
+    "retention": {
+     "median": 0.7695,
+     "range": [
+      0.6333,
+      0.8761
+     ]
+    }
+   }
+  },
+  "eps=0.01/aci_mag_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.15,
+     "binary_range": [
+      0.1233,
+      0.1967
+     ],
+     "e_clip_mbps_median": 0.0633,
+     "e_clip_mbps_range": [
+      0.0523,
+      0.0794
+     ],
+     "e_over_mbps_median": 0.0807,
+     "e_over_mbps_range": [
+      0.0659,
+      0.1501
+     ],
+     "e_qb_mbps_median": 0.0807,
+     "e_qb_mbps_range": [
+      0.0659,
+      0.1501
+     ],
+     "final_alpha_median": 0.0026,
+     "final_alpha_range": [
+      0.002,
+      0.0046
+     ],
+     "mean_delay_ms_median": 5.5658,
+     "mean_delay_ms_range": [
+      3.3427,
+      6.4244
+     ],
+     "p99_delay_ms_median": 46.1106,
+     "p99_delay_ms_range": [
+      40.2814,
+      89.1256
+     ],
+     "p_over_0.5mbps_median": 0.065,
+     "p_over_0.5mbps_range": [
+      0.0567,
+      0.0867
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0,
+      0.0167
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8016,
+     "retention_range": [
+      0.7565,
+      0.8708
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1133,
+     "binary_range": [
+      0.0867,
+      0.14
+     ],
+     "e_clip_mbps_median": 0.0495,
+     "e_clip_mbps_range": [
+      0.0339,
+      0.0653
+     ],
+     "e_over_mbps_median": 0.1329,
+     "e_over_mbps_range": [
+      0.1174,
+      0.1536
+     ],
+     "e_qb_mbps_median": 0.1329,
+     "e_qb_mbps_range": [
+      0.1174,
+      0.1536
+     ],
+     "final_alpha_median": 0.0032,
+     "final_alpha_range": [
+      0.002,
+      0.0086
+     ],
+     "mean_delay_ms_median": 3.863,
+     "mean_delay_ms_range": [
+      3.1608,
+      5.2713
+     ],
+     "p99_delay_ms_median": 37.3839,
+     "p99_delay_ms_range": [
+      25.5276,
+      51.9397
+     ],
+     "p_over_0.5mbps_median": 0.0483,
+     "p_over_0.5mbps_range": [
+      0.0233,
+      0.0667
+     ],
+     "p_over_1.0mbps_median": 0.0167,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.03
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.7718,
+     "retention_range": [
+      0.7005,
+      0.7855
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1083,
+     "binary_range": [
+      0.1,
+      0.1267
+     ],
+     "e_clip_mbps_median": 0.0659,
+     "e_clip_mbps_range": [
+      0.0575,
+      0.0887
+     ],
+     "e_over_mbps_median": 0.0801,
+     "e_over_mbps_range": [
+      0.0686,
+      0.1016
+     ],
+     "e_qb_mbps_median": 0.0801,
+     "e_qb_mbps_range": [
+      0.0686,
+      0.1016
+     ],
+     "final_alpha_median": 0.003,
+     "final_alpha_range": [
+      0.002,
+      0.0052
+     ],
+     "mean_delay_ms_median": 2.5092,
+     "mean_delay_ms_range": [
+      2.2494,
+      3.3514
+     ],
+     "p99_delay_ms_median": 41.6726,
+     "p99_delay_ms_range": [
+      33.5374,
+      47.1703
+     ],
+     "p_over_0.5mbps_median": 0.065,
+     "p_over_0.5mbps_range": [
+      0.05,
+      0.0967
+     ],
+     "p_over_1.0mbps_median": 0.03,
+     "p_over_1.0mbps_range": [
+      0.0133,
+      0.0433
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.7866,
+     "retention_range": [
+      0.7513,
+      0.8575
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1217,
+     "binary_range": [
+      0.1,
+      0.1633
+     ],
+     "e_clip_mbps_median": 0.0481,
+     "e_clip_mbps_range": [
+      0.0383,
+      0.0734
+     ],
+     "e_over_mbps_median": 0.0502,
+     "e_over_mbps_range": [
+      0.0412,
+      0.0756
+     ],
+     "e_qb_mbps_median": 0.0502,
+     "e_qb_mbps_range": [
+      0.0412,
+      0.0756
+     ],
+     "final_alpha_median": 0.0033,
+     "final_alpha_range": [
+      0.002,
+      0.0052
+     ],
+     "mean_delay_ms_median": 2.7406,
+     "mean_delay_ms_range": [
+      2.3763,
+      5.4973
+     ],
+     "p99_delay_ms_median": 40.9752,
+     "p99_delay_ms_range": [
+      35.4372,
+      89.1256
+     ],
+     "p_over_0.5mbps_median": 0.0533,
+     "p_over_0.5mbps_range": [
+      0.04,
+      0.0833
+     ],
+     "p_over_1.0mbps_median": 0.0067,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.6942,
+     "retention_range": [
+      0.6446,
+      0.7568
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.1183,
+     "range": [
+      0.0867,
+      0.1967
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0623,
+     "range": [
+      0.0339,
+      0.0887
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.0807,
+     "range": [
+      0.0412,
+      0.1536
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.0807,
+     "range": [
+      0.0412,
+      0.1536
+     ]
+    },
+    "final_alpha": {
+     "median": 0.003,
+     "range": [
+      0.002,
+      0.0086
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 3.3435,
+     "range": [
+      2.2494,
+      6.4244
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 41.9306,
+     "range": [
+      25.5276,
+      89.1256
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.06,
+     "range": [
+      0.0233,
+      0.0967
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.01,
+     "range": [
+      0.0,
+      0.0433
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0033,
+     "range": [
+      0.0,
+      0.0067
+     ]
+    },
+    "retention": {
+     "median": 0.7758,
+     "range": [
+      0.6446,
+      0.8708
+     ]
+    }
+   }
+  },
+  "eps=0.01/aci_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.16,
+     "binary_range": [
+      0.1333,
+      0.1933
+     ],
+     "e_clip_mbps_median": 0.0759,
+     "e_clip_mbps_range": [
+      0.058,
+      0.0839
+     ],
+     "e_over_mbps_median": 0.1108,
+     "e_over_mbps_range": [
+      0.0736,
+      0.1637
+     ],
+     "e_qb_mbps_median": 0.1108,
+     "e_qb_mbps_range": [
+      0.0736,
+      0.1637
+     ],
+     "final_alpha_median": 0.0026,
+     "final_alpha_range": [
+      0.002,
+      0.0046
+     ],
+     "mean_delay_ms_median": 6.5724,
+     "mean_delay_ms_range": [
+      3.4412,
+      8.0029
+     ],
+     "p99_delay_ms_median": 49.2544,
+     "p99_delay_ms_range": [
+      39.5437,
+      102.995
+     ],
+     "p_over_0.5mbps_median": 0.0867,
+     "p_over_0.5mbps_range": [
+      0.06,
+      0.0933
+     ],
+     "p_over_1.0mbps_median": 0.0117,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0167
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.8507,
+     "retention_range": [
+      0.7865,
+      0.9015
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.12,
+     "binary_range": [
+      0.0867,
+      0.1533
+     ],
+     "e_clip_mbps_median": 0.065,
+     "e_clip_mbps_range": [
+      0.0517,
+      0.0779
+     ],
+     "e_over_mbps_median": 0.15,
+     "e_over_mbps_range": [
+      0.1341,
+      0.1814
+     ],
+     "e_qb_mbps_median": 0.15,
+     "e_qb_mbps_range": [
+      0.1341,
+      0.1814
+     ],
+     "final_alpha_median": 0.004,
+     "final_alpha_range": [
+      0.0022,
+      0.0076
+     ],
+     "mean_delay_ms_median": 4.6564,
+     "mean_delay_ms_range": [
+      3.5282,
+      5.529
+     ],
+     "p99_delay_ms_median": 45.5274,
+     "p99_delay_ms_range": [
+      31.3568,
+      59.3467
+     ],
+     "p_over_0.5mbps_median": 0.0683,
+     "p_over_0.5mbps_range": [
+      0.0533,
+      0.0867
+     ],
+     "p_over_1.0mbps_median": 0.0233,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0467
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "retention_median": 0.7933,
+     "retention_range": [
+      0.7499,
+      0.8462
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1083,
+     "binary_range": [
+      0.0833,
+      0.1467
+     ],
+     "e_clip_mbps_median": 0.0767,
+     "e_clip_mbps_range": [
+      0.0572,
+      0.0962
+     ],
+     "e_over_mbps_median": 0.0963,
+     "e_over_mbps_range": [
+      0.0697,
+      0.1266
+     ],
+     "e_qb_mbps_median": 0.0963,
+     "e_qb_mbps_range": [
+      0.0697,
+      0.1266
+     ],
+     "final_alpha_median": 0.0031,
+     "final_alpha_range": [
+      0.002,
+      0.0052
+     ],
+     "mean_delay_ms_median": 3.1183,
+     "mean_delay_ms_range": [
+      2.1349,
+      4.235
+     ],
+     "p99_delay_ms_median": 53.6098,
+     "p99_delay_ms_range": [
+      44.4274,
+      59.76
+     ],
+     "p_over_0.5mbps_median": 0.0833,
+     "p_over_0.5mbps_range": [
+      0.0533,
+      0.09
+     ],
+     "p_over_1.0mbps_median": 0.0417,
+     "p_over_1.0mbps_range": [
+      0.0367,
+      0.0633
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.01
+     ],
+     "retention_median": 0.8108,
+     "retention_range": [
+      0.7788,
+      0.8594
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.115,
+     "binary_range": [
+      0.0967,
+      0.1567
+     ],
+     "e_clip_mbps_median": 0.0582,
+     "e_clip_mbps_range": [
+      0.0452,
+      0.0715
+     ],
+     "e_over_mbps_median": 0.0649,
+     "e_over_mbps_range": [
+      0.0469,
+      0.076
+     ],
+     "e_qb_mbps_median": 0.0649,
+     "e_qb_mbps_range": [
+      0.0469,
+      0.076
+     ],
+     "final_alpha_median": 0.0024,
+     "final_alpha_range": [
+      0.002,
+      0.0046
+     ],
+     "mean_delay_ms_median": 3.4795,
+     "mean_delay_ms_range": [
+      2.6259,
+      4.6772
+     ],
+     "p99_delay_ms_median": 46.1106,
+     "p99_delay_ms_range": [
+      39.0452,
+      52.9246
+     ],
+     "p_over_0.5mbps_median": 0.0683,
+     "p_over_0.5mbps_range": [
+      0.05,
+      0.08
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.02
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.7028,
+     "retention_range": [
+      0.6787,
+      0.756
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.12,
+     "range": [
+      0.0833,
+      0.1933
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0705,
+     "range": [
+      0.0452,
+      0.0962
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.101,
+     "range": [
+      0.0469,
+      0.1814
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.101,
+     "range": [
+      0.0469,
+      0.1814
+     ]
+    },
+    "final_alpha": {
+     "median": 0.003,
+     "range": [
+      0.002,
+      0.0076
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 3.9212,
+     "range": [
+      2.1349,
+      8.0029
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 46.1106,
+     "range": [
+      31.3568,
+      102.995
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0783,
+     "range": [
+      0.05,
+      0.0933
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0167,
+     "range": [
+      0.0067,
+      0.0633
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0033,
+     "range": [
+      0.0,
+      0.0133
+     ]
+    },
+    "retention": {
+     "median": 0.8033,
+     "range": [
+      0.6787,
+      0.9015
+     ]
+    }
+   }
+  },
+  "eps=0.01/baseline": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.4367,
+     "binary_range": [
+      0.4233,
+      0.53
+     ],
+     "e_clip_mbps_median": 0.1046,
+     "e_clip_mbps_range": [
+      0.093,
+      0.1209
+     ],
+     "e_over_mbps_median": 0.1864,
+     "e_over_mbps_range": [
+      0.1719,
+      0.205
+     ],
+     "e_qb_mbps_median": 0.1864,
+     "e_qb_mbps_range": [
+      0.1719,
+      0.205
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 28.0886,
+     "mean_delay_ms_range": [
+      22.5802,
+      52.3071
+     ],
+     "p99_delay_ms_median": 157.3869,
+     "p99_delay_ms_range": [
+      93.2663,
+      212.0603
+     ],
+     "p_over_0.5mbps_median": 0.055,
+     "p_over_0.5mbps_range": [
+      0.04,
+      0.0633
+     ],
+     "p_over_1.0mbps_median": 0.0083,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0033
+     ],
+     "retention_median": 0.9828,
+     "retention_range": [
+      0.9599,
+      0.9883
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.3333,
+     "binary_range": [
+      0.3167,
+      0.3867
+     ],
+     "e_clip_mbps_median": 0.1186,
+     "e_clip_mbps_range": [
+      0.1083,
+      0.1266
+     ],
+     "e_over_mbps_median": 0.202,
+     "e_over_mbps_range": [
+      0.19,
+      0.2099
+     ],
+     "e_qb_mbps_median": 0.202,
+     "e_qb_mbps_range": [
+      0.19,
+      0.2099
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 15.867,
+     "mean_delay_ms_range": [
+      14.8844,
+      21.0656
+     ],
+     "p99_delay_ms_median": 82.8141,
+     "p99_delay_ms_range": [
+      69.9497,
+      112.9648
+     ],
+     "p_over_0.5mbps_median": 0.0867,
+     "p_over_0.5mbps_range": [
+      0.0633,
+      0.1033
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0267
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9478,
+     "retention_range": [
+      0.9309,
+      0.9607
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.3183,
+     "binary_range": [
+      0.26,
+      0.37
+     ],
+     "e_clip_mbps_median": 0.1736,
+     "e_clip_mbps_range": [
+      0.1585,
+      0.1929
+     ],
+     "e_over_mbps_median": 0.1941,
+     "e_over_mbps_range": [
+      0.1779,
+      0.2044
+     ],
+     "e_qb_mbps_median": 0.1941,
+     "e_qb_mbps_range": [
+      0.1779,
+      0.2044
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 23.6377,
+     "mean_delay_ms_range": [
+      15.7062,
+      31.956
+     ],
+     "p99_delay_ms_median": 135.0595,
+     "p99_delay_ms_range": [
+      96.9872,
+      168.0859
+     ],
+     "p_over_0.5mbps_median": 0.1633,
+     "p_over_0.5mbps_range": [
+      0.1533,
+      0.1933
+     ],
+     "p_over_1.0mbps_median": 0.0567,
+     "p_over_1.0mbps_range": [
+      0.0367,
+      0.0767
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.9827,
+     "retention_range": [
+      0.9666,
+      0.9864
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.3233,
+     "binary_range": [
+      0.2933,
+      0.4167
+     ],
+     "e_clip_mbps_median": 0.0841,
+     "e_clip_mbps_range": [
+      0.0744,
+      0.1006
+     ],
+     "e_over_mbps_median": 0.0892,
+     "e_over_mbps_range": [
+      0.0756,
+      0.106
+     ],
+     "e_qb_mbps_median": 0.0888,
+     "e_qb_mbps_range": [
+      0.0747,
+      0.1051
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 16.4981,
+     "mean_delay_ms_range": [
+      12.8391,
+      31.8957
+     ],
+     "p99_delay_ms_median": 96.1809,
+     "p99_delay_ms_range": [
+      79.397,
+      221.5075
+     ],
+     "p_over_0.5mbps_median": 0.0517,
+     "p_over_0.5mbps_range": [
+      0.0433,
+      0.0567
+     ],
+     "p_over_1.0mbps_median": 0.0067,
+     "p_over_1.0mbps_range": [
+      0.0,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0
+     ],
+     "retention_median": 0.8346,
+     "retention_range": [
+      0.8083,
+      0.8386
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.345,
+     "range": [
+      0.26,
+      0.53
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1136,
+     "range": [
+      0.0744,
+      0.1929
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1883,
+     "range": [
+      0.0756,
+      0.2099
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1883,
+     "range": [
+      0.0747,
+      0.2099
+     ]
+    },
+    "final_alpha": null,
+    "mean_delay_ms": {
+     "median": 20.3314,
+     "range": [
+      12.8391,
+      52.3071
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 105.8402,
+     "range": [
+      69.9497,
+      221.5075
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0633,
+     "range": [
+      0.04,
+      0.1933
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.01,
+     "range": [
+      0.0,
+      0.0767
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0033,
+     "range": [
+      0.0,
+      0.0067
+     ]
+    },
+    "retention": {
+     "median": 0.9603,
+     "range": [
+      0.8083,
+      0.9883
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_mag_oracle": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.1933,
+     "binary_range": [
+      0.14,
+      0.26
+     ],
+     "e_clip_mbps_median": 0.1,
+     "e_clip_mbps_range": [
+      0.0844,
+      0.1147
+     ],
+     "e_over_mbps_median": 0.1816,
+     "e_over_mbps_range": [
+      0.1541,
+      0.2142
+     ],
+     "e_qb_mbps_median": 0.1816,
+     "e_qb_mbps_range": [
+      0.1541,
+      0.2142
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.017
+     ],
+     "mean_delay_ms_median": 8.2865,
+     "mean_delay_ms_range": [
+      6.7685,
+      9.9817
+     ],
+     "p99_delay_ms_median": 56.4523,
+     "p99_delay_ms_range": [
+      46.1106,
+      72.6231
+     ],
+     "p_over_0.5mbps_median": 0.105,
+     "p_over_0.5mbps_range": [
+      0.09,
+      0.12
+     ],
+     "p_over_1.0mbps_median": 0.03,
+     "p_over_1.0mbps_range": [
+      0.02,
+      0.04
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.9117,
+     "retention_range": [
+      0.8374,
+      0.9392
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.2117,
+     "binary_range": [
+      0.18,
+      0.2433
+     ],
+     "e_clip_mbps_median": 0.0906,
+     "e_clip_mbps_range": [
+      0.075,
+      0.1096
+     ],
+     "e_over_mbps_median": 0.1881,
+     "e_over_mbps_range": [
+      0.1686,
+      0.2081
+     ],
+     "e_qb_mbps_median": 0.1881,
+     "e_qb_mbps_range": [
+      0.1686,
+      0.2081
+     ],
+     "final_alpha_median": 0.0075,
+     "final_alpha_range": [
+      0.002,
+      0.024
+     ],
+     "mean_delay_ms_median": 7.8908,
+     "mean_delay_ms_range": [
+      7.1146,
+      10.1702
+     ],
+     "p99_delay_ms_median": 58.0114,
+     "p99_delay_ms_range": [
+      46.6332,
+      122.0101
+     ],
+     "p_over_0.5mbps_median": 0.0817,
+     "p_over_0.5mbps_range": [
+      0.06,
+      0.1033
+     ],
+     "p_over_1.0mbps_median": 0.0433,
+     "p_over_1.0mbps_range": [
+      0.0333,
+      0.06
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.8689,
+     "retention_range": [
+      0.8272,
+      0.9215
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1483,
+     "binary_range": [
+      0.1367,
+      0.1633
+     ],
+     "e_clip_mbps_median": 0.1127,
+     "e_clip_mbps_range": [
+      0.096,
+      0.1171
+     ],
+     "e_over_mbps_median": 0.1441,
+     "e_over_mbps_range": [
+      0.13,
+      0.1642
+     ],
+     "e_qb_mbps_median": 0.1441,
+     "e_qb_mbps_range": [
+      0.13,
+      0.1642
+     ],
+     "final_alpha_median": 0.0046,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 4.8288,
+     "mean_delay_ms_range": [
+      4.2586,
+      5.8409
+     ],
+     "p99_delay_ms_median": 55.8089,
+     "p99_delay_ms_range": [
+      46.4824,
+      62.9104
+     ],
+     "p_over_0.5mbps_median": 0.11,
+     "p_over_0.5mbps_range": [
+      0.1,
+      0.12
+     ],
+     "p_over_1.0mbps_median": 0.0633,
+     "p_over_1.0mbps_range": [
+      0.05,
+      0.09
+     ],
+     "p_over_2.0mbps_median": 0.0083,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.02
+     ],
+     "retention_median": 0.8992,
+     "retention_range": [
+      0.8661,
+      0.9145
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.21,
+     "binary_range": [
+      0.15,
+      0.23
+     ],
+     "e_clip_mbps_median": 0.083,
+     "e_clip_mbps_range": [
+      0.0695,
+      0.0939
+     ],
+     "e_over_mbps_median": 0.093,
+     "e_over_mbps_range": [
+      0.0812,
+      0.1074
+     ],
+     "e_qb_mbps_median": 0.0918,
+     "e_qb_mbps_range": [
+      0.0812,
+      0.1074
+     ],
+     "final_alpha_median": 0.007,
+     "final_alpha_range": [
+      0.002,
+      0.017
+     ],
+     "mean_delay_ms_median": 6.694,
+     "mean_delay_ms_range": [
+      4.7456,
+      8.1507
+     ],
+     "p99_delay_ms_median": 46.1106,
+     "p99_delay_ms_range": [
+      43.0151,
+      67.0905
+     ],
+     "p_over_0.5mbps_median": 0.085,
+     "p_over_0.5mbps_range": [
+      0.06,
+      0.0933
+     ],
+     "p_over_1.0mbps_median": 0.02,
+     "p_over_1.0mbps_range": [
+      0.0133,
+      0.0333
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8137,
+     "retention_range": [
+      0.7486,
+      0.8425
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.195,
+     "range": [
+      0.1367,
+      0.26
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0956,
+     "range": [
+      0.0695,
+      0.1171
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1609,
+     "range": [
+      0.0812,
+      0.2142
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1609,
+     "range": [
+      0.0812,
+      0.2142
+     ]
+    },
+    "final_alpha": {
+     "median": 0.0065,
+     "range": [
+      0.002,
+      0.024
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 7.2394,
+     "range": [
+      4.2586,
+      10.1702
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 54.6734,
+     "range": [
+      43.0151,
+      122.0101
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0967,
+     "range": [
+      0.06,
+      0.12
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0333,
+     "range": [
+      0.0133,
+      0.09
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.02
+     ]
+    },
+    "retention": {
+     "median": 0.8708,
+     "range": [
+      0.7486,
+      0.9392
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_mag_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.205,
+     "binary_range": [
+      0.1633,
+      0.2433
+     ],
+     "e_clip_mbps_median": 0.0938,
+     "e_clip_mbps_range": [
+      0.0869,
+      0.1093
+     ],
+     "e_over_mbps_median": 0.1796,
+     "e_over_mbps_range": [
+      0.1046,
+      0.2043
+     ],
+     "e_qb_mbps_median": 0.1796,
+     "e_qb_mbps_range": [
+      0.1046,
+      0.2043
+     ],
+     "final_alpha_median": 0.0035,
+     "final_alpha_range": [
+      0.002,
+      0.016
+     ],
+     "mean_delay_ms_median": 8.116,
+     "mean_delay_ms_range": [
+      5.7477,
+      10.9024
+     ],
+     "p99_delay_ms_median": 58.3678,
+     "p99_delay_ms_range": [
+      40.2814,
+      98.1508
+     ],
+     "p_over_0.5mbps_median": 0.0983,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.1167
+     ],
+     "p_over_1.0mbps_median": 0.0317,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.0433
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.8927,
+     "retention_range": [
+      0.8675,
+      0.9423
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.165,
+     "binary_range": [
+      0.1433,
+      0.2033
+     ],
+     "e_clip_mbps_median": 0.0912,
+     "e_clip_mbps_range": [
+      0.0766,
+      0.1012
+     ],
+     "e_over_mbps_median": 0.1891,
+     "e_over_mbps_range": [
+      0.1753,
+      0.2114
+     ],
+     "e_qb_mbps_median": 0.1891,
+     "e_qb_mbps_range": [
+      0.1753,
+      0.2114
+     ],
+     "final_alpha_median": 0.008,
+     "final_alpha_range": [
+      0.002,
+      0.029
+     ],
+     "mean_delay_ms_median": 6.6253,
+     "mean_delay_ms_range": [
+      5.707,
+      8.0243
+     ],
+     "p99_delay_ms_median": 54.6657,
+     "p99_delay_ms_range": [
+      44.4002,
+      82.6131
+     ],
+     "p_over_0.5mbps_median": 0.0917,
+     "p_over_0.5mbps_range": [
+      0.0767,
+      0.1133
+     ],
+     "p_over_1.0mbps_median": 0.04,
+     "p_over_1.0mbps_range": [
+      0.0333,
+      0.05
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0167
+     ],
+     "retention_median": 0.8658,
+     "retention_range": [
+      0.8176,
+      0.9004
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.15,
+     "binary_range": [
+      0.13,
+      0.1833
+     ],
+     "e_clip_mbps_median": 0.1136,
+     "e_clip_mbps_range": [
+      0.0957,
+      0.1259
+     ],
+     "e_over_mbps_median": 0.1476,
+     "e_over_mbps_range": [
+      0.1153,
+      0.1727
+     ],
+     "e_qb_mbps_median": 0.1476,
+     "e_qb_mbps_range": [
+      0.1153,
+      0.1727
+     ],
+     "final_alpha_median": 0.004,
+     "final_alpha_range": [
+      0.002,
+      0.0107
+     ],
+     "mean_delay_ms_median": 5.1868,
+     "mean_delay_ms_range": [
+      3.881,
+      5.5693
+     ],
+     "p99_delay_ms_median": 53.7194,
+     "p99_delay_ms_range": [
+      45.7844,
+      61.6391
+     ],
+     "p_over_0.5mbps_median": 0.1133,
+     "p_over_0.5mbps_range": [
+      0.1,
+      0.13
+     ],
+     "p_over_1.0mbps_median": 0.0683,
+     "p_over_1.0mbps_range": [
+      0.0467,
+      0.0867
+     ],
+     "p_over_2.0mbps_median": 0.01,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0167
+     ],
+     "retention_median": 0.9002,
+     "retention_range": [
+      0.8442,
+      0.9412
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1783,
+     "binary_range": [
+      0.1567,
+      0.1967
+     ],
+     "e_clip_mbps_median": 0.0897,
+     "e_clip_mbps_range": [
+      0.08,
+      0.1016
+     ],
+     "e_over_mbps_median": 0.1041,
+     "e_over_mbps_range": [
+      0.0862,
+      0.1126
+     ],
+     "e_qb_mbps_median": 0.0991,
+     "e_qb_mbps_range": [
+      0.0862,
+      0.1095
+     ],
+     "final_alpha_median": 0.0055,
+     "final_alpha_range": [
+      0.002,
+      0.016
+     ],
+     "mean_delay_ms_median": 5.7688,
+     "mean_delay_ms_range": [
+      4.4791,
+      7.9744
+     ],
+     "p99_delay_ms_median": 53.0679,
+     "p99_delay_ms_range": [
+      45.5648,
+      90.1106
+     ],
+     "p_over_0.5mbps_median": 0.0967,
+     "p_over_0.5mbps_range": [
+      0.08,
+      0.11
+     ],
+     "p_over_1.0mbps_median": 0.0267,
+     "p_over_1.0mbps_range": [
+      0.0133,
+      0.0333
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.01
+     ],
+     "retention_median": 0.8039,
+     "retention_range": [
+      0.7576,
+      0.8422
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.17,
+     "range": [
+      0.13,
+      0.2433
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.0938,
+     "range": [
+      0.0766,
+      0.1259
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.153,
+     "range": [
+      0.0862,
+      0.2114
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.153,
+     "range": [
+      0.0862,
+      0.2114
+     ]
+    },
+    "final_alpha": {
+     "median": 0.0048,
+     "range": [
+      0.002,
+      0.029
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 6.0373,
+     "range": [
+      3.881,
+      10.9024
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 54.3069,
+     "range": [
+      40.2814,
+      98.1508
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0983,
+     "range": [
+      0.0767,
+      0.13
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0383,
+     "range": [
+      0.0133,
+      0.0867
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0,
+      0.0167
+     ]
+    },
+    "retention": {
+     "median": 0.8714,
+     "range": [
+      0.7576,
+      0.9423
+     ]
+    }
+   }
+  },
+  "eps=0.05/aci_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.21,
+     "binary_range": [
+      0.1633,
+      0.2367
+     ],
+     "e_clip_mbps_median": 0.1138,
+     "e_clip_mbps_range": [
+      0.0939,
+      0.1238
+     ],
+     "e_over_mbps_median": 0.1946,
+     "e_over_mbps_range": [
+      0.1188,
+      0.2104
+     ],
+     "e_qb_mbps_median": 0.1946,
+     "e_qb_mbps_range": [
+      0.1188,
+      0.2104
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.007
+     ],
+     "mean_delay_ms_median": 9.0853,
+     "mean_delay_ms_range": [
+      7.8539,
+      12.5982
+     ],
+     "p99_delay_ms_median": 65.809,
+     "p99_delay_ms_range": [
+      49.1946,
+      111.0352
+     ],
+     "p_over_0.5mbps_median": 0.1233,
+     "p_over_0.5mbps_range": [
+      0.1,
+      0.1367
+     ],
+     "p_over_1.0mbps_median": 0.045,
+     "p_over_1.0mbps_range": [
+      0.0233,
+      0.06
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.9238,
+     "retention_range": [
+      0.8713,
+      0.9473
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.165,
+     "binary_range": [
+      0.1533,
+      0.19
+     ],
+     "e_clip_mbps_median": 0.1057,
+     "e_clip_mbps_range": [
+      0.084,
+      0.1213
+     ],
+     "e_over_mbps_median": 0.2103,
+     "e_over_mbps_range": [
+      0.1815,
+      0.2464
+     ],
+     "e_qb_mbps_median": 0.2103,
+     "e_qb_mbps_range": [
+      0.1815,
+      0.2464
+     ],
+     "final_alpha_median": 0.011,
+     "final_alpha_range": [
+      0.003,
+      0.018
+     ],
+     "mean_delay_ms_median": 6.9445,
+     "mean_delay_ms_range": [
+      5.759,
+      9.0715
+     ],
+     "p99_delay_ms_median": 58.5099,
+     "p99_delay_ms_range": [
+      48.8945,
+      82.6131
+     ],
+     "p_over_0.5mbps_median": 0.115,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.1333
+     ],
+     "p_over_1.0mbps_median": 0.0567,
+     "p_over_1.0mbps_range": [
+      0.0433,
+      0.0667
+     ],
+     "p_over_2.0mbps_median": 0.015,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0267
+     ],
+     "retention_median": 0.8989,
+     "retention_range": [
+      0.8437,
+      0.918
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.165,
+     "binary_range": [
+      0.15,
+      0.1733
+     ],
+     "e_clip_mbps_median": 0.1215,
+     "e_clip_mbps_range": [
+      0.1145,
+      0.1312
+     ],
+     "e_over_mbps_median": 0.1722,
+     "e_over_mbps_range": [
+      0.1569,
+      0.1964
+     ],
+     "e_qb_mbps_median": 0.1722,
+     "e_qb_mbps_range": [
+      0.1569,
+      0.1964
+     ],
+     "final_alpha_median": 0.004,
+     "final_alpha_range": [
+      0.002,
+      0.009
+     ],
+     "mean_delay_ms_median": 5.989,
+     "mean_delay_ms_range": [
+      5.2992,
+      7.4484
+     ],
+     "p99_delay_ms_median": 63.8369,
+     "p99_delay_ms_range": [
+      53.7313,
+      79.0106
+     ],
+     "p_over_0.5mbps_median": 0.1217,
+     "p_over_0.5mbps_range": [
+      0.1167,
+      0.1333
+     ],
+     "p_over_1.0mbps_median": 0.0867,
+     "p_over_1.0mbps_range": [
+      0.07,
+      0.0967
+     ],
+     "p_over_2.0mbps_median": 0.0117,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0267
+     ],
+     "retention_median": 0.9119,
+     "retention_range": [
+      0.8949,
+      0.9459
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.1833,
+     "binary_range": [
+      0.16,
+      0.2067
+     ],
+     "e_clip_mbps_median": 0.0987,
+     "e_clip_mbps_range": [
+      0.0858,
+      0.1067
+     ],
+     "e_over_mbps_median": 0.1104,
+     "e_over_mbps_range": [
+      0.0934,
+      0.127
+     ],
+     "e_qb_mbps_median": 0.1098,
+     "e_qb_mbps_range": [
+      0.0934,
+      0.1263
+     ],
+     "final_alpha_median": 0.0055,
+     "final_alpha_range": [
+      0.002,
+      0.007
+     ],
+     "mean_delay_ms_median": 6.585,
+     "mean_delay_ms_range": [
+      5.9535,
+      8.1316
+     ],
+     "p99_delay_ms_median": 59.9799,
+     "p99_delay_ms_range": [
+      48.8442,
+      90.1106
+     ],
+     "p_over_0.5mbps_median": 0.11,
+     "p_over_0.5mbps_range": [
+      0.09,
+      0.12
+     ],
+     "p_over_1.0mbps_median": 0.035,
+     "p_over_1.0mbps_range": [
+      0.02,
+      0.0433
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0067
+     ],
+     "retention_median": 0.8299,
+     "retention_range": [
+      0.7888,
+      0.8428
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.1733,
+     "range": [
+      0.15,
+      0.2367
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1084,
+     "range": [
+      0.084,
+      0.1312
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1774,
+     "range": [
+      0.0934,
+      0.2464
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1774,
+     "range": [
+      0.0934,
+      0.2464
+     ]
+    },
+    "final_alpha": {
+     "median": 0.006,
+     "range": [
+      0.002,
+      0.018
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 6.824,
+     "range": [
+      5.2992,
+      12.5982
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 59.9799,
+     "range": [
+      48.8442,
+      111.0352
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.12,
+     "range": [
+      0.0833,
+      0.1367
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0483,
+     "range": [
+      0.02,
+      0.0967
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0083,
+     "range": [
+      0.0,
+      0.0267
+     ]
+    },
+    "retention": {
+     "median": 0.9061,
+     "range": [
+      0.7888,
+      0.9473
+     ]
+    }
+   }
+  },
+  "eps=0.05/baseline": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.6683,
+     "binary_range": [
+      0.58,
+      0.7367
+     ],
+     "e_clip_mbps_median": 0.1309,
+     "e_clip_mbps_range": [
+      0.1165,
+      0.1364
+     ],
+     "e_over_mbps_median": 0.2153,
+     "e_over_mbps_range": [
+      0.2017,
+      0.2247
+     ],
+     "e_qb_mbps_median": 0.2153,
+     "e_qb_mbps_range": [
+      0.2017,
+      0.2247
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 151.5484,
+     "mean_delay_ms_range": [
+      65.3025,
+      207.7439
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      250.6533,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.03,
+     "p_over_0.5mbps_range": [
+      0.0233,
+      0.0367
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0167
+     ],
+     "p_over_2.0mbps_median": 0.005,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9952,
+     "retention_range": [
+      0.9916,
+      0.9975
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.4567,
+     "binary_range": [
+      0.4267,
+      0.5233
+     ],
+     "e_clip_mbps_median": 0.1151,
+     "e_clip_mbps_range": [
+      0.105,
+      0.1352
+     ],
+     "e_over_mbps_median": 0.1979,
+     "e_over_mbps_range": [
+      0.185,
+      0.2185
+     ],
+     "e_qb_mbps_median": 0.1979,
+     "e_qb_mbps_range": [
+      0.185,
+      0.2185
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 53.3757,
+     "mean_delay_ms_range": [
+      33.494,
+      72.4501
+     ],
+     "p99_delay_ms_median": 227.3367,
+     "p99_delay_ms_range": [
+      128.2412,
+      398.593
+     ],
+     "p_over_0.5mbps_median": 0.0333,
+     "p_over_0.5mbps_range": [
+      0.0233,
+      0.04
+     ],
+     "p_over_1.0mbps_median": 0.0067,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9647,
+     "retention_range": [
+      0.9607,
+      0.9698
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.68,
+     "binary_range": [
+      0.6367,
+      0.7567
+     ],
+     "e_clip_mbps_median": 0.2925,
+     "e_clip_mbps_range": [
+      0.2506,
+      0.364
+     ],
+     "e_over_mbps_median": 0.3006,
+     "e_over_mbps_range": [
+      0.2514,
+      0.3685
+     ],
+     "e_qb_mbps_median": 0.3006,
+     "e_qb_mbps_range": [
+      0.2514,
+      0.3685
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 295.3406,
+     "mean_delay_ms_range": [
+      223.5234,
+      332.217
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.2433,
+     "p_over_0.5mbps_range": [
+      0.19,
+      0.38
+     ],
+     "p_over_1.0mbps_median": 0.0233,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.08
+     ],
+     "p_over_2.0mbps_median": 0.0,
+     "p_over_2.0mbps_range": [
+      0.0,
+      0.0033
+     ],
+     "retention_median": 0.9986,
+     "retention_range": [
+      0.9968,
+      0.9998
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.535,
+     "binary_range": [
+      0.4767,
+      0.61
+     ],
+     "e_clip_mbps_median": 0.1129,
+     "e_clip_mbps_range": [
+      0.108,
+      0.1299
+     ],
+     "e_over_mbps_median": 0.1288,
+     "e_over_mbps_range": [
+      0.1191,
+      0.1446
+     ],
+     "e_qb_mbps_median": 0.1093,
+     "e_qb_mbps_range": [
+      0.0982,
+      0.1272
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 92.4521,
+     "mean_delay_ms_range": [
+      51.4859,
+      145.9125
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      256.4824,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.035,
+     "p_over_0.5mbps_range": [
+      0.0267,
+      0.0433
+     ],
+     "p_over_1.0mbps_median": 0.0133,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.02
+     ],
+     "p_over_2.0mbps_median": 0.005,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.8871,
+     "retention_range": [
+      0.8842,
+      0.8884
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.6033,
+     "range": [
+      0.4267,
+      0.7567
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1247,
+     "range": [
+      0.105,
+      0.364
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2052,
+     "range": [
+      0.1191,
+      0.3685
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2052,
+     "range": [
+      0.0982,
+      0.3685
+     ]
+    },
+    "final_alpha": null,
+    "mean_delay_ms": {
+     "median": 112.071,
+     "range": [
+      33.494,
+      332.217
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 400.0,
+     "range": [
+      128.2412,
+      400.0
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0333,
+     "range": [
+      0.0233,
+      0.38
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0117,
+     "range": [
+      0.0033,
+      0.08
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0033,
+     "range": [
+      0.0,
+      0.0067
+     ]
+    },
+    "retention": {
+     "median": 0.9807,
+     "range": [
+      0.8842,
+      0.9998
+     ]
+    }
+   }
+  },
+  "eps=0.1/aci_mag_oracle": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.5183,
+     "binary_range": [
+      0.42,
+      0.5433
+     ],
+     "e_clip_mbps_median": 0.1106,
+     "e_clip_mbps_range": [
+      0.1062,
+      0.1145
+     ],
+     "e_over_mbps_median": 0.1959,
+     "e_over_mbps_range": [
+      0.1923,
+      0.2004
+     ],
+     "e_qb_mbps_median": 0.1959,
+     "e_qb_mbps_range": [
+      0.1923,
+      0.2004
+     ],
+     "final_alpha_median": 0.038,
+     "final_alpha_range": [
+      0.0117,
+      0.0639
+     ],
+     "mean_delay_ms_median": 48.2106,
+     "mean_delay_ms_range": [
+      20.763,
+      74.6623
+     ],
+     "p99_delay_ms_median": 209.8492,
+     "p99_delay_ms_range": [
+      75.7789,
+      343.9196
+     ],
+     "p_over_0.5mbps_median": 0.035,
+     "p_over_0.5mbps_range": [
+      0.0267,
+      0.0767
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9936,
+     "retention_range": [
+      0.989,
+      0.9965
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.44,
+     "binary_range": [
+      0.4,
+      0.48
+     ],
+     "e_clip_mbps_median": 0.1137,
+     "e_clip_mbps_range": [
+      0.1093,
+      0.1176
+     ],
+     "e_over_mbps_median": 0.1969,
+     "e_over_mbps_range": [
+      0.1943,
+      0.2025
+     ],
+     "e_qb_mbps_median": 0.1969,
+     "e_qb_mbps_range": [
+      0.1943,
+      0.2025
+     ],
+     "final_alpha_median": 0.0158,
+     "final_alpha_range": [
+      0.002,
+      0.0423
+     ],
+     "mean_delay_ms_median": 37.6932,
+     "mean_delay_ms_range": [
+      28.3869,
+      49.1421
+     ],
+     "p99_delay_ms_median": 215.1442,
+     "p99_delay_ms_range": [
+      122.4121,
+      262.3116
+     ],
+     "p_over_0.5mbps_median": 0.04,
+     "p_over_0.5mbps_range": [
+      0.0267,
+      0.0633
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9679,
+     "retention_range": [
+      0.9645,
+      0.9807
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.2283,
+     "binary_range": [
+      0.1967,
+      0.2833
+     ],
+     "e_clip_mbps_median": 0.1391,
+     "e_clip_mbps_range": [
+      0.1321,
+      0.1441
+     ],
+     "e_over_mbps_median": 0.1817,
+     "e_over_mbps_range": [
+      0.1555,
+      0.2118
+     ],
+     "e_qb_mbps_median": 0.1817,
+     "e_qb_mbps_range": [
+      0.1555,
+      0.2118
+     ],
+     "final_alpha_median": 0.007,
+     "final_alpha_range": [
+      0.002,
+      0.0158
+     ],
+     "mean_delay_ms_median": 14.6991,
+     "mean_delay_ms_range": [
+      9.5283,
+      29.3895
+     ],
+     "p99_delay_ms_median": 111.204,
+     "p99_delay_ms_range": [
+      64.0155,
+      136.6949
+     ],
+     "p_over_0.5mbps_median": 0.135,
+     "p_over_0.5mbps_range": [
+      0.1133,
+      0.1433
+     ],
+     "p_over_1.0mbps_median": 0.0833,
+     "p_over_1.0mbps_range": [
+      0.06,
+      0.0967
+     ],
+     "p_over_2.0mbps_median": 0.01,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.03
+     ],
+     "retention_median": 0.9608,
+     "retention_range": [
+      0.952,
+      0.9754
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.4883,
+     "binary_range": [
+      0.4567,
+      0.52
+     ],
+     "e_clip_mbps_median": 0.1086,
+     "e_clip_mbps_range": [
+      0.1025,
+      0.1101
+     ],
+     "e_over_mbps_median": 0.1315,
+     "e_over_mbps_range": [
+      0.1159,
+      0.1412
+     ],
+     "e_qb_mbps_median": 0.1104,
+     "e_qb_mbps_range": [
+      0.1062,
+      0.1176
+     ],
+     "final_alpha_median": 0.0489,
+     "final_alpha_range": [
+      0.0405,
+      0.0859
+     ],
+     "mean_delay_ms_median": 69.1479,
+     "mean_delay_ms_range": [
+      51.0394,
+      94.7663
+     ],
+     "p99_delay_ms_median": 335.8794,
+     "p99_delay_ms_range": [
+      227.3367,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.04,
+     "p_over_0.5mbps_range": [
+      0.0333,
+      0.0467
+     ],
+     "p_over_1.0mbps_median": 0.015,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.0167
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.8942,
+     "retention_range": [
+      0.8919,
+      0.8964
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.4567,
+     "range": [
+      0.1967,
+      0.5433
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.112,
+     "range": [
+      0.1025,
+      0.1441
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.1937,
+     "range": [
+      0.1159,
+      0.2118
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.1937,
+     "range": [
+      0.1062,
+      0.2118
+     ]
+    },
+    "final_alpha": {
+     "median": 0.0295,
+     "range": [
+      0.002,
+      0.0859
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 41.6638,
+     "range": [
+      9.5283,
+      94.7663
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 212.2296,
+     "range": [
+      64.0155,
+      400.0
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0433,
+     "range": [
+      0.0267,
+      0.1433
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0117,
+     "range": [
+      0.0067,
+      0.0967
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0033,
+      0.03
+     ]
+    },
+    "retention": {
+     "median": 0.967,
+     "range": [
+      0.8919,
+      0.9965
+     ]
+    }
+   }
+  },
+  "eps=0.1/aci_mag_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.2267,
+     "binary_range": [
+      0.1967,
+      0.2433
+     ],
+     "e_clip_mbps_median": 0.1177,
+     "e_clip_mbps_range": [
+      0.1103,
+      0.1298
+     ],
+     "e_over_mbps_median": 0.2071,
+     "e_over_mbps_range": [
+      0.1639,
+      0.2199
+     ],
+     "e_qb_mbps_median": 0.2071,
+     "e_qb_mbps_range": [
+      0.1639,
+      0.2199
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.0282
+     ],
+     "mean_delay_ms_median": 10.1542,
+     "mean_delay_ms_range": [
+      8.416,
+      11.6274
+     ],
+     "p99_delay_ms_median": 60.4724,
+     "p99_delay_ms_range": [
+      49.603,
+      85.5075
+     ],
+     "p_over_0.5mbps_median": 0.1217,
+     "p_over_0.5mbps_range": [
+      0.11,
+      0.1333
+     ],
+     "p_over_1.0mbps_median": 0.04,
+     "p_over_1.0mbps_range": [
+      0.0233,
+      0.0533
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9488,
+     "retention_range": [
+      0.9378,
+      0.9645
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.19,
+     "binary_range": [
+      0.1733,
+      0.2133
+     ],
+     "e_clip_mbps_median": 0.1171,
+     "e_clip_mbps_range": [
+      0.103,
+      0.1294
+     ],
+     "e_over_mbps_median": 0.2364,
+     "e_over_mbps_range": [
+      0.2124,
+      0.2584
+     ],
+     "e_qb_mbps_median": 0.2364,
+     "e_qb_mbps_range": [
+      0.2124,
+      0.2584
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.024
+     ],
+     "mean_delay_ms_median": 9.0088,
+     "mean_delay_ms_range": [
+      7.694,
+      10.629
+     ],
+     "p99_delay_ms_median": 72.7638,
+     "p99_delay_ms_range": [
+      51.9397,
+      200.804
+     ],
+     "p_over_0.5mbps_median": 0.12,
+     "p_over_0.5mbps_range": [
+      0.1067,
+      0.1333
+     ],
+     "p_over_1.0mbps_median": 0.07,
+     "p_over_1.0mbps_range": [
+      0.0467,
+      0.0867
+     ],
+     "p_over_2.0mbps_median": 0.0133,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.0267
+     ],
+     "retention_median": 0.9188,
+     "retention_range": [
+      0.873,
+      0.9406
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1867,
+     "binary_range": [
+      0.1733,
+      0.1933
+     ],
+     "e_clip_mbps_median": 0.136,
+     "e_clip_mbps_range": [
+      0.1345,
+      0.1424
+     ],
+     "e_over_mbps_median": 0.1989,
+     "e_over_mbps_range": [
+      0.1786,
+      0.214
+     ],
+     "e_qb_mbps_median": 0.1989,
+     "e_qb_mbps_range": [
+      0.1786,
+      0.214
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.012
+     ],
+     "mean_delay_ms_median": 7.1476,
+     "mean_delay_ms_range": [
+      6.2394,
+      7.8394
+     ],
+     "p99_delay_ms_median": 68.7657,
+     "p99_delay_ms_range": [
+      56.9521,
+      84.5548
+     ],
+     "p_over_0.5mbps_median": 0.1367,
+     "p_over_0.5mbps_range": [
+      0.13,
+      0.1467
+     ],
+     "p_over_1.0mbps_median": 0.0983,
+     "p_over_1.0mbps_range": [
+      0.0733,
+      0.11
+     ],
+     "p_over_2.0mbps_median": 0.02,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.04
+     ],
+     "retention_median": 0.939,
+     "retention_range": [
+      0.9313,
+      0.951
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.2167,
+     "binary_range": [
+      0.1933,
+      0.2533
+     ],
+     "e_clip_mbps_median": 0.115,
+     "e_clip_mbps_range": [
+      0.097,
+      0.1247
+     ],
+     "e_over_mbps_median": 0.1292,
+     "e_over_mbps_range": [
+      0.1096,
+      0.1502
+     ],
+     "e_qb_mbps_median": 0.1197,
+     "e_qb_mbps_range": [
+      0.1052,
+      0.1332
+     ],
+     "final_alpha_median": 0.0113,
+     "final_alpha_range": [
+      0.002,
+      0.0302
+     ],
+     "mean_delay_ms_median": 7.7719,
+     "mean_delay_ms_range": [
+      6.0806,
+      10.1034
+     ],
+     "p99_delay_ms_median": 54.0,
+     "p99_delay_ms_range": [
+      46.1106,
+      77.4673
+     ],
+     "p_over_0.5mbps_median": 0.1167,
+     "p_over_0.5mbps_range": [
+      0.0933,
+      0.1367
+     ],
+     "p_over_1.0mbps_median": 0.0333,
+     "p_over_1.0mbps_range": [
+      0.0167,
+      0.0467
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.01
+     ],
+     "retention_median": 0.8606,
+     "retention_range": [
+      0.8437,
+      0.8762
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.2,
+     "range": [
+      0.1733,
+      0.2533
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1194,
+     "range": [
+      0.097,
+      0.1424
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2006,
+     "range": [
+      0.1096,
+      0.2584
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2006,
+     "range": [
+      0.1052,
+      0.2584
+     ]
+    },
+    "final_alpha": {
+     "median": 0.006,
+     "range": [
+      0.002,
+      0.0302
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 8.4072,
+     "range": [
+      6.0806,
+      11.6274
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 63.5778,
+     "range": [
+      46.1106,
+      200.804
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1233,
+     "range": [
+      0.0933,
+      0.1467
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.05,
+     "range": [
+      0.0167,
+      0.11
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0083,
+     "range": [
+      0.0033,
+      0.04
+     ]
+    },
+    "retention": {
+     "median": 0.9319,
+     "range": [
+      0.8437,
+      0.9645
+     ]
+    }
+   }
+  },
+  "eps=0.1/aci_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.2233,
+     "binary_range": [
+      0.2067,
+      0.25
+     ],
+     "e_clip_mbps_median": 0.1269,
+     "e_clip_mbps_range": [
+      0.1131,
+      0.1357
+     ],
+     "e_over_mbps_median": 0.2216,
+     "e_over_mbps_range": [
+      0.1967,
+      0.2305
+     ],
+     "e_qb_mbps_median": 0.2216,
+     "e_qb_mbps_range": [
+      0.1967,
+      0.2305
+     ],
+     "final_alpha_median": 0.007,
+     "final_alpha_range": [
+      0.002,
+      0.014
+     ],
+     "mean_delay_ms_median": 10.9616,
+     "mean_delay_ms_range": [
+      10.4288,
+      13.388
+     ],
+     "p99_delay_ms_median": 68.7236,
+     "p99_delay_ms_range": [
+      59.9799,
+      91.3367
+     ],
+     "p_over_0.5mbps_median": 0.13,
+     "p_over_0.5mbps_range": [
+      0.1133,
+      0.1333
+     ],
+     "p_over_1.0mbps_median": 0.0517,
+     "p_over_1.0mbps_range": [
+      0.0333,
+      0.0733
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9572,
+     "retention_range": [
+      0.9284,
+      0.9679
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.1883,
+     "binary_range": [
+      0.1767,
+      0.2133
+     ],
+     "e_clip_mbps_median": 0.1229,
+     "e_clip_mbps_range": [
+      0.1167,
+      0.1323
+     ],
+     "e_over_mbps_median": 0.2433,
+     "e_over_mbps_range": [
+      0.2178,
+      0.2708
+     ],
+     "e_qb_mbps_median": 0.2433,
+     "e_qb_mbps_range": [
+      0.2178,
+      0.2708
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.024
+     ],
+     "mean_delay_ms_median": 9.899,
+     "mean_delay_ms_range": [
+      7.5371,
+      10.8993
+     ],
+     "p99_delay_ms_median": 96.1492,
+     "p99_delay_ms_range": [
+      49.9748,
+      200.804
+     ],
+     "p_over_0.5mbps_median": 0.13,
+     "p_over_0.5mbps_range": [
+      0.1233,
+      0.14
+     ],
+     "p_over_1.0mbps_median": 0.0717,
+     "p_over_1.0mbps_range": [
+      0.0633,
+      0.0833
+     ],
+     "p_over_2.0mbps_median": 0.0133,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0367
+     ],
+     "retention_median": 0.9241,
+     "retention_range": [
+      0.9107,
+      0.9416
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.1817,
+     "binary_range": [
+      0.17,
+      0.21
+     ],
+     "e_clip_mbps_median": 0.139,
+     "e_clip_mbps_range": [
+      0.1314,
+      0.152
+     ],
+     "e_over_mbps_median": 0.2047,
+     "e_over_mbps_range": [
+      0.1878,
+      0.2145
+     ],
+     "e_qb_mbps_median": 0.2047,
+     "e_qb_mbps_range": [
+      0.1878,
+      0.2145
+     ],
+     "final_alpha_median": 0.01,
+     "final_alpha_range": [
+      0.004,
+      0.014
+     ],
+     "mean_delay_ms_median": 7.2789,
+     "mean_delay_ms_range": [
+      6.7507,
+      8.8637
+     ],
+     "p99_delay_ms_median": 72.4299,
+     "p99_delay_ms_range": [
+      64.94,
+      86.7552
+     ],
+     "p_over_0.5mbps_median": 0.1417,
+     "p_over_0.5mbps_range": [
+      0.1333,
+      0.1533
+     ],
+     "p_over_1.0mbps_median": 0.0967,
+     "p_over_1.0mbps_range": [
+      0.09,
+      0.11
+     ],
+     "p_over_2.0mbps_median": 0.0233,
+     "p_over_2.0mbps_range": [
+      0.0133,
+      0.03
+     ],
+     "retention_median": 0.9445,
+     "retention_range": [
+      0.925,
+      0.9534
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.215,
+     "binary_range": [
+      0.19,
+      0.2233
+     ],
+     "e_clip_mbps_median": 0.1125,
+     "e_clip_mbps_range": [
+      0.1062,
+      0.1242
+     ],
+     "e_over_mbps_median": 0.1301,
+     "e_over_mbps_range": [
+      0.1152,
+      0.1537
+     ],
+     "e_qb_mbps_median": 0.1297,
+     "e_qb_mbps_range": [
+      0.113,
+      0.1378
+     ],
+     "final_alpha_median": 0.005,
+     "final_alpha_range": [
+      0.002,
+      0.012
+     ],
+     "mean_delay_ms_median": 8.4146,
+     "mean_delay_ms_range": [
+      7.9313,
+      9.3363
+     ],
+     "p99_delay_ms_median": 64.6429,
+     "p99_delay_ms_range": [
+      51.9397,
+      71.6382
+     ],
+     "p_over_0.5mbps_median": 0.1167,
+     "p_over_0.5mbps_range": [
+      0.1067,
+      0.13
+     ],
+     "p_over_1.0mbps_median": 0.04,
+     "p_over_1.0mbps_range": [
+      0.02,
+      0.0567
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.8608,
+     "retention_range": [
+      0.8391,
+      0.8721
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.2067,
+     "range": [
+      0.17,
+      0.25
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.124,
+     "range": [
+      0.1062,
+      0.152
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2092,
+     "range": [
+      0.1152,
+      0.2708
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2092,
+     "range": [
+      0.113,
+      0.2708
+     ]
+    },
+    "final_alpha": {
+     "median": 0.006,
+     "range": [
+      0.002,
+      0.024
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 9.2372,
+     "range": [
+      6.7507,
+      13.388
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 71.1855,
+     "range": [
+      49.9748,
+      200.804
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.13,
+     "range": [
+      0.1067,
+      0.1533
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0667,
+     "range": [
+      0.02,
+      0.11
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.01,
+     "range": [
+      0.0033,
+      0.0367
+     ]
+    },
+    "retention": {
+     "median": 0.9313,
+     "range": [
+      0.8391,
+      0.9679
+     ]
+    }
+   }
+  },
+  "eps=0.1/baseline": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.6883,
+     "binary_range": [
+      0.6167,
+      0.77
+     ],
+     "e_clip_mbps_median": 0.1352,
+     "e_clip_mbps_range": [
+      0.1245,
+      0.1456
+     ],
+     "e_over_mbps_median": 0.2197,
+     "e_over_mbps_range": [
+      0.2112,
+      0.2337
+     ],
+     "e_qb_mbps_median": 0.2197,
+     "e_qb_mbps_range": [
+      0.2112,
+      0.2337
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 158.6504,
+     "mean_delay_ms_range": [
+      128.5588,
+      228.1665
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.03,
+     "p_over_0.5mbps_range": [
+      0.02,
+      0.0333
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9967,
+     "retention_range": [
+      0.9944,
+      0.9982
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.4733,
+     "binary_range": [
+      0.4233,
+      0.5867
+     ],
+     "e_clip_mbps_median": 0.119,
+     "e_clip_mbps_range": [
+      0.1076,
+      0.1464
+     ],
+     "e_over_mbps_median": 0.2017,
+     "e_over_mbps_range": [
+      0.192,
+      0.2305
+     ],
+     "e_qb_mbps_median": 0.2017,
+     "e_qb_mbps_range": [
+      0.192,
+      0.2305
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 85.258,
+     "mean_delay_ms_range": [
+      49.3576,
+      124.8463
+     ],
+     "p99_delay_ms_median": 326.0302,
+     "p99_delay_ms_range": [
+      188.1407,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.0283,
+     "p_over_0.5mbps_range": [
+      0.0267,
+      0.04
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9693,
+     "retention_range": [
+      0.9645,
+      0.9742
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.8883,
+     "binary_range": [
+      0.82,
+      0.9467
+     ],
+     "e_clip_mbps_median": 0.5397,
+     "e_clip_mbps_range": [
+      0.4612,
+      0.6313
+     ],
+     "e_over_mbps_median": 0.5708,
+     "e_over_mbps_range": [
+      0.4744,
+      0.6735
+     ],
+     "e_qb_mbps_median": 0.5708,
+     "e_qb_mbps_range": [
+      0.4744,
+      0.6735
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 355.5743,
+     "mean_delay_ms_range": [
+      314.2133,
+      360.142
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.5783,
+     "p_over_0.5mbps_range": [
+      0.47,
+      0.6467
+     ],
+     "p_over_1.0mbps_median": 0.1483,
+     "p_over_1.0mbps_range": [
+      0.0633,
+      0.2367
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9989,
+     "retention_range": [
+      0.9979,
+      0.9998
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.6933,
+     "binary_range": [
+      0.6167,
+      0.7333
+     ],
+     "e_clip_mbps_median": 0.1823,
+     "e_clip_mbps_range": [
+      0.1677,
+      0.1911
+     ],
+     "e_over_mbps_median": 0.7484,
+     "e_over_mbps_range": [
+      0.7357,
+      0.7629
+     ],
+     "e_qb_mbps_median": 0.1334,
+     "e_qb_mbps_range": [
+      0.1144,
+      0.139
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 126.548,
+     "mean_delay_ms_range": [
+      86.5876,
+      171.9241
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      378.8945,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.09,
+     "p_over_0.5mbps_range": [
+      0.0833,
+      0.0967
+     ],
+     "p_over_1.0mbps_median": 0.0667,
+     "p_over_1.0mbps_range": [
+      0.06,
+      0.07
+     ],
+     "p_over_2.0mbps_median": 0.0533,
+     "p_over_2.0mbps_range": [
+      0.0533,
+      0.0567
+     ],
+     "retention_median": 0.8973,
+     "retention_range": [
+      0.8956,
+      0.8984
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.6917,
+     "range": [
+      0.4233,
+      0.9467
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.157,
+     "range": [
+      0.1076,
+      0.6313
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.354,
+     "range": [
+      0.192,
+      0.7629
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2154,
+     "range": [
+      0.1144,
+      0.6735
+     ]
+    },
+    "final_alpha": null,
+    "mean_delay_ms": {
+     "median": 144.6694,
+     "range": [
+      49.3576,
+      360.142
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 400.0,
+     "range": [
+      188.1407,
+      400.0
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0617,
+     "range": [
+      0.02,
+      0.6467
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0367,
+     "range": [
+      0.0033,
+      0.2367
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0033,
+      0.0567
+     ]
+    },
+    "retention": {
+     "median": 0.9843,
+     "range": [
+      0.8956,
+      0.9998
+     ]
+    }
+   }
+  },
+  "eps=0.2/aci_mag_oracle": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.7067,
+     "binary_range": [
+      0.6233,
+      0.7833
+     ],
+     "e_clip_mbps_median": 0.1428,
+     "e_clip_mbps_range": [
+      0.1243,
+      0.1532
+     ],
+     "e_over_mbps_median": 0.2319,
+     "e_over_mbps_range": [
+      0.2148,
+      0.2416
+     ],
+     "e_qb_mbps_median": 0.2319,
+     "e_qb_mbps_range": [
+      0.2148,
+      0.2416
+     ],
+     "final_alpha_median": 0.5,
+     "final_alpha_range": [
+      0.4794,
+      0.5
+     ],
+     "mean_delay_ms_median": 213.9479,
+     "mean_delay_ms_range": [
+      175.373,
+      247.0405
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.035,
+     "p_over_0.5mbps_range": [
+      0.0267,
+      0.0433
+     ],
+     "p_over_1.0mbps_median": 0.0133,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.02
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9985,
+     "retention_range": [
+      0.9966,
+      0.9993
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.555,
+     "binary_range": [
+      0.5167,
+      0.8167
+     ],
+     "e_clip_mbps_median": 0.1414,
+     "e_clip_mbps_range": [
+      0.1276,
+      0.1921
+     ],
+     "e_over_mbps_median": 0.2356,
+     "e_over_mbps_range": [
+      0.2127,
+      0.2772
+     ],
+     "e_qb_mbps_median": 0.2356,
+     "e_qb_mbps_range": [
+      0.2127,
+      0.2772
+     ],
+     "final_alpha_median": 0.4485,
+     "final_alpha_range": [
+      0.2487,
+      0.499
+     ],
+     "mean_delay_ms_median": 147.9689,
+     "mean_delay_ms_range": [
+      102.6292,
+      242.5782
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      308.3417,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.0333,
+     "p_over_0.5mbps_range": [
+      0.0167,
+      0.0533
+     ],
+     "p_over_1.0mbps_median": 0.015,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.0333
+     ],
+     "p_over_2.0mbps_median": 0.0117,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.0233
+     ],
+     "retention_median": 0.9753,
+     "retention_range": [
+      0.9746,
+      0.976
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.6817,
+     "binary_range": [
+      0.62,
+      0.72
+     ],
+     "e_clip_mbps_median": 0.2241,
+     "e_clip_mbps_range": [
+      0.2184,
+      0.2333
+     ],
+     "e_over_mbps_median": 0.2329,
+     "e_over_mbps_range": [
+      0.2303,
+      0.249
+     ],
+     "e_qb_mbps_median": 0.2329,
+     "e_qb_mbps_range": [
+      0.2303,
+      0.249
+     ],
+     "final_alpha_median": 0.0532,
+     "final_alpha_range": [
+      0.0073,
+      0.0967
+     ],
+     "mean_delay_ms_median": 299.4036,
+     "mean_delay_ms_range": [
+      239.9636,
+      342.5966
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.1433,
+     "p_over_0.5mbps_range": [
+      0.1233,
+      0.17
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0333
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9994,
+     "retention_range": [
+      0.9986,
+      0.9998
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.705,
+     "binary_range": [
+      0.6267,
+      0.74
+     ],
+     "e_clip_mbps_median": 0.1797,
+     "e_clip_mbps_range": [
+      0.1702,
+      0.1827
+     ],
+     "e_over_mbps_median": 0.9877,
+     "e_over_mbps_range": [
+      0.8847,
+      1.2083
+     ],
+     "e_qb_mbps_median": 0.1398,
+     "e_qb_mbps_range": [
+      0.1314,
+      0.1556
+     ],
+     "final_alpha_median": 0.321,
+     "final_alpha_range": [
+      0.3026,
+      0.3779
+     ],
+     "mean_delay_ms_median": 159.9123,
+     "mean_delay_ms_range": [
+      122.4228,
+      182.2458
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.0833,
+     "p_over_0.5mbps_range": [
+      0.0733,
+      0.0867
+     ],
+     "p_over_1.0mbps_median": 0.0567,
+     "p_over_1.0mbps_range": [
+      0.0433,
+      0.0667
+     ],
+     "p_over_2.0mbps_median": 0.045,
+     "p_over_2.0mbps_range": [
+      0.04,
+      0.0533
+     ],
+     "retention_median": 0.8985,
+     "retention_range": [
+      0.8974,
+      0.8995
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.6867,
+     "range": [
+      0.5167,
+      0.8167
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1735,
+     "range": [
+      0.1243,
+      0.2333
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2386,
+     "range": [
+      0.2127,
+      1.2083
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2315,
+     "range": [
+      0.1314,
+      0.2772
+     ]
+    },
+    "final_alpha": {
+     "median": 0.3551,
+     "range": [
+      0.0073,
+      0.5
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 182.5949,
+     "range": [
+      102.6292,
+      342.5966
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 400.0,
+     "range": [
+      308.3417,
+      400.0
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0633,
+     "range": [
+      0.0167,
+      0.17
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0167,
+     "range": [
+      0.0067,
+      0.0667
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0033,
+      0.0533
+     ]
+    },
+    "retention": {
+     "median": 0.9863,
+     "range": [
+      0.8974,
+      0.9998
+     ]
+    }
+   }
+  },
+  "eps=0.2/aci_mag_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.2783,
+     "binary_range": [
+      0.2633,
+      0.3133
+     ],
+     "e_clip_mbps_median": 0.1408,
+     "e_clip_mbps_range": [
+      0.1276,
+      0.1497
+     ],
+     "e_over_mbps_median": 0.2277,
+     "e_over_mbps_range": [
+      0.2049,
+      0.2334
+     ],
+     "e_qb_mbps_median": 0.2277,
+     "e_qb_mbps_range": [
+      0.2049,
+      0.2334
+     ],
+     "final_alpha_median": 0.014,
+     "final_alpha_range": [
+      0.002,
+      0.025
+     ],
+     "mean_delay_ms_median": 14.8795,
+     "mean_delay_ms_range": [
+      12.6222,
+      16.0838
+     ],
+     "p99_delay_ms_median": 95.201,
+     "p99_delay_ms_range": [
+      62.7136,
+      124.2714
+     ],
+     "p_over_0.5mbps_median": 0.1583,
+     "p_over_0.5mbps_range": [
+      0.13,
+      0.1733
+     ],
+     "p_over_1.0mbps_median": 0.025,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.0333
+     ],
+     "p_over_2.0mbps_median": 0.0083,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9778,
+     "retention_range": [
+      0.9631,
+      0.9821
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.265,
+     "binary_range": [
+      0.25,
+      0.28
+     ],
+     "e_clip_mbps_median": 0.1477,
+     "e_clip_mbps_range": [
+      0.1264,
+      0.1622
+     ],
+     "e_over_mbps_median": 0.2521,
+     "e_over_mbps_range": [
+      0.2136,
+      0.2936
+     ],
+     "e_qb_mbps_median": 0.2521,
+     "e_qb_mbps_range": [
+      0.2136,
+      0.2936
+     ],
+     "final_alpha_median": 0.0113,
+     "final_alpha_range": [
+      0.002,
+      0.107
+     ],
+     "mean_delay_ms_median": 14.4514,
+     "mean_delay_ms_range": [
+      12.3111,
+      17.9773
+     ],
+     "p99_delay_ms_median": 190.9548,
+     "p99_delay_ms_range": [
+      62.9146,
+      318.995
+     ],
+     "p_over_0.5mbps_median": 0.1433,
+     "p_over_0.5mbps_range": [
+      0.1267,
+      0.17
+     ],
+     "p_over_1.0mbps_median": 0.0683,
+     "p_over_1.0mbps_range": [
+      0.0267,
+      0.09
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0167
+     ],
+     "retention_median": 0.9401,
+     "retention_range": [
+      0.875,
+      0.9483
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.2517,
+     "binary_range": [
+      0.23,
+      0.26
+     ],
+     "e_clip_mbps_median": 0.1795,
+     "e_clip_mbps_range": [
+      0.1628,
+      0.1848
+     ],
+     "e_over_mbps_median": 0.2435,
+     "e_over_mbps_range": [
+      0.2165,
+      0.2592
+     ],
+     "e_qb_mbps_median": 0.2435,
+     "e_qb_mbps_range": [
+      0.2165,
+      0.2592
+     ],
+     "final_alpha_median": 0.014,
+     "final_alpha_range": [
+      0.002,
+      0.0319
+     ],
+     "mean_delay_ms_median": 13.7588,
+     "mean_delay_ms_range": [
+      12.5037,
+      15.7966
+     ],
+     "p99_delay_ms_median": 88.0795,
+     "p99_delay_ms_range": [
+      73.707,
+      126.5065
+     ],
+     "p_over_0.5mbps_median": 0.1767,
+     "p_over_0.5mbps_range": [
+      0.1633,
+      0.19
+     ],
+     "p_over_1.0mbps_median": 0.1067,
+     "p_over_1.0mbps_range": [
+      0.0833,
+      0.13
+     ],
+     "p_over_2.0mbps_median": 0.02,
+     "p_over_2.0mbps_range": [
+      0.0133,
+      0.0267
+     ],
+     "retention_median": 0.9638,
+     "retention_range": [
+      0.9585,
+      0.9685
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.335,
+     "binary_range": [
+      0.32,
+      0.3667
+     ],
+     "e_clip_mbps_median": 0.1866,
+     "e_clip_mbps_range": [
+      0.166,
+      0.2014
+     ],
+     "e_over_mbps_median": 0.5155,
+     "e_over_mbps_range": [
+      0.2163,
+      0.9033
+     ],
+     "e_qb_mbps_median": 0.1422,
+     "e_qb_mbps_range": [
+      0.1385,
+      0.1579
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.026
+     ],
+     "mean_delay_ms_median": 12.9102,
+     "mean_delay_ms_range": [
+      11.4999,
+      15.9262
+     ],
+     "p99_delay_ms_median": 83.5176,
+     "p99_delay_ms_range": [
+      56.8844,
+      128.8945
+     ],
+     "p_over_0.5mbps_median": 0.1917,
+     "p_over_0.5mbps_range": [
+      0.1667,
+      0.22
+     ],
+     "p_over_1.0mbps_median": 0.08,
+     "p_over_1.0mbps_range": [
+      0.0467,
+      0.0933
+     ],
+     "p_over_2.0mbps_median": 0.0733,
+     "p_over_2.0mbps_range": [
+      0.0267,
+      0.0767
+     ],
+     "retention_median": 0.8836,
+     "retention_range": [
+      0.8757,
+      0.888
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.27,
+     "range": [
+      0.23,
+      0.3667
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1625,
+     "range": [
+      0.1264,
+      0.2014
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2435,
+     "range": [
+      0.2049,
+      0.9033
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2307,
+     "range": [
+      0.1385,
+      0.2936
+     ]
+    },
+    "final_alpha": {
+     "median": 0.0133,
+     "range": [
+      0.002,
+      0.107
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 14.0865,
+     "range": [
+      11.4999,
+      17.9773
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 99.3467,
+     "range": [
+      56.8844,
+      318.995
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.1667,
+     "range": [
+      0.1267,
+      0.22
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.08,
+     "range": [
+      0.01,
+      0.13
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.015,
+     "range": [
+      0.0033,
+      0.0767
+     ]
+    },
+    "retention": {
+     "median": 0.9534,
+     "range": [
+      0.875,
+      0.9821
+     ]
+    }
+   }
+  },
+  "eps=0.2/aci_proxy": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.2883,
+     "binary_range": [
+      0.2767,
+      0.3133
+     ],
+     "e_clip_mbps_median": 0.1448,
+     "e_clip_mbps_range": [
+      0.1338,
+      0.153
+     ],
+     "e_over_mbps_median": 0.2306,
+     "e_over_mbps_range": [
+      0.1664,
+      0.2427
+     ],
+     "e_qb_mbps_median": 0.2306,
+     "e_qb_mbps_range": [
+      0.1664,
+      0.2427
+     ],
+     "final_alpha_median": 0.01,
+     "final_alpha_range": [
+      0.002,
+      0.026
+     ],
+     "mean_delay_ms_median": 16.1219,
+     "mean_delay_ms_range": [
+      13.2646,
+      17.6705
+     ],
+     "p99_delay_ms_median": 85.0503,
+     "p99_delay_ms_range": [
+      65.809,
+      149.196
+     ],
+     "p_over_0.5mbps_median": 0.1683,
+     "p_over_0.5mbps_range": [
+      0.1433,
+      0.18
+     ],
+     "p_over_1.0mbps_median": 0.02,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.03
+     ],
+     "p_over_2.0mbps_median": 0.0083,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.01
+     ],
+     "retention_median": 0.9789,
+     "retention_range": [
+      0.9627,
+      0.9815
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.275,
+     "binary_range": [
+      0.26,
+      0.3
+     ],
+     "e_clip_mbps_median": 0.1503,
+     "e_clip_mbps_range": [
+      0.1451,
+      0.1669
+     ],
+     "e_over_mbps_median": 0.2591,
+     "e_over_mbps_range": [
+      0.2445,
+      0.2816
+     ],
+     "e_qb_mbps_median": 0.2591,
+     "e_qb_mbps_range": [
+      0.2445,
+      0.2816
+     ],
+     "final_alpha_median": 0.018,
+     "final_alpha_range": [
+      0.01,
+      0.026
+     ],
+     "mean_delay_ms_median": 15.4491,
+     "mean_delay_ms_range": [
+      12.9051,
+      18.7446
+     ],
+     "p99_delay_ms_median": 190.9548,
+     "p99_delay_ms_range": [
+      73.8191,
+      318.995
+     ],
+     "p_over_0.5mbps_median": 0.155,
+     "p_over_0.5mbps_range": [
+      0.1433,
+      0.1767
+     ],
+     "p_over_1.0mbps_median": 0.0733,
+     "p_over_1.0mbps_range": [
+      0.06,
+      0.0867
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0067
+     ],
+     "retention_median": 0.9454,
+     "retention_range": [
+      0.9354,
+      0.9534
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.2617,
+     "binary_range": [
+      0.2467,
+      0.2767
+     ],
+     "e_clip_mbps_median": 0.1806,
+     "e_clip_mbps_range": [
+      0.1677,
+      0.1963
+     ],
+     "e_over_mbps_median": 0.2529,
+     "e_over_mbps_range": [
+      0.2221,
+      0.2795
+     ],
+     "e_qb_mbps_median": 0.2529,
+     "e_qb_mbps_range": [
+      0.2221,
+      0.2795
+     ],
+     "final_alpha_median": 0.01,
+     "final_alpha_range": [
+      0.002,
+      0.03
+     ],
+     "mean_delay_ms_median": 15.5039,
+     "mean_delay_ms_range": [
+      13.5306,
+      18.6574
+     ],
+     "p99_delay_ms_median": 105.0588,
+     "p99_delay_ms_range": [
+      86.9355,
+      126.5065
+     ],
+     "p_over_0.5mbps_median": 0.1817,
+     "p_over_0.5mbps_range": [
+      0.1633,
+      0.2
+     ],
+     "p_over_1.0mbps_median": 0.1183,
+     "p_over_1.0mbps_range": [
+      0.0767,
+      0.1267
+     ],
+     "p_over_2.0mbps_median": 0.0233,
+     "p_over_2.0mbps_range": [
+      0.0167,
+      0.03
+     ],
+     "retention_median": 0.9639,
+     "retention_range": [
+      0.9595,
+      0.9656
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.3467,
+     "binary_range": [
+      0.3367,
+      0.3667
+     ],
+     "e_clip_mbps_median": 0.1964,
+     "e_clip_mbps_range": [
+      0.1829,
+      0.2062
+     ],
+     "e_over_mbps_median": 0.4845,
+     "e_over_mbps_range": [
+      0.2345,
+      0.848
+     ],
+     "e_qb_mbps_median": 0.157,
+     "e_qb_mbps_range": [
+      0.1392,
+      0.1659
+     ],
+     "final_alpha_median": 0.006,
+     "final_alpha_range": [
+      0.002,
+      0.022
+     ],
+     "mean_delay_ms_median": 14.5954,
+     "mean_delay_ms_range": [
+      12.0668,
+      17.7966
+     ],
+     "p99_delay_ms_median": 85.0503,
+     "p99_delay_ms_range": [
+      65.809,
+      220.3015
+     ],
+     "p_over_0.5mbps_median": 0.2033,
+     "p_over_0.5mbps_range": [
+      0.1933,
+      0.2267
+     ],
+     "p_over_1.0mbps_median": 0.0833,
+     "p_over_1.0mbps_range": [
+      0.05,
+      0.0967
+     ],
+     "p_over_2.0mbps_median": 0.0733,
+     "p_over_2.0mbps_range": [
+      0.03,
+      0.0767
+     ],
+     "retention_median": 0.8844,
+     "retention_range": [
+      0.869,
+      0.888
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.2833,
+     "range": [
+      0.2467,
+      0.3667
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1673,
+     "range": [
+      0.1338,
+      0.2062
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.2529,
+     "range": [
+      0.1664,
+      0.848
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2406,
+     "range": [
+      0.1392,
+      0.2816
+     ]
+    },
+    "final_alpha": {
+     "median": 0.01,
+     "range": [
+      0.002,
+      0.03
+     ]
+    },
+    "mean_delay_ms": {
+     "median": 15.6801,
+     "range": [
+      12.0668,
+      18.7446
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 106.6829,
+     "range": [
+      65.809,
+      318.995
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.175,
+     "range": [
+      0.1433,
+      0.2267
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0783,
+     "range": [
+      0.01,
+      0.1267
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0133,
+     "range": [
+      0.0033,
+      0.0767
+     ]
+    },
+    "retention": {
+     "median": 0.9564,
+     "range": [
+      0.869,
+      0.9815
+     ]
+    }
+   }
+  },
+  "eps=0.2/baseline": {
+   "n_runs": 40,
+   "per_scenario": [
+    {
+     "binary_median": 0.7217,
+     "binary_range": [
+      0.6267,
+      0.7667
+     ],
+     "e_clip_mbps_median": 0.1438,
+     "e_clip_mbps_range": [
+      0.1269,
+      0.1509
+     ],
+     "e_over_mbps_median": 0.2319,
+     "e_over_mbps_range": [
+      0.2154,
+      0.2366
+     ],
+     "e_qb_mbps_median": 0.2319,
+     "e_qb_mbps_range": [
+      0.2154,
+      0.2366
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 207.7486,
+     "mean_delay_ms_range": [
+      142.2953,
+      246.7884
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.035,
+     "p_over_0.5mbps_range": [
+      0.02,
+      0.0433
+     ],
+     "p_over_1.0mbps_median": 0.015,
+     "p_over_1.0mbps_range": [
+      0.01,
+      0.02
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0067,
+      0.0067
+     ],
+     "retention_median": 0.9985,
+     "retention_range": [
+      0.9963,
+      0.9991
+     ],
+     "scenario": "abrupt_drop"
+    },
+    {
+     "binary_median": 0.5067,
+     "binary_range": [
+      0.4467,
+      0.69
+     ],
+     "e_clip_mbps_median": 0.1257,
+     "e_clip_mbps_range": [
+      0.1147,
+      0.1618
+     ],
+     "e_over_mbps_median": 0.2115,
+     "e_over_mbps_range": [
+      0.1964,
+      0.2461
+     ],
+     "e_qb_mbps_median": 0.2115,
+     "e_qb_mbps_range": [
+      0.1964,
+      0.2461
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 108.7289,
+     "mean_delay_ms_range": [
+      58.677,
+      188.951
+     ],
+     "p99_delay_ms_median": 363.6181,
+     "p99_delay_ms_range": [
+      214.2714,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.0333,
+     "p_over_0.5mbps_range": [
+      0.0233,
+      0.05
+     ],
+     "p_over_1.0mbps_median": 0.01,
+     "p_over_1.0mbps_range": [
+      0.0067,
+      0.0167
+     ],
+     "p_over_2.0mbps_median": 0.0067,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.0133
+     ],
+     "retention_median": 0.9727,
+     "retention_range": [
+      0.968,
+      0.9753
+     ],
+     "scenario": "capacity_rise"
+    },
+    {
+     "binary_median": 0.96,
+     "binary_range": [
+      0.95,
+      0.99
+     ],
+     "e_clip_mbps_median": 0.7774,
+     "e_clip_mbps_range": [
+      0.7232,
+      0.8444
+     ],
+     "e_over_mbps_median": 0.8915,
+     "e_over_mbps_range": [
+      0.7967,
+      1.0122
+     ],
+     "e_qb_mbps_median": 0.8915,
+     "e_qb_mbps_range": [
+      0.7967,
+      1.0122
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 365.7424,
+     "mean_delay_ms_range": [
+      356.46,
+      384.2904
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.8217,
+     "p_over_0.5mbps_range": [
+      0.7333,
+      0.9233
+     ],
+     "p_over_1.0mbps_median": 0.4433,
+     "p_over_1.0mbps_range": [
+      0.31,
+      0.55
+     ],
+     "p_over_2.0mbps_median": 0.0033,
+     "p_over_2.0mbps_range": [
+      0.0033,
+      0.02
+     ],
+     "retention_median": 0.9996,
+     "retention_range": [
+      0.9987,
+      1.0
+     ],
+     "scenario": "gradual_decline"
+    },
+    {
+     "binary_median": 0.71,
+     "binary_range": [
+      0.6433,
+      0.7867
+     ],
+     "e_clip_mbps_median": 0.1968,
+     "e_clip_mbps_range": [
+      0.1813,
+      0.2106
+     ],
+     "e_over_mbps_median": 1.8164,
+     "e_over_mbps_range": [
+      1.8034,
+      1.8317
+     ],
+     "e_qb_mbps_median": 0.1978,
+     "e_qb_mbps_range": [
+      0.1833,
+      0.2126
+     ],
+     "final_alpha_median": null,
+     "final_alpha_range": null,
+     "mean_delay_ms_median": 159.9349,
+     "mean_delay_ms_range": [
+      122.0709,
+      232.0059
+     ],
+     "p99_delay_ms_median": 400.0,
+     "p99_delay_ms_range": [
+      400.0,
+      400.0
+     ],
+     "p_over_0.5mbps_median": 0.1,
+     "p_over_0.5mbps_range": [
+      0.0933,
+      0.11
+     ],
+     "p_over_1.0mbps_median": 0.08,
+     "p_over_1.0mbps_range": [
+      0.0767,
+      0.0867
+     ],
+     "p_over_2.0mbps_median": 0.0733,
+     "p_over_2.0mbps_range": [
+      0.0733,
+      0.0733
+     ],
+     "retention_median": 0.8981,
+     "retention_range": [
+      0.897,
+      0.8994
+     ],
+     "scenario": "idle_drop"
+    }
+   ],
+   "pooled": {
+    "binary": {
+     "median": 0.72,
+     "range": [
+      0.4467,
+      0.99
+     ]
+    },
+    "e_clip_mbps": {
+     "median": 0.1716,
+     "range": [
+      0.1147,
+      0.8444
+     ]
+    },
+    "e_over_mbps": {
+     "median": 0.5214,
+     "range": [
+      0.1964,
+      1.8317
+     ]
+    },
+    "e_qb_mbps": {
+     "median": 0.2201,
+     "range": [
+      0.1833,
+      1.0122
+     ]
+    },
+    "final_alpha": null,
+    "mean_delay_ms": {
+     "median": 185.2125,
+     "range": [
+      58.677,
+      384.2904
+     ]
+    },
+    "p99_delay_ms": {
+     "median": 400.0,
+     "range": [
+      214.2714,
+      400.0
+     ]
+    },
+    "p_over_0.5mbps": {
+     "median": 0.0717,
+     "range": [
+      0.02,
+      0.9233
+     ]
+    },
+    "p_over_1.0mbps": {
+     "median": 0.0483,
+     "range": [
+      0.0067,
+      0.55
+     ]
+    },
+    "p_over_2.0mbps": {
+     "median": 0.0067,
+     "range": [
+      0.0033,
+      0.0733
+     ]
+    },
+    "retention": {
+     "median": 0.9858,
+     "range": [
+      0.897,
+      1.0
+     ]
+    }
+   }
+  }
+ }
+}
